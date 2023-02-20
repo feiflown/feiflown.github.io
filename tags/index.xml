@@ -6,15 +6,15 @@
     <description>Recent content in Tags on Lamy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>lamy9813@gmail.com (Lamy)</managingEditor>
-    <webMaster>lamy9813@gmail.com (Lamy)</webMaster>
+    <managingEditor>suofeiyaxx@gmail.com (AGou-ops)</managingEditor>
+    <webMaster>suofeiyaxx@gmail.com (AGou-ops)</webMaster>
     <copyright>WTFPLv2</copyright>
     <lastBuildDate>Wed, 06 Apr 2022 11:29:42 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Golang</title>
       <link>http://lamy9813.github.io/tags/golang/</link>
       <pubDate>Wed, 06 Apr 2022 11:29:42 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
+      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
       <guid>http://lamy9813.github.io/tags/golang/</guid>
       <description></description>
     </item>
@@ -23,7 +23,7 @@
       <title>Service</title>
       <link>http://lamy9813.github.io/tags/service/</link>
       <pubDate>Wed, 06 Apr 2022 11:29:42 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
+      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
       <guid>http://lamy9813.github.io/tags/service/</guid>
       <description></description>
     </item>
@@ -32,8 +32,17 @@
       <title>Windows</title>
       <link>http://lamy9813.github.io/tags/windows/</link>
       <pubDate>Wed, 06 Apr 2022 11:29:42 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
+      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
       <guid>http://lamy9813.github.io/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>内网穿透</title>
+      <link>http://lamy9813.github.io/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
+      <pubDate>Thu, 21 Oct 2021 09:01:46 +0800</pubDate>
+      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <guid>http://lamy9813.github.io/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
       <description></description>
     </item>
     
