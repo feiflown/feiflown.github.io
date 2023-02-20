@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hugo on AGou&#39;s blog</title>
+    <title>hugo on Lamy</title>
     <link>http://lamy9813.github.io/categories/hugo/</link>
-    <description>Recent content in hugo on AGou&#39;s blog</description>
+    <description>Recent content in hugo on Lamy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>suofeiyaxx@gmail.com (AGou-ops)</managingEditor>
-    <webMaster>suofeiyaxx@gmail.com (AGou-ops)</webMaster>
+    <managingEditor>lamy9813@gmail.com (Lamy)</managingEditor>
+    <webMaster>lamy9813@gmail.com (Lamy)</webMaster>
     <copyright>WTFPLv2</copyright>
     <lastBuildDate>Mon, 04 Mar 2019 16:01:23 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Shortcodes Preview</title>
       <link>http://lamy9813.github.io/post/shortcodes-preview/</link>
       <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/post/shortcodes-preview/</guid>
       <description>&lt;h2 id=&#34;what-a-shortcode-is&#34;&gt;What a Shortcode is&lt;/h2&gt;
 &lt;p&gt;Hugo loves Markdown because of its simple content format, but there are times when Markdown falls short. Often, content authors are forced to add raw HTML (e.g., video &lt;code&gt;&amp;lt;iframes&amp;gt;&lt;/code&gt;) to Markdown content. We think this contradicts the beautiful simplicity of Markdown&amp;rsquo;s syntax.&lt;/p&gt;

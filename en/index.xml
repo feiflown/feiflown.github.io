@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>En on AGou&#39;s blog</title>
+    <title>En on Lamy</title>
     <link>http://lamy9813.github.io/en/</link>
-    <description>Recent content in En on AGou&#39;s blog</description>
+    <description>Recent content in En on Lamy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>suofeiyaxx@gmail.com (AGou-ops)</managingEditor>
-    <webMaster>suofeiyaxx@gmail.com (AGou-ops)</webMaster>
+    <managingEditor>lamy9813@gmail.com (Lamy)</managingEditor>
+    <webMaster>lamy9813@gmail.com (Lamy)</webMaster>
     <copyright>WTFPLv2</copyright><atom:link href="http://lamy9813.github.io/en/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

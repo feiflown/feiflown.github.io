@@ -3,27 +3,34 @@
   
   <url>
     <loc>http://lamy9813.github.io/aboutme/</loc>
-    <lastmod>2018-04-16T14:01:47+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://lamy9813.github.io/author/agou-ops/</loc>
-    <lastmod>2022-08-05T17:02:21+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://lamy9813.github.io/</loc>
-    <lastmod>2022-08-05T17:02:21+08:00</lastmod>
+    <lastmod>2023-02-19T14:01:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://lamy9813.github.io/author/</loc>
+    <lastmod>2023-02-19T14:01:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/author/lamy/</loc>
+    <lastmod>2023-02-19T14:01:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/</loc>
+    <lastmod>2023-02-19T14:01:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/author/agou-ops/</loc>
     <lastmod>2022-08-05T17:02:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

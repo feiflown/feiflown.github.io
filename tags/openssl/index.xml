@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>openssl on AGou&#39;s blog</title>
+    <title>openssl on Lamy</title>
     <link>http://lamy9813.github.io/tags/openssl/</link>
-    <description>Recent content in openssl on AGou&#39;s blog</description>
+    <description>Recent content in openssl on Lamy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>suofeiyaxx@gmail.com (AGou-ops)</managingEditor>
-    <webMaster>suofeiyaxx@gmail.com (AGou-ops)</webMaster>
+    <managingEditor>lamy9813@gmail.com (Lamy)</managingEditor>
+    <webMaster>lamy9813@gmail.com (Lamy)</webMaster>
     <copyright>WTFPLv2</copyright>
     <lastBuildDate>Mon, 01 Jun 2020 10:01:51 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/tags/openssl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux 生成随机数</title>
       <link>http://lamy9813.github.io/post/linux%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0/</link>
       <pubDate>Mon, 01 Jun 2020 10:01:51 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/post/linux%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0/</guid>
       <description>[TOC] 通过 openssl 生成 1 2 3 4 5 6 7 8 9 10 [root@myhost ~]\# openssl rand -base64 3 xsSp [root@myhost ~]\# openssl rand -base64 8 8SlHCsBAiYw= [root@myhost ~]\# openssl rand -base64 10 nUzBw8ngKGGqWw== `openssl rand -base64 32|tr A-Z a-z|cut -c 1-10` 使用 date 命令生成 1 2 3 4 5 6 7 8 9 10 [root@myhost ~]\# date +%s 1539071518 [root@myhost ~]\# date</description>
     </item>

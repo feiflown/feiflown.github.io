@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>流控 on AGou&#39;s blog</title>
+    <title>流控 on Lamy</title>
     <link>http://lamy9813.github.io/tags/%E6%B5%81%E6%8E%A7/</link>
-    <description>Recent content in 流控 on AGou&#39;s blog</description>
+    <description>Recent content in 流控 on Lamy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>suofeiyaxx@gmail.com (AGou-ops)</managingEditor>
-    <webMaster>suofeiyaxx@gmail.com (AGou-ops)</webMaster>
+    <managingEditor>lamy9813@gmail.com (Lamy)</managingEditor>
+    <webMaster>lamy9813@gmail.com (Lamy)</webMaster>
     <copyright>WTFPLv2</copyright>
     <lastBuildDate>Wed, 16 Dec 2020 15:30:58 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/tags/%E6%B5%81%E6%8E%A7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TC 高级流控</title>
       <link>http://lamy9813.github.io/post/tc-%E9%AB%98%E7%BA%A7%E6%B5%81%E6%8E%A7/</link>
       <pubDate>Wed, 16 Dec 2020 15:30:58 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/post/tc-%E9%AB%98%E7%BA%A7%E6%B5%81%E6%8E%A7/</guid>
       <description>&lt;h2 id=&#34;tc-简介及原理&#34;&gt;TC 简介及原理&lt;/h2&gt;
 &lt;p&gt;tc 是 Linux 系统中的一个工具，全名为&lt;code&gt;traffic control&lt;/code&gt;（流量控制）, 主要是通过在输出端口处建立一个队列来实现流量控制。tc 可以用来控制 netem 的工作模式，也就是说，想要使用 netem ，则需要内核开启了 netem，而且安装了 tc工具。&lt;/p&gt;

@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lamy on Lamy&#39;s blog</title>
+    <title>Lamy</title>
     <link>http://lamy9813.github.io/author/lamy/</link>
-    <description>Recent content in Lamy on Lamy&#39;s blog</description>
+    <description>Recent content on Lamy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>suofeiyaxx@gmail.com (AGou-ops)</managingEditor>
-    <webMaster>suofeiyaxx@gmail.com (AGou-ops)</webMaster>
+    <managingEditor>lamy9813@gmail.com (Lamy)</managingEditor>
+    <webMaster>lamy9813@gmail.com (Lamy)</webMaster>
     <copyright>WTFPLv2</copyright>
     <lastBuildDate>Sun, 19 Feb 2023 14:01:47 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/author/lamy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于</title>
       <link>http://lamy9813.github.io/aboutme/</link>
       <pubDate>Sun, 19 Feb 2023 14:01:47 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/aboutme/</guid>
-      <description>License 本站所有原创内容开源许可协议均为：WTFPL，转载的时候随便去掉本站信息都可以，不用经过博主同意。 何为WTFPL？ WTFPL © Do What the Fuck You Want to Public Li</description>
+      <description>&lt;!DOCTYPE html&gt; 岂能尽如人意，但求无愧我心。 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Hover here to show all your network information. All your network information is shown below: 本站地址：https://lamy9813.github.io/ License 本站所有原创</description>
+    </item>
+    
+    <item>
+      <title>我的动漫之旅(My Anime Trip.)</title>
+      <link>http://lamy9813.github.io/anime/</link>
+      <pubDate>Wed, 30 Sep 2020 19:14:44 +0800</pubDate>
+      <author>lamy9813@gmail.com (Lamy)</author>
+      <guid>http://lamy9813.github.io/anime/</guid>
+      <description>按照观看结束时间排序，序号仅用于计数。(2020-03-28 至 ????-??-??) 变更日志： 2020年10月01日：初始化表格、增加序号至39； 2020年11</description>
     </item>
     
   </channel>

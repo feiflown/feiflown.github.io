@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on AGou&#39;s blog</title>
+    <title>Tags on Lamy</title>
     <link>http://lamy9813.github.io/tags/</link>
-    <description>Recent content in Tags on AGou&#39;s blog</description>
+    <description>Recent content in Tags on Lamy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>suofeiyaxx@gmail.com (AGou-ops)</managingEditor>
-    <webMaster>suofeiyaxx@gmail.com (AGou-ops)</webMaster>
+    <managingEditor>lamy9813@gmail.com (Lamy)</managingEditor>
+    <webMaster>lamy9813@gmail.com (Lamy)</webMaster>
     <copyright>WTFPLv2</copyright>
     <lastBuildDate>Mon, 08 Nov 2021 11:25:31 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Shell</title>
       <link>http://lamy9813.github.io/tags/shell/</link>
       <pubDate>Mon, 08 Nov 2021 11:25:31 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/shell/</guid>
       <description></description>
     </item>
@@ -23,7 +23,7 @@
       <title>tricks</title>
       <link>http://lamy9813.github.io/tags/tricks/</link>
       <pubDate>Mon, 08 Nov 2021 11:25:31 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/tricks/</guid>
       <description></description>
     </item>
@@ -32,7 +32,7 @@
       <title>kubernetes</title>
       <link>http://lamy9813.github.io/tags/kubernetes/</link>
       <pubDate>Tue, 02 Nov 2021 14:30:23 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/kubernetes/</guid>
       <description></description>
     </item>
@@ -41,7 +41,7 @@
       <title>network</title>
       <link>http://lamy9813.github.io/tags/network/</link>
       <pubDate>Tue, 02 Nov 2021 14:30:23 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/network/</guid>
       <description></description>
     </item>
@@ -50,7 +50,7 @@
       <title>tc</title>
       <link>http://lamy9813.github.io/tags/tc/</link>
       <pubDate>Wed, 16 Dec 2020 15:30:58 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/tc/</guid>
       <description></description>
     </item>
@@ -59,7 +59,7 @@
       <title>流控</title>
       <link>http://lamy9813.github.io/tags/%E6%B5%81%E6%8E%A7/</link>
       <pubDate>Wed, 16 Dec 2020 15:30:58 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/%E6%B5%81%E6%8E%A7/</guid>
       <description></description>
     </item>
@@ -68,7 +68,7 @@
       <title>vim</title>
       <link>http://lamy9813.github.io/tags/vim/</link>
       <pubDate>Sun, 06 Dec 2020 11:53:04 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/vim/</guid>
       <description></description>
     </item>
@@ -77,7 +77,7 @@
       <title>Anime</title>
       <link>http://lamy9813.github.io/tags/anime/</link>
       <pubDate>Wed, 30 Sep 2020 19:14:44 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/anime/</guid>
       <description></description>
     </item>
@@ -86,7 +86,7 @@
       <title>yum</title>
       <link>http://lamy9813.github.io/tags/yum/</link>
       <pubDate>Tue, 04 Aug 2020 10:23:39 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/yum/</guid>
       <description></description>
     </item>
@@ -95,7 +95,7 @@
       <title>Linux</title>
       <link>http://lamy9813.github.io/tags/linux/</link>
       <pubDate>Tue, 14 Jul 2020 11:00:31 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/linux/</guid>
       <description></description>
     </item>
@@ -104,7 +104,7 @@
       <title>帮助文档</title>
       <link>http://lamy9813.github.io/tags/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/</link>
       <pubDate>Tue, 14 Jul 2020 11:00:31 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/</guid>
       <description></description>
     </item>
@@ -113,7 +113,7 @@
       <title>技巧</title>
       <link>http://lamy9813.github.io/tags/%E6%8A%80%E5%B7%A7/</link>
       <pubDate>Tue, 14 Jul 2020 11:00:31 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/%E6%8A%80%E5%B7%A7/</guid>
       <description></description>
     </item>
@@ -122,7 +122,7 @@
       <title>脚本</title>
       <link>http://lamy9813.github.io/tags/%E8%84%9A%E6%9C%AC/</link>
       <pubDate>Tue, 14 Jul 2020 11:00:31 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/%E8%84%9A%E6%9C%AC/</guid>
       <description></description>
     </item>
@@ -131,7 +131,7 @@
       <title>http</title>
       <link>http://lamy9813.github.io/tags/http/</link>
       <pubDate>Tue, 14 Jul 2020 10:23:47 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/http/</guid>
       <description></description>
     </item>
@@ -140,7 +140,7 @@
       <title>web</title>
       <link>http://lamy9813.github.io/tags/web/</link>
       <pubDate>Tue, 14 Jul 2020 10:23:47 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/web/</guid>
       <description></description>
     </item>
@@ -149,7 +149,7 @@
       <title>压测</title>
       <link>http://lamy9813.github.io/tags/%E5%8E%8B%E6%B5%8B/</link>
       <pubDate>Tue, 14 Jul 2020 10:23:47 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/%E5%8E%8B%E6%B5%8B/</guid>
       <description></description>
     </item>
@@ -158,7 +158,7 @@
       <title>工具</title>
       <link>http://lamy9813.github.io/tags/%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Tue, 14 Jul 2020 10:23:47 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/%E5%B7%A5%E5%85%B7/</guid>
       <description></description>
     </item>
@@ -167,7 +167,7 @@
       <title>持续更新</title>
       <link>http://lamy9813.github.io/tags/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</link>
       <pubDate>Tue, 14 Jul 2020 10:23:47 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</guid>
       <description></description>
     </item>
@@ -176,7 +176,7 @@
       <title>网卡</title>
       <link>http://lamy9813.github.io/tags/%E7%BD%91%E5%8D%A1/</link>
       <pubDate>Sat, 11 Jul 2020 22:12:17 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/%E7%BD%91%E5%8D%A1/</guid>
       <description></description>
     </item>
@@ -185,7 +185,7 @@
       <title>系统封装</title>
       <link>http://lamy9813.github.io/tags/%E7%B3%BB%E7%BB%9F%E5%B0%81%E8%A3%85/</link>
       <pubDate>Fri, 10 Jul 2020 21:16:31 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/%E7%B3%BB%E7%BB%9F%E5%B0%81%E8%A3%85/</guid>
       <description></description>
     </item>

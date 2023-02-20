@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AGou&#39;s blog</title>
+    <title>Lamy</title>
     <link>http://lamy9813.github.io/</link>
-    <description>Recent content on AGou&#39;s blog</description>
+    <description>Recent content on Lamy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>suofeiyaxx@gmail.com (AGou-ops)</managingEditor>
-    <webMaster>suofeiyaxx@gmail.com (AGou-ops)</webMaster>
+    <managingEditor>lamy9813@gmail.com (Lamy)</managingEditor>
+    <webMaster>lamy9813@gmail.com (Lamy)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Fri, 05 Aug 2022 17:02:21 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 19 Feb 2023 14:01:47 +0800</lastBuildDate>
     
         <atom:link href="http://lamy9813.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,8 +17,8 @@
     <item>
       <title>关于</title>
       <link>http://lamy9813.github.io/aboutme/</link>
-      <pubDate>Mon, 16 Apr 2018 14:01:47 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <pubDate>Sun, 19 Feb 2023 14:01:47 +0800</pubDate>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/aboutme/</guid>
       <description>&lt;!DOCTYPE html&gt;
 
@@ -216,9 +216,7 @@
 &lt;/html&gt;
 &lt;hr&gt;
 &lt;ul&gt;
-&lt;li&gt;本站地址：&lt;a href=&#34;https://agou-ops.cn&#34;&gt;https://agou-ops.cn&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;备用地址：&lt;a href=&#34;https://agou-ops.cn/myBlog-bak&#34;&gt;https://x.agou-ops.cn&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;my Docs：&lt;a href=&#34;https://agou-ops.cn/myDocsv3&#34;&gt;https://docs.agou-ops.cn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;本站地址：&lt;a href=&#34;https://lamy9813.github.io/&#34;&gt;https://lamy9813.github.io/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
 &lt;p&gt;本站所有原创内容开源许可协议均为：&lt;strong&gt;&lt;code&gt;WTFPL&lt;/code&gt;，转载的时候随便去掉本站信息都可以，不用经过博主同意。&lt;/strong&gt;&lt;/p&gt;
@@ -248,7 +246,7 @@
       <title>Posts</title>
       <link>http://lamy9813.github.io/post/</link>
       <pubDate>Fri, 05 Aug 2022 17:02:21 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/post/</guid>
       <description></description>
     </item>
@@ -257,7 +255,7 @@
       <title>我的动漫之旅(My Anime Trip.)</title>
       <link>http://lamy9813.github.io/anime/</link>
       <pubDate>Wed, 30 Sep 2020 19:14:44 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/anime/</guid>
       <description>&lt;style&gt;
     @font-face {

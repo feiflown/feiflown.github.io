@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>yum on AGou&#39;s blog</title>
+    <title>yum on Lamy</title>
     <link>http://lamy9813.github.io/tags/yum/</link>
-    <description>Recent content in yum on AGou&#39;s blog</description>
+    <description>Recent content in yum on Lamy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>suofeiyaxx@gmail.com (AGou-ops)</managingEditor>
-    <webMaster>suofeiyaxx@gmail.com (AGou-ops)</webMaster>
+    <managingEditor>lamy9813@gmail.com (Lamy)</managingEditor>
+    <webMaster>lamy9813@gmail.com (Lamy)</webMaster>
     <copyright>WTFPLv2</copyright>
     <lastBuildDate>Tue, 04 Aug 2020 10:23:39 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/tags/yum/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>搭建内网yum源(nginx、ftp)</title>
       <link>http://lamy9813.github.io/post/%E6%90%AD%E5%BB%BA%E5%86%85%E7%BD%91yum%E6%BA%90/</link>
       <pubDate>Tue, 04 Aug 2020 10:23:39 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/post/%E6%90%AD%E5%BB%BA%E5%86%85%E7%BD%91yum%E6%BA%90/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;搭建内网yum源，摆脱软件包困扰。&lt;/p&gt;

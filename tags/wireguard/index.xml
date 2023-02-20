@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>WireGuard on AGou&#39;s blog</title>
+    <title>WireGuard on Lamy</title>
     <link>http://lamy9813.github.io/tags/wireguard/</link>
-    <description>Recent content in WireGuard on AGou&#39;s blog</description>
+    <description>Recent content in WireGuard on Lamy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>suofeiyaxx@gmail.com (AGou-ops)</managingEditor>
-    <webMaster>suofeiyaxx@gmail.com (AGou-ops)</webMaster>
+    <managingEditor>lamy9813@gmail.com (Lamy)</managingEditor>
+    <webMaster>lamy9813@gmail.com (Lamy)</webMaster>
     <copyright>WTFPLv2</copyright>
     <lastBuildDate>Tue, 19 May 2020 12:14:24 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/tags/wireguard/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WireGuard VPN for Ubuntu</title>
       <link>http://lamy9813.github.io/post/wireguard-vpn-for-ubuntu/</link>
       <pubDate>Tue, 19 May 2020 12:14:24 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/post/wireguard-vpn-for-ubuntu/</guid>
       <description>&lt;h2 id=&#34;wireguard-简介&#34;&gt;WireGuard 简介&lt;/h2&gt;
 &lt;p&gt;​		WireGuard是具有最新加密技术的现代VPN（虚拟专用网）技术。与IPsec和OpenVPN等其他类似解决方案相比，WireGuard更快，更易于配置且性能更高。它是一个跨平台，几乎可以在任何地方运行，包括Linux，Windows，Android和macOS。 Wireguard是对等VPN。它不使用客户端-服务器模型。根据其配置，对等方可以充当传统的服务器或客户端。 WireGuard通过在充当隧道的每个对等设备上创建网络接口来工作。对等体通过交换和验证公共密钥（类似于SSH模型）来相互认证。公钥与隧道中允许的IP地址列表进行映射。 VPN流量封装在UDP中。在本教程中，我们将在充当VPN服务器的Ubuntu 18.04计算机上设置WireGuard。我们还将向您展示如何将WireGuard配置为客户端。客户端的流量将通过Ubuntu 18.04服务器进行路由。此设置可用于防御中间人攻击，匿名浏览网络，绕过受地域限制的内容，或允许您的同事在远程工作时安全地连接到公司网络。&lt;/p&gt;</description>
