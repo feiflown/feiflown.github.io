@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://lamy9813.github.io/sitemap.xml
+Sitemap: http://lamy9813.github.io/sitemap.xml
