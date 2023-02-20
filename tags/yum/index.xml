@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>yum on AGou&#39;s blog</title>
+    <link>http://lamy9813.github.io/tags/yum/</link>
+    <description>Recent content in yum on AGou&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>suofeiyaxx@gmail.com (AGou-ops)</managingEditor>
+    <webMaster>suofeiyaxx@gmail.com (AGou-ops)</webMaster>
+    <copyright>WTFPLv2</copyright>
+    <lastBuildDate>Tue, 04 Aug 2020 10:23:39 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/tags/yum/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>搭建内网yum源(nginx、ftp)</title>
+      <link>http://lamy9813.github.io/post/%E6%90%AD%E5%BB%BA%E5%86%85%E7%BD%91yum%E6%BA%90/</link>
+      <pubDate>Tue, 04 Aug 2020 10:23:39 +0800</pubDate>
+      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <guid>http://lamy9813.github.io/post/%E6%90%AD%E5%BB%BA%E5%86%85%E7%BD%91yum%E6%BA%90/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;搭建内网yum源，摆脱软件包困扰。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;选择合适稳定的公网yum仓库&#34;&gt;选择合适稳定的公网yum仓库&lt;/h2&gt;
+&lt;p&gt;建议选择对运营商网络友好的yum仓库&lt;/p&gt;
+&lt;p&gt;国内可供选择的有:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;阿里云：http://mirrors.aliyun.com/  (这里我使用阿里云)&lt;/li&gt;
+&lt;li&gt;网易：http://mirrors.163.com/&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;更多国内镜像仓库参考：https://blog.csdn.net/wyqwilliam/article/details/90581159&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

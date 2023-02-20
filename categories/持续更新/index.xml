@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>持续更新 on AGou&#39;s blog</title>
+    <link>http://lamy9813.github.io/categories/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</link>
+    <description>Recent content in 持续更新 on AGou&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>suofeiyaxx@gmail.com (AGou-ops)</managingEditor>
+    <webMaster>suofeiyaxx@gmail.com (AGou-ops)</webMaster>
+    <copyright>WTFPLv2</copyright>
+    <lastBuildDate>Mon, 08 Nov 2021 11:25:31 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/categories/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shell Tricks</title>
+      <link>http://lamy9813.github.io/post/shell-tricks/</link>
+      <pubDate>Mon, 08 Nov 2021 11:25:31 +0800</pubDate>
+      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <guid>http://lamy9813.github.io/post/shell-tricks/</guid>
+      <description>&lt;img src=&#34;https://api.ixiaowai.cn/gqapi/gqapi.php&#34; style=&#34;zoom:65%;&#34; /&gt;
+&lt;p&gt;&lt;strong&gt;🚩该文章将持续更新。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;分享和记录个人日常和工作中，学习和实际用到的shell片段以及一些小技巧。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vim Hotkeys and Cheat Sheet</title>
+      <link>http://lamy9813.github.io/post/vim-tricks/</link>
+      <pubDate>Sun, 06 Dec 2020 11:53:04 +0800</pubDate>
+      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <guid>http://lamy9813.github.io/post/vim-tricks/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://api.ixiaowai.cn/gqapi/gqapi.php&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;该文章用于记录个人在使用&lt;code&gt;vim&lt;/code&gt;期间常用的技巧和快捷键。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2021-08-20 15:27:56：初始化；&lt;/li&gt;
+&lt;li&gt;2021年08月20日15:27:18 ： 更新vim分屏快捷键以及&lt;code&gt;NERDTree&lt;/code&gt;快捷键；&lt;/li&gt;
+&lt;li&gt;2021年09月18日09:53:28： 更新插件快捷键；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

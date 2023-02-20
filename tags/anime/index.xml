@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anime on AGou&#39;s blog</title>
+    <link>http://lamy9813.github.io/tags/anime/</link>
+    <description>Recent content in Anime on AGou&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>suofeiyaxx@gmail.com (AGou-ops)</managingEditor>
+    <webMaster>suofeiyaxx@gmail.com (AGou-ops)</webMaster>
+    <copyright>WTFPLv2</copyright>
+    <lastBuildDate>Wed, 30 Sep 2020 19:14:44 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/tags/anime/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的动漫之旅(My Anime Trip.)</title>
+      <link>http://lamy9813.github.io/anime/</link>
+      <pubDate>Wed, 30 Sep 2020 19:14:44 +0800</pubDate>
+      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <guid>http://lamy9813.github.io/anime/</guid>
+      <description>按照观看结束时间排序，序号仅用于计数。(2020-03-28 至 ????-??-??) 变更日志： 2020年10月01日：初始化表格、增加序号至39； 2020年11</description>
+    </item>
+    
+  </channel>
+</rss>

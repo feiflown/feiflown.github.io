@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on AGou&#39;s blog</title>
+    <link>http://lamy9813.github.io/categories/tools/</link>
+    <description>Recent content in Tools on AGou&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>suofeiyaxx@gmail.com (AGou-ops)</managingEditor>
+    <webMaster>suofeiyaxx@gmail.com (AGou-ops)</webMaster>
+    <copyright>WTFPLv2</copyright>
+    <lastBuildDate>Tue, 14 Jul 2020 10:23:47 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web 压测工具</title>
+      <link>http://lamy9813.github.io/post/web-benchmark/</link>
+      <pubDate>Tue, 14 Jul 2020 10:23:47 +0800</pubDate>
+      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <guid>http://lamy9813.github.io/post/web-benchmark/</guid>
+      <description>&lt;h2 id=&#34;web-benchmark-tools&#34;&gt;web benchmark tools&lt;/h2&gt;
+&lt;h3 id=&#34;apache-bench&#34;&gt;Apache Bench&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ApacheBench 是一个用来衡量http服务器性能的单线程命令行工具。原本针对Apache http服务器，但是也适用于其他http服务器。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如果你的操作系统没有&lt;code&gt;ab&lt;/code&gt;工具， 那么只需安装&lt;code&gt;httpd-tools&lt;/code&gt;(CentOS)或者&lt;code&gt;apache-utils&lt;/code&gt;(Ubuntu)即可。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux 实时查看网卡流量</title>
+      <link>http://lamy9813.github.io/post/linux-%E5%AE%9E%E6%97%B6%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1%E6%B5%81%E9%87%8F/</link>
+      <pubDate>Sat, 11 Jul 2020 22:12:17 +0800</pubDate>
+      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <guid>http://lamy9813.github.io/post/linux-%E5%AE%9E%E6%97%B6%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1%E6%B5%81%E9%87%8F/</guid>
+      <description>&lt;h2 id=&#34;nload工具&#34;&gt;nload工具&lt;/h2&gt;
+&lt;p&gt;nload用于实时查看网卡流量，默认系统都没有安装，首先安装方式如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ yum install -y epel-release
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ yum install -y nload
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux 日志分割工具-split和logrotate</title>
+      <link>http://lamy9813.github.io/post/linux-%E6%97%A5%E5%BF%97%E5%88%86%E5%89%B2%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Mon, 22 Jun 2020 08:45:13 +0800</pubDate>
+      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <guid>http://lamy9813.github.io/post/linux-%E6%97%A5%E5%BF%97%E5%88%86%E5%89%B2%E5%B7%A5%E5%85%B7/</guid>
+      <description>&lt;p&gt;本文主要介绍Linux系统下的日志分割工具，&lt;code&gt;Split&lt;/code&gt; 和 &lt;code&gt;Logrotate&lt;/code&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;split&#34;&gt;Split&lt;/h2&gt;
+&lt;p&gt;Linux 系统自带简单日志文件分割工具。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux 系统资源监控面板</title>
+      <link>http://lamy9813.github.io/post/linux-%E7%B3%BB%E7%BB%9F%E8%B5%84%E6%BA%90%E7%9B%91%E6%8E%A7%E9%9D%A2%E6%9D%BF/</link>
+      <pubDate>Fri, 12 Jun 2020 19:40:55 +0800</pubDate>
+      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <guid>http://lamy9813.github.io/post/linux-%E7%B3%BB%E7%BB%9F%E8%B5%84%E6%BA%90%E7%9B%91%E6%8E%A7%E9%9D%A2%E6%9D%BF/</guid>
+      <description>&lt;p&gt;&lt;code&gt;WTF&lt;/code&gt;和&lt;code&gt;bashtop&lt;/code&gt;是我个人目前在用的系统资源管理面板，界面非常的美观，极具极客风范，在这里我分别做简单介绍。&lt;/p&gt;
+&lt;h2 id=&#34;wtf&#34;&gt;WTF&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;WTF（又名“wtfutil”）是终端的个人信息仪表板，可快速访问您非常重要但不常需要的统计信息和数据。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;项目地址：&lt;a href=&#34;https://github.com/wtfutil/wtf&#34;&gt;https://github.com/wtfutil/wtf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;官方站点：&lt;a href=&#34;https://wtfutil.com/&#34;&gt;https://wtfutil.com/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Scrcpy Android投屏神器</title>
+      <link>http://lamy9813.github.io/post/scrcpy-android%E6%8A%95%E5%B1%8F%E7%A5%9E%E5%99%A8/</link>
+      <pubDate>Thu, 28 May 2020 20:22:13 +0800</pubDate>
+      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <guid>http://lamy9813.github.io/post/scrcpy-android%E6%8A%95%E5%B1%8F%E7%A5%9E%E5%99%A8/</guid>
+      <description>&lt;h2 id=&#34;scrcpy-简介&#34;&gt;Scrcpy 简介&lt;/h2&gt;
+&lt;p&gt;应用程序可显示和控制通过USB（或通过TCP / IP）连接的Android设备。它不需要任何根访问权限。它适用于GNU / Linux，Windows和macOS。&lt;/p&gt;
+&lt;p&gt;github地址：&lt;a href=&#34;https://github.com/Genymobile/scrcpy&#34;&gt;https://github.com/Genymobile/scrcpy&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

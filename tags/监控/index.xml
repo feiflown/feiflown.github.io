@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>监控 on AGou&#39;s blog</title>
+    <link>http://lamy9813.github.io/tags/%E7%9B%91%E6%8E%A7/</link>
+    <description>Recent content in 监控 on AGou&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>suofeiyaxx@gmail.com (AGou-ops)</managingEditor>
+    <webMaster>suofeiyaxx@gmail.com (AGou-ops)</webMaster>
+    <copyright>WTFPLv2</copyright>
+    <lastBuildDate>Fri, 12 Jun 2020 19:40:55 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/tags/%E7%9B%91%E6%8E%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux 系统资源监控面板</title>
+      <link>http://lamy9813.github.io/post/linux-%E7%B3%BB%E7%BB%9F%E8%B5%84%E6%BA%90%E7%9B%91%E6%8E%A7%E9%9D%A2%E6%9D%BF/</link>
+      <pubDate>Fri, 12 Jun 2020 19:40:55 +0800</pubDate>
+      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <guid>http://lamy9813.github.io/post/linux-%E7%B3%BB%E7%BB%9F%E8%B5%84%E6%BA%90%E7%9B%91%E6%8E%A7%E9%9D%A2%E6%9D%BF/</guid>
+      <description>&lt;p&gt;&lt;code&gt;WTF&lt;/code&gt;和&lt;code&gt;bashtop&lt;/code&gt;是我个人目前在用的系统资源管理面板，界面非常的美观，极具极客风范，在这里我分别做简单介绍。&lt;/p&gt;
+&lt;h2 id=&#34;wtf&#34;&gt;WTF&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;WTF（又名“wtfutil”）是终端的个人信息仪表板，可快速访问您非常重要但不常需要的统计信息和数据。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;项目地址：&lt;a href=&#34;https://github.com/wtfutil/wtf&#34;&gt;https://github.com/wtfutil/wtf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;官方站点：&lt;a href=&#34;https://wtfutil.com/&#34;&gt;https://wtfutil.com/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

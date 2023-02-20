@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Author on Lamy&#39;s blog</title>
+    <title>Author on AGou&#39;s blog</title>
     <link>http://lamy9813.github.io/author/</link>
-    <description>Recent content in Author on Lamy&#39;s blog</description>
+    <description>Recent content in Author on AGou&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>suofeiyaxx@gmail.com (AGou-ops)</managingEditor>
     <webMaster>suofeiyaxx@gmail.com (AGou-ops)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Sun, 19 Feb 2023 14:01:47 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/author/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Lamy</title>
-      <link>http://lamy9813.github.io/author/lamy/</link>
-      <pubDate>Sun, 19 Feb 2023 14:01:47 +0800</pubDate>
-      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
-      <guid>http://lamy9813.github.io/author/lamy/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Fri, 05 Aug 2022 17:02:21 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/author/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AGou-ops</title>
       <link>http://lamy9813.github.io/author/agou-ops/</link>
-      <pubDate>Wed, 06 Apr 2022 11:29:42 +0800</pubDate>
+      <pubDate>Fri, 05 Aug 2022 17:02:21 +0800</pubDate>
       <author>suofeiyaxx@gmail.com (AGou-ops)</author>
       <guid>http://lamy9813.github.io/author/agou-ops/</guid>
       <description></description>

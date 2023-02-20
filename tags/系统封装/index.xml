@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>系统封装 on AGou&#39;s blog</title>
+    <link>http://lamy9813.github.io/tags/%E7%B3%BB%E7%BB%9F%E5%B0%81%E8%A3%85/</link>
+    <description>Recent content in 系统封装 on AGou&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>suofeiyaxx@gmail.com (AGou-ops)</managingEditor>
+    <webMaster>suofeiyaxx@gmail.com (AGou-ops)</webMaster>
+    <copyright>WTFPLv2</copyright>
+    <lastBuildDate>Fri, 10 Jul 2020 21:16:31 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/tags/%E7%B3%BB%E7%BB%9F%E5%B0%81%E8%A3%85/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux 系统封装</title>
+      <link>http://lamy9813.github.io/post/linux-%E7%B3%BB%E7%BB%9F%E5%B0%81%E8%A3%85/</link>
+      <pubDate>Fri, 10 Jul 2020 21:16:31 +0800</pubDate>
+      <author>suofeiyaxx@gmail.com (AGou-ops)</author>
+      <guid>http://lamy9813.github.io/post/linux-%E7%B3%BB%E7%BB%9F%E5%B0%81%E8%A3%85/</guid>
+      <description>&lt;h2 id=&#34;mondo-rescue&#34;&gt;Mondo Rescue&lt;/h2&gt;
+&lt;p&gt;Mondo Rescue（简称 Mondo）：是一款开源免费的故障恢复和备份工具，可以说是 Linux 操作系统下的 Ghost ，你可以轻松地创建系统（Linux 或 Windows）克隆或备份的 ISO 镜像，可以将这些镜像存放在 CD、DVD、磁带、USB 设备、硬盘和 NFS 上。&lt;/p&gt;
+&lt;p&gt;官方站点:http://www.mondorescue.org/&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
