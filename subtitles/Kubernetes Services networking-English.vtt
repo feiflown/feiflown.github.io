@@ -1,0 +1,550 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.140
+hey there in this video I'll explain
+
+00:00:02.760 --> 00:00:07.230
+everything you need to know about
+
+00:00:04.140 --> 00:00:08.790
+kubernetes services networking I'll walk
+
+00:00:07.230 --> 00:00:09.929
+you through a range of options and why
+
+00:00:08.790 --> 00:00:12.150
+you might choose one versus another
+
+00:00:09.929 --> 00:00:13.280
+depending on your needs and specific
+
+00:00:12.150 --> 00:00:15.360
+cluster environment
+
+00:00:13.280 --> 00:00:17.039
+we'll start with drawing the basic
+
+00:00:15.360 --> 00:00:19.010
+networking for a couple of kubernetes
+
+00:00:17.039 --> 00:00:21.289
+nodes
+
+00:00:19.010 --> 00:00:23.420
+the details depend on which CNI plug-in
+
+00:00:21.289 --> 00:00:24.859
+is being used to learn more you can
+
+00:00:23.420 --> 00:00:26.660
+check out the other videos in this
+
+00:00:24.859 --> 00:00:28.520
+series to understand how things fit
+
+00:00:26.660 --> 00:00:33.829
+together across a range of different
+
+00:00:28.520 --> 00:00:35.839
+networking options in this video I'm
+
+00:00:33.829 --> 00:00:37.489
+using Calico as the example which
+
+00:00:35.839 --> 00:00:39.680
+connects the parts to the host using a
+
+00:00:37.489 --> 00:00:41.360
+pair of virtual Ethernet interfaces and
+
+00:00:39.680 --> 00:00:42.890
+sets up the Linux kernel to act as a
+
+00:00:41.360 --> 00:00:48.980
+simple virtual router that connects
+
+00:00:42.890 --> 00:00:50.930
+everything together let's begin by
+
+00:00:48.980 --> 00:00:55.010
+looking at our pods access services
+
+00:00:50.930 --> 00:00:57.949
+using +2 IPS + 4 IP is a virtual IP
+
+00:00:55.010 --> 00:00:59.660
+address used to represent a service view
+
+00:00:57.949 --> 00:01:01.640
+proxy programs the Linux kernel to
+
+00:00:59.660 --> 00:01:03.769
+intercept connections to cluster IPs and
+
+00:01:01.640 --> 00:01:06.890
+load balance them across the pods back
+
+00:01:03.769 --> 00:01:09.740
+in each service so for example if
+
+00:01:06.890 --> 00:01:11.330
+service 1 is backed by pods a and C then
+
+00:01:09.740 --> 00:01:13.520
+when pod d tries to connect to the
+
+00:01:11.330 --> 00:01:15.500
+services cluster IP the connection is
+
+00:01:13.520 --> 00:01:18.470
+intercepted and using a technique called
+
+00:01:15.500 --> 00:01:20.390
+mapped network address translation the
+
+00:01:18.470 --> 00:01:23.090
+destination IP is changed from the
+
+00:01:20.390 --> 00:01:25.880
+cluster IP to the chosen backing pods IP
+
+00:01:23.090 --> 00:01:28.550
+address importantly the source IP
+
+00:01:25.880 --> 00:01:30.319
+address is not changed so pod a sees pod
+
+00:01:28.550 --> 00:01:32.599
+D as the source of the connection and
+
+00:01:30.319 --> 00:01:35.810
+any network policies they apply to pot a
+
+00:01:32.599 --> 00:01:37.789
+behave exactly as expected the return
+
+00:01:35.810 --> 00:01:39.920
+traffic associated with connection gets
+
+00:01:37.789 --> 00:01:41.420
+the nat reversed on its way back so the
+
+00:01:39.920 --> 00:01:43.810
+client part is unaware any of this
+
+00:01:41.420 --> 00:01:43.810
+happened
+
+00:01:45.350 --> 00:01:49.620
+next let's look at the most basic way to
+
+00:01:47.880 --> 00:01:53.250
+connect to a service from outside the
+
+00:01:49.620 --> 00:01:55.410
+cluster service type note port anode
+
+00:01:53.250 --> 00:01:58.020
+port is a port reserved on every node in
+
+00:01:55.410 --> 00:01:59.700
+the cluster to represent a service key
+
+00:01:58.020 --> 00:02:01.710
+proxy program the Linux kernel to
+
+00:01:59.700 --> 00:02:03.480
+intercept connections to node ports and
+
+00:02:01.710 --> 00:02:06.390
+load balance them across the pods back
+
+00:02:03.480 --> 00:02:08.399
+in each service so for example if an
+
+00:02:06.390 --> 00:02:10.500
+external client connects to a node port
+
+00:02:08.399 --> 00:02:12.060
+on any of the nodes in the cluster the
+
+00:02:10.500 --> 00:02:14.490
+connection is intercepted and the
+
+00:02:12.060 --> 00:02:16.890
+destination is noted from the node IP
+
+00:02:14.490 --> 00:02:20.060
+and node port to the chosen backing pot
+
+00:02:16.890 --> 00:02:20.060
+IP and service port
+
+00:02:23.770 --> 00:02:28.000
+but if only the destination was matted
+
+00:02:25.870 --> 00:02:29.920
+they return packets from port on other
+
+00:02:28.000 --> 00:02:31.870
+nodes would go directly back to the
+
+00:02:29.920 --> 00:02:33.160
+client which wouldn't know what to do
+
+00:02:31.870 --> 00:02:34.600
+with the packets because they aren't
+
+00:02:33.160 --> 00:02:37.720
+coming from the node and they probably
+
+00:02:34.600 --> 00:02:39.730
+thought it was connecting to so to avoid
+
+00:02:37.720 --> 00:02:42.040
+this issue no ports also nabbed the
+
+00:02:39.730 --> 00:02:43.980
+source IP address changing the client IP
+
+00:02:42.040 --> 00:02:47.110
+to the nodes IP
+
+00:02:43.980 --> 00:02:47.110
+[Music]
+
+00:02:48.209 --> 00:02:52.409
+as a result the return traffic is routed
+
+00:02:50.519 --> 00:02:54.090
+back to the original mode where the NAT
+
+00:02:52.409 --> 00:02:56.450
+can be reversed before returning to the
+
+00:02:54.090 --> 00:02:56.450
+client
+
+00:02:59.280 --> 00:03:03.090
+on downside of this approach is that
+
+00:03:01.110 --> 00:03:04.800
+Cuba net is now where policy applied to
+
+00:03:03.090 --> 00:03:07.350
+the backing pot cannot limit access to
+
+00:03:04.800 --> 00:03:10.920
+specific external clients because the
+
+00:03:07.350 --> 00:03:12.720
+client IP is obscured by the net if you
+
+00:03:10.920 --> 00:03:14.370
+are a calico user then you could apply
+
+00:03:12.720 --> 00:03:16.920
+calico network policy to the nodes
+
+00:03:14.370 --> 00:03:18.950
+themselves to limit access to locals if
+
+00:03:16.920 --> 00:03:21.360
+you add a strong requirement to do so
+
+00:03:18.950 --> 00:03:22.950
+another way of accessing services from
+
+00:03:21.360 --> 00:03:26.250
+outside the cluster is to advertise
+
+00:03:22.950 --> 00:03:27.900
+service IP addresses using BGP this
+
+00:03:26.250 --> 00:03:30.240
+requires an underlying network that is
+
+00:03:27.900 --> 00:03:32.160
+BGP capable which typically means an
+
+00:03:30.240 --> 00:03:35.310
+on-prem deployment with standard
+
+00:03:32.160 --> 00:03:38.130
+top-of-rack routers karekare supports
+
+00:03:35.310 --> 00:03:40.650
+advertising cluster IPS or external IPS
+
+00:03:38.130 --> 00:03:43.170
+for services configured with one if you
+
+00:03:40.650 --> 00:03:45.060
+are not using calico then metal lb
+
+00:03:43.170 --> 00:03:46.560
+provides similar capabilities that work
+
+00:03:45.060 --> 00:03:49.050
+with a variety of different network
+
+00:03:46.560 --> 00:03:50.910
+plugins with the simplest form of
+
+00:03:49.050 --> 00:03:53.130
+service IP advertisement calico
+
+00:03:50.910 --> 00:03:55.190
+advertisers the entire cost IP address
+
+00:03:53.130 --> 00:03:57.870
+range from every node in the cluster
+
+00:03:55.190 --> 00:03:59.640
+just like with no pause cue proxy
+
+00:03:57.870 --> 00:04:01.830
+intercepts external connections to
+
+00:03:59.640 --> 00:04:03.900
+cluster ip's knotting them to backing
+
+00:04:01.830 --> 00:04:05.910
+ports including changing the source IP
+
+00:04:03.900 --> 00:04:09.780
+address with the same implications for
+
+00:04:05.910 --> 00:04:11.549
+kubernetes network policy the return
+
+00:04:09.780 --> 00:04:13.320
+traffic is routed back to the original
+
+00:04:11.549 --> 00:04:16.519
+node where the NAT is reversed before
+
+00:04:13.320 --> 00:04:16.519
+returning to the client
+
+00:04:19.799 --> 00:04:23.849
+this routing behavior can be changed by
+
+00:04:21.930 --> 00:04:27.720
+setting the services external traffic
+
+00:04:23.849 --> 00:04:29.819
+policy to local in this case calico will
+
+00:04:27.720 --> 00:04:31.590
+advertise the individual cluster IP from
+
+00:04:29.819 --> 00:04:34.289
+any node hosting a backing part of the
+
+00:04:31.590 --> 00:04:37.349
+service and queue proxy load balances to
+
+00:04:34.289 --> 00:04:39.569
+local pots only in addition to reducing
+
+00:04:37.349 --> 00:04:42.180
+the maximum number of Network hops the
+
+00:04:39.569 --> 00:04:44.129
+source IP of the client is preserved so
+
+00:04:42.180 --> 00:04:45.720
+you can use kubernetes network policy to
+
+00:04:44.129 --> 00:04:48.750
+limit access to specific external
+
+00:04:45.720 --> 00:04:50.639
+clients if desired it's worth noting
+
+00:04:48.750 --> 00:04:52.889
+that when using external traffic policy
+
+00:04:50.639 --> 00:04:54.539
+local the evenness of the load balancing
+
+00:04:52.889 --> 00:04:57.449
+becomes node and network topology
+
+00:04:54.539 --> 00:04:59.340
+dependent for example if we add a second
+
+00:04:57.449 --> 00:05:01.139
+backing pot to know well then our works
+
+00:04:59.340 --> 00:05:04.020
+still load balancers traffic equally
+
+00:05:01.139 --> 00:05:05.759
+across the two notes which in turn means
+
+00:05:04.020 --> 00:05:07.680
+that the two pods on node one each
+
+00:05:05.759 --> 00:05:10.500
+receive half as much traffic as the pot
+
+00:05:07.680 --> 00:05:12.690
+on node two in many cases you can use
+
+00:05:10.500 --> 00:05:14.639
+pot and tea affinity rules to ensure
+
+00:05:12.690 --> 00:05:16.800
+even distribution of backing pods across
+
+00:05:14.639 --> 00:05:19.099
+your topology but this does add some
+
+00:05:16.800 --> 00:05:21.599
+complexity to deploying the service
+
+00:05:19.099 --> 00:05:23.340
+another alternative to consider whether
+
+00:05:21.599 --> 00:05:26.430
+you're using node course or service IP
+
+00:05:23.340 --> 00:05:28.259
+advertisement is to use calicos EBP F
+
+00:05:26.430 --> 00:05:30.330
+data plane which includes a native
+
+00:05:28.259 --> 00:05:33.569
+service handling without the need to run
+
+00:05:30.330 --> 00:05:36.210
+queue proxy this preserves source IP to
+
+00:05:33.569 --> 00:05:39.419
+simplify network policy and uses dsr
+
+00:05:36.210 --> 00:05:42.360
+direct 0 return to reduce the number of
+
+00:05:39.419 --> 00:05:44.250
+now we're cops for returned traffic it
+
+00:05:42.360 --> 00:05:46.740
+provides even load balancing independent
+
+00:05:44.250 --> 00:05:49.650
+of topology with reduced CPU and latency
+
+00:05:46.740 --> 00:05:51.360
+compared to queue proxy the final
+
+00:05:49.650 --> 00:05:53.430
+service type I'll cover in this video is
+
+00:05:51.360 --> 00:05:55.469
+load balancer which dynamically
+
+00:05:53.430 --> 00:05:57.240
+allocates an external IP for the service
+
+00:05:55.469 --> 00:05:59.909
+on a network load balancer outside the
+
+00:05:57.240 --> 00:06:01.529
+cluster the exact type of network load
+
+00:05:59.909 --> 00:06:04.110
+balancer depends on your cloud provider
+
+00:06:01.529 --> 00:06:05.759
+in our globe balancer then distributes
+
+00:06:04.110 --> 00:06:08.550
+connections across the nodes using the
+
+00:06:05.759 --> 00:06:10.500
+services node port most node load
+
+00:06:08.550 --> 00:06:12.509
+balancers preserve the client source IP
+
+00:06:10.500 --> 00:06:14.759
+address but because the traffic still
+
+00:06:12.509 --> 00:06:16.440
+goes by our node port by default the
+
+00:06:14.759 --> 00:06:18.870
+backing pods themselves do not see the
+
+00:06:16.440 --> 00:06:20.909
+client IP unless using an alternative to
+
+00:06:18.870 --> 00:06:23.400
+queue proxy that preserves the source IP
+
+00:06:20.909 --> 00:06:26.039
+such as Calico ebps native service
+
+00:06:23.400 --> 00:06:27.779
+handling as with service IP
+
+00:06:26.039 --> 00:06:29.880
+advertisement this behavior can be
+
+00:06:27.779 --> 00:06:32.909
+changed by setting the services external
+
+00:06:29.880 --> 00:06:34.649
+traffic policy to local now where globe
+
+00:06:32.909 --> 00:06:36.330
+balances that support this option will
+
+00:06:34.649 --> 00:06:38.490
+only load balance two nodes hosting
+
+00:06:36.330 --> 00:06:40.259
+backing pods for the service when queue
+
+00:06:38.490 --> 00:06:42.750
+proxy will only load balance to local
+
+00:06:40.259 --> 00:06:44.580
+pods on that note preserving the client
+
+00:06:42.750 --> 00:06:47.009
+source IP all the way to the banking pot
+
+00:06:44.580 --> 00:06:50.460
+but the cost of potentially uneven lake
+
+00:06:47.009 --> 00:06:52.080
+balancing that's all for now be sure to
+
+00:06:50.460 --> 00:06:54.899
+check out the next video in this series
+
+00:06:52.080 --> 00:06:56.880
+which covers kubernetes ingress building
+
+00:06:54.899 --> 00:06:58.680
+on top of kubernetes services to provide
+
+00:06:56.880 --> 00:07:00.839
+access to services from outside of the
+
+00:06:58.680 --> 00:07:03.449
+cluster using application layer load
+
+00:07:00.839 --> 00:07:06.590
+balancing I hope you've found this video
+
+00:07:03.449 --> 00:07:08.650
+useful and thanks for watching
+
+00:07:06.590 --> 00:07:08.650
+you
