@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Author on Lamy&#39;s blog</title>
+    <link>http://lamy9813.github.io/author/</link>
+    <description>Recent content in Author on Lamy&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>lamy9813@gmail.com (Lamy)</managingEditor>
+    <webMaster>lamy9813@gmail.com (Lamy)</webMaster>
+    <copyright>WTFPLv2</copyright>
+    <lastBuildDate>Wed, 06 Apr 2022 11:29:42 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/author/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AGou-ops</title>
+      <link>http://lamy9813.github.io/author/agou-ops/</link>
+      <pubDate>Wed, 06 Apr 2022 11:29:42 +0800</pubDate>
+      <author>lamy9813@gmail.com (Lamy)</author>
+      <guid>http://lamy9813.github.io/author/agou-ops/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

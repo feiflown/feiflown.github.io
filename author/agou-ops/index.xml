@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Lamy&#39;s blog</title>
-    <link>http://lamy9813.github.io/post/</link>
-    <description>Recent content in Posts on Lamy&#39;s blog</description>
+    <title>AGou-ops on Lamy&#39;s blog</title>
+    <link>http://lamy9813.github.io/author/agou-ops/</link>
+    <description>Recent content in AGou-ops on Lamy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>lamy9813@gmail.com (Lamy)</managingEditor>
     <webMaster>lamy9813@gmail.com (Lamy)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Wed, 06 Apr 2022 11:29:42 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Apr 2022 11:29:42 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/author/agou-ops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于</title>
+      <link>http://lamy9813.github.io/aboutme/</link>
+      <pubDate>Mon, 16 Apr 2018 14:01:47 +0800</pubDate>
+      <author>lamy9813@gmail.com (Lamy)</author>
+      <guid>http://lamy9813.github.io/aboutme/</guid>
+      <description>License 本站所有原创内容开源许可协议均为：WTFPL，转载的时候随便去掉本站信息都可以，不用经过博主同意。 何为WTFPL？ WTFPL © Do What the Fuck You Want to Public Li</description>
+    </item>
+    
     <item>
       <title>Windows服务检测与重启（Golang）</title>
       <link>http://lamy9813.github.io/post/windows%E6%9C%8D%E5%8A%A1%E6%A3%80%E6%B5%8B%E4%B8%8E%E9%87%8D%E5%90%AFgolang/</link>
