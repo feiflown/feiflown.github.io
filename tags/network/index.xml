@@ -8,12 +8,11 @@
     <language>en</language>
     <managingEditor>lamy9813@gmail.com (Lamy)</managingEditor>
     <webMaster>lamy9813@gmail.com (Lamy)</webMaster>
-    <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Tue, 02 Nov 2021 14:30:23 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>WTFPLv2</copyright><atom:link href="http://lamy9813.github.io/tags/network/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>K8s网络学习</title>
       <link>http://lamy9813.github.io/post/k8s%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0/</link>
-      <pubDate>Tue, 02 Nov 2021 14:30:23 +0800</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/post/k8s%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0/</guid>
       <description>&lt;p&gt;从简单&lt;code&gt;p2p&lt;/code&gt;网络到k8s复杂型网络。&lt;/p&gt;

@@ -47,15 +47,6 @@
     </item>
     
     <item>
-      <title>kubernetes</title>
-      <link>http://lamy9813.github.io/categories/kubernetes/</link>
-      <pubDate>Tue, 02 Nov 2021 14:30:23 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
-      <guid>http://lamy9813.github.io/categories/kubernetes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>流控</title>
       <link>http://lamy9813.github.io/categories/%E6%B5%81%E6%8E%A7/</link>
       <pubDate>Wed, 16 Dec 2020 15:30:58 +0800</pubDate>
@@ -187,6 +178,15 @@
       <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
       <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shortcode</title>
+      <link>http://lamy9813.github.io/categories/shortcode/</link>
+      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
+      <author>lamy9813@gmail.com (Lamy)</author>
+      <guid>http://lamy9813.github.io/categories/shortcode/</guid>
       <description></description>
     </item>
     

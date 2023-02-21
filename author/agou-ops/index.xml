@@ -71,18 +71,6 @@
     </item>
     
     <item>
-      <title>K8s网络学习</title>
-      <link>http://lamy9813.github.io/post/k8s%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0/</link>
-      <pubDate>Tue, 02 Nov 2021 14:30:23 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
-      <guid>http://lamy9813.github.io/post/k8s%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0/</guid>
-      <description>&lt;p&gt;从简单&lt;code&gt;p2p&lt;/code&gt;网络到k8s复杂型网络。&lt;/p&gt;
-&lt;h2 id=&#34;简单p2p网络模型&#34;&gt;简单p2p网络模型&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://agou-images.oss-cn-qingdao.aliyuncs.com/others/image-20211102145031780.png&#34; alt=&#34;image-20211102145031780&#34;&gt;&lt;/p&gt;
-&lt;p&gt;ℹ️简单说明：创建两个网络命名空间&lt;code&gt;client&lt;/code&gt;和&lt;code&gt;server&lt;/code&gt;，然后创建一对虚拟网卡将两端的命名空间相连起来，就好像直接相连的网线一样，中间没有阻拦，创建完的虚拟网卡对存在于默认的命名空间中，接着我们将其分别放入&lt;code&gt;client&lt;/code&gt;和&lt;code&gt;server&lt;/code&gt;命名空间中，最后为两个虚拟网卡对&lt;code&gt;veth-client&lt;/code&gt;和&lt;code&gt;veth-server&lt;/code&gt;分配IP地址并启用网卡。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>TC 高级流控</title>
       <link>http://lamy9813.github.io/post/tc-%E9%AB%98%E7%BA%A7%E6%B5%81%E6%8E%A7/</link>
       <pubDate>Wed, 16 Dec 2020 15:30:58 +0800</pubDate>
