@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html
-  lang="en"
-  itemscope
-  itemtype="http://schema.org/WebPage"
->
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <title>脚本 · Lamy</title>
     
 
+
+<link rel="alternate" type="application/rss+xml" href="http://lamy9813.github.io/tags/%E8%84%9A%E6%9C%AC/index.xml" title="Lamy" />
 <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 <meta name="MobileOptimized" content="width"/>
 <meta name="HandheldFriendly" content="true"/>
@@ -45,7 +45,8 @@
 
 
 
-<link rel="icon" href="/favicon.ico" />
+
+<link rel="icon" href="https://agou-images.oss-cn-qingdao.aliyuncs.com/BaseIMG/logo.png" />
 
 
 
@@ -57,14 +58,16 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.d8d87b982993a745e5e7b6a6cbf257be8c3e82aab5e485f0908ad7e6c3501ab2.css" integrity="sha256-2Nh7mCmTp0Xl57amy/JXvow&#43;gqq15IXwkIrX5sNQGrI=" media="screen" crossorigin="anonymous">
 
-
+<link rel="stylesheet" href="/sass/jane.min.d8d87b982993a745e5e7b6a6cbf257be8c3e82aab5e485f0908ad7e6c3501ab2.css" integrity="" media="screen" crossorigin="anonymous">
 
 
 
 
 <link rel="stylesheet" href="/css/layer.css">
+
+
+<link rel="stylesheet" href="http://lamy9813.github.io/code_expander.js">
 
 
 <meta property="og:title" content="脚本" />
@@ -90,11 +93,17 @@
 
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2DZCW6NJZF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  </head>
-  <body>
-    <div id="back-to-top"></div>
+  gtag('config', 'G-2DZCW6NJZF');
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.3/dist/cdn/docsearch.min.css" />
+</head>
 
+<body>
     <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
     <a href="/" class="logo">Lamy's blog</a>
@@ -145,13 +154,12 @@
       </li>
     
 
-    
+
+    <input size="15"  maxlength="15" type="search" class="docsearch" placeholder="Search Here..." />
+
   </ul>
 </nav>
-
-
-    
-      
+  
 
 
 
@@ -207,38 +215,29 @@
     </div>
     </div>
 </div>
-
-    
-
-    
-
-    
-      <style>
+   
+    <style>
         .fork-me-on-github {
-          position: absolute;
-          top: 0;
-          left: 0;
-          border: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: 0;
         }
+        
         @media (max-width: 1080px) {
-          .fork-me-on-github {
-            display: none;
-          }
+            .fork-me-on-github {
+                display: none;
+            }
         }
-      </style>
+    </style>
 
-      <a href="https://github.com/lamy9813">
-        <img
-          class="fork-me-on-github"
-          src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"
-          alt="Fork me on GitHub"
-        />
-      </a>
+    <a href="https://github.com/lamy9813">
+        <img loading="lazy" width="149" height="149" class="fork-me-on-github" src="https://agou-images.oss-cn-qingdao.aliyuncs.com/BaseIMG/forkme_right_gray_6d6d6d.svg" data-recalc-dims="1" alt="Fork me on GitHub">
+    </a>
     
 
-
-    <header id="header" class="header">
-      <div class="logo-wrapper">
+    <header id="header" class="header container">
+        <div class="logo-wrapper">
   <a href="/" class="logo">
     
       Lamy's blog
@@ -308,16 +307,22 @@
 
     
     
-
     
+    <input size="20"  maxlength="15" type="search" class="docsearch-input"  placeholder="Search Here..." />
+
+
+
   </ul>
 </nav>
+
 
     </header>
 
     <div id="mobile-panel">
-      <main id="main" class="main bg-llight wallpaper">
-        
+        <main id="main" class="main bg-llight">
+            <div class="content-wrapper">
+                <div id="content" class="content container">
+                    
 
 <section id="archive" class="archive">
   
@@ -367,12 +372,13 @@
 
 
 
+                </div>
+            </div>
+        </main>
 
-      </main>
-
-      <footer id="footer" class="footer">
-        <div class="icon-links">
-  
+        <footer id="footer" class="footer">
+            <div class="icon-links">
+    
   
     <a href="mailto:lamy9813@gmail.com" rel="me noopener" class="iconfont"
       title="email" >
@@ -434,15 +440,8 @@
 </div>
 
 <div class="copyright">
-  <span class="power-by">
-    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
-  </span>
 
-  <span class="copyright-year">
+    <span class="copyright-year">
     &copy;
     2023
     <span class="heart">
@@ -461,40 +460,41 @@
         
       </span></span>
 
-  
-  
-    <span id="busuanzi_container">
+    <span class="power-by">
+      <a title="Host on GitHub & AliOSS"><img alt="Ecologi (Carbon Offset)" src="https://img.shields.io/badge/Host%20on-GitHub%20%26%20AliOSS-blue"></a>
+    </span>
+    <span class="theme-info">
+      <a title="Provided by Algolia & Giscus"><img alt="Ecologi (Carbon Offset)" src="https://img.shields.io/badge/Providers-Algolia%20%26%20Giscus-brightgreen"></a>
+    </span></br>
+
+    
+    
+    <span id="busuanzi_container" style="font-size: 15px;">
       访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
     </span>
-  
-
-  
+     
 </div>
+        </footer>
 
-      </footer>
-
-      <div class="button__back-to-top">
-        <a href="#back-to-top">
-          <i class="iconfont">
-            
-            <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+        <div class="back-to-top" id="back-to-top">
+            <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="35" height="35">
   <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
 </svg>
 
-          </i>
-        </a>
-      </div>
+      </i>
+        </div>
     </div>
     
-<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js" crossorigin="anonymous"></script>
 
 
-
-
-<script type="text/javascript" src="/js/main.79ae5f0be59fb5d743b9a5ba254563b33b8e28386c5d348ab5352625c5dfa67a.js" integrity="sha256-ea5fC&#43;WftddDuaW6JUVjszuOKDhsXTSKtTUmJcXfpno=" crossorigin="anonymous"></script>
+ 
+<script type="text/javascript" src="/js/main.5eaee198cc2af0f91a8d11124cad4f984d12227dd9ee0456086337e50a5de11c.js" integrity="" crossorigin="anonymous"></script>
 
 
 
@@ -504,50 +504,82 @@
 
 
 <script id="baidu_push">
-  (function(){
-    if (window.location.hostname === 'localhost') return;
-    var bp = document.createElement('script'); bp.async = true;
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-      bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    (function() {
+        if (window.location.hostname === 'localhost') return;
+        var bp = document.createElement('script');
+        bp.async = true;
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+
+ 
+<script src="/js/load-photoswipe.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+ 
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+ 
+
+
+ <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+    const options = {
+      bottom: '32px', 
+      right: 'unset', 
+      left: '32px', 
+      time: '0.5s', 
+      mixColor: '#fff', 
+      backgroundColor: '#fff',  
+      buttonColorDark: '#100f2c',  
+      buttonColorLight: '#fff', 
+      saveInCookies: true, 
+      label: '🌓', 
+      autoMatchOsTheme: true 
     }
-    else {
-      bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-  })();
+
+    const darkmode = new Darkmode(options);
+    darkmode.showWidget();
 </script>
 
 
 
-  
-    <script src="/js/load-photoswipe.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc="
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk="
-      crossorigin="anonymous"></script>
-  
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.3/dist/cdn/docsearch.min.js"></script>
+<script>
+    docsearch({
+        apiKey: "6a2c773473e3d77a8e761f3f64825c5a",
+        indexName: "main-blog",
+        appId: "5M8VQRD7W9",
+        inputSelector: '.docsearch-input',
+        debug: false,
+    });
+</script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.3/dist/cdn/docsearch.min.js"></script>
+<script>
+    docsearch({
+        apiKey: "6a2c773473e3d77a8e761f3f64825c5a",
+        indexName: "main-blog",
+        appId: "5M8VQRD7W9",
+        inputSelector: '.docsearch',
+        debug: false,
+    });
+</script>
+
+<script src="/js/code_expander.js"></script>
 
 
+</body>
 
-
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script src="/js/code_expander.js"></script>
-
-
-  </body>
 </html>

@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<html
-  lang="en"
-  itemscope
-  itemtype="http://schema.org/WebPage"
->
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>
-          Lamy
-        </title>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Lamy</title>
     
 
+
+<link rel="alternate" type="application/rss+xml" href="http://lamy9813.github.io/index.xml" title="Lamy" />
 <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 <meta name="MobileOptimized" content="width"/>
 <meta name="HandheldFriendly" content="true"/>
@@ -47,7 +45,8 @@
 
 
 
-<link rel="icon" href="/favicon.ico" />
+
+<link rel="icon" href="https://agou-images.oss-cn-qingdao.aliyuncs.com/BaseIMG/logo.png" />
 
 
 
@@ -59,14 +58,16 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.d8d87b982993a745e5e7b6a6cbf257be8c3e82aab5e485f0908ad7e6c3501ab2.css" integrity="sha256-2Nh7mCmTp0Xl57amy/JXvow&#43;gqq15IXwkIrX5sNQGrI=" media="screen" crossorigin="anonymous">
 
-
+<link rel="stylesheet" href="/sass/jane.min.d8d87b982993a745e5e7b6a6cbf257be8c3e82aab5e485f0908ad7e6c3501ab2.css" integrity="" media="screen" crossorigin="anonymous">
 
 
 
 
 <link rel="stylesheet" href="/css/layer.css">
+
+
+<link rel="stylesheet" href="http://lamy9813.github.io/code_expander.js">
 
 
 <meta property="og:title" content="Lamy" />
@@ -92,11 +93,17 @@
 
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2DZCW6NJZF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  </head>
-  <body>
-    <div id="back-to-top"></div>
+  gtag('config', 'G-2DZCW6NJZF');
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.3/dist/cdn/docsearch.min.css" />
+</head>
 
+<body>
     <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
     <a href="/" class="logo">Lamy's blog</a>
@@ -147,13 +154,12 @@
       </li>
     
 
-    
+
+    <input size="15"  maxlength="15" type="search" class="docsearch" placeholder="Search Here..." />
+
   </ul>
 </nav>
-
-
-    
-      
+  
 
 
 
@@ -209,38 +215,29 @@
     </div>
     </div>
 </div>
-
-    
-
-    
-
-    
-      <style>
+   
+    <style>
         .fork-me-on-github {
-          position: absolute;
-          top: 0;
-          left: 0;
-          border: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: 0;
         }
+        
         @media (max-width: 1080px) {
-          .fork-me-on-github {
-            display: none;
-          }
+            .fork-me-on-github {
+                display: none;
+            }
         }
-      </style>
+    </style>
 
-      <a href="https://github.com/lamy9813">
-        <img
-          class="fork-me-on-github"
-          src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"
-          alt="Fork me on GitHub"
-        />
-      </a>
+    <a href="https://github.com/lamy9813">
+        <img loading="lazy" width="149" height="149" class="fork-me-on-github" src="https://agou-images.oss-cn-qingdao.aliyuncs.com/BaseIMG/forkme_right_gray_6d6d6d.svg" data-recalc-dims="1" alt="Fork me on GitHub">
+    </a>
     
 
-
-    <header id="header" class="header">
-      <div class="logo-wrapper">
+    <header id="header" class="header container">
+        <div class="logo-wrapper">
   <a href="/" class="logo">
     
       Lamy's blog
@@ -310,16 +307,22 @@
 
     
     
-
     
+    <input size="20"  maxlength="15" type="search" class="docsearch-input"  placeholder="Search Here..." />
+
+
+
   </ul>
 </nav>
+
 
     </header>
 
     <div id="mobile-panel">
-      <main id="main" class="main bg-llight wallpaper">
-        
+        <main id="main" class="main bg-llight">
+            <div class="content-wrapper">
+                <div id="content" class="content container">
+                    
 <section id="posts" class="posts">
   
   
@@ -327,62 +330,34 @@
   
   
   
-    <article class="post">
+    <article class="post bg-white">
   <header class="post-header">
     <h1 class="post-title">
       
       <a class="post-link" href="/post/macos-%E7%BB%88%E7%AB%AF%E4%B8%8B%E5%85%89%E6%A0%87%E7%A7%BB%E5%8A%A8%E9%97%AE%E9%A2%98/">MacOS偏门解决vim/Neovim光标跳转（j/k键）卡顿的问题。【使用karabiner】</a>
     </h1>
     
-
     <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      AGou-ops
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2022-08-05">
-      2022-08-05
-    </time>
-  </div>
-
-  
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        275 words -
-        1 min read
-      </span>
-
-    <div class="post-meta-category">
-        <a href="http://lamy9813.github.io/categories/macos/"> MacOS </a>
+      <time datetime="2022-08-05" class="post-time">
+        2022-08-05
+      </time>
+      <div class="post-category">
+          <a href="http://lamy9813.github.io/categories/macos/"> MacOS </a>
           <a href="http://lamy9813.github.io/categories/neovim/"> neovim </a>
           
-      </div>
-
-
-    
-    
-      <span id="busuanzi_container_page_pv">
-        | 阅读 <span id="busuanzi_value_page_pv"></span>
-      </span>
-    
-
-
-    
-    
-  </div>
-</div>
-
+        </div>
+      <span class="more-meta"> 275 words </span>
+      <span class="more-meta"> 1 min read </span>
+      
+      
+      
+    </div>
   </header>
   
   <div class="post-content">
     
-      <div class="post-summary">
-        <p>问题详情参考：<a href="https://blog.deskangel.com/2021/04/03/vim-j-k-speed-issue/">https://blog.deskangel.com/2021/04/03/vim-j-k-speed-issue/</a></p>
+    <div class="post-summary">
+      <p>问题详情参考：<a href="https://blog.deskangel.com/2021/04/03/vim-j-k-speed-issue/">https://blog.deskangel.com/2021/04/03/vim-j-k-speed-issue/</a></p>
 <p>在iterm2中强制让英文输入法切换为内置的<code>ABC输入法</code>而不使用搜狗或者其他输入法的英文状态.</p>
 <p>在使用iterm2的时候，将<code>左shift</code>键重新映射为<code>command+space</code>键（在系统快捷键中设置切换输入法的快捷键，这里你可以自定义）。
 使用以下命令将上面这个键盘映射json文件导入到karabiner里面（浏览器打开就可以，会自动拉起karabiner，路径自定义。）</p>
@@ -399,348 +374,193 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div>
-      </div>
-      <div class="read-more">
-        <a href="/post/macos-%E7%BB%88%E7%AB%AF%E4%B8%8B%E5%85%89%E6%A0%87%E7%A7%BB%E5%8A%A8%E9%97%AE%E9%A2%98/" class="read-more-link"
-          >Read more</a
-        >
-      </div>
+    </div>
+    <div class="read-more">
+      <a href="/post/macos-%E7%BB%88%E7%AB%AF%E4%B8%8B%E5%85%89%E6%A0%87%E7%A7%BB%E5%8A%A8%E9%97%AE%E9%A2%98/" class="read-more-link">Read more</a>
+    </div>
     
   </div>
 </article>
 
   
-    <article class="post">
+    <article class="post bg-white">
   <header class="post-header">
     <h1 class="post-title">
       
       <a class="post-link" href="/post/nginx-logs-geo-mapgrafana%E8%AF%A6%E7%BB%86%E9%83%A8%E7%BD%B2/">NGINX LOGS &amp; GEO MAP(Grafana)详细部署</a>
     </h1>
     
-
     <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      AGou-ops
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2022-04-24">
-      2022-04-24
-    </time>
-  </div>
-
-  
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        2796 words -
-        6 min read
-      </span>
-
-    
-
-
-    
-    
-      <span id="busuanzi_container_page_pv">
-        | 阅读 <span id="busuanzi_value_page_pv"></span>
-      </span>
-    
-
-
-    
-    
-  </div>
-</div>
-
+      <time datetime="2022-04-24" class="post-time">
+        2022-04-24
+      </time>
+      
+      <span class="more-meta"> 2796 words </span>
+      <span class="more-meta"> 6 min read </span>
+      
+      
+      
+    </div>
   </header>
   
   <div class="post-content">
     
-      <div class="post-summary">
-        <p><img src="https://agou-images.oss-cn-qingdao.aliyuncs.com/others/image-20220424105947609.png" alt="image-20220424105947609"></p>
+    <div class="post-summary">
+      <p><img src="https://agou-images.oss-cn-qingdao.aliyuncs.com/others/image-20220424105947609.png" alt="image-20220424105947609"></p>
 <p>以上是<code>Grafana Template</code>的页面截图，🔗 <a href="https://grafana.com/grafana/dashboards/12268">https://grafana.com/grafana/dashboards/12268</a></p>
-      </div>
-      <div class="read-more">
-        <a href="/post/nginx-logs-geo-mapgrafana%E8%AF%A6%E7%BB%86%E9%83%A8%E7%BD%B2/" class="read-more-link"
-          >Read more</a
-        >
-      </div>
+    </div>
+    <div class="read-more">
+      <a href="/post/nginx-logs-geo-mapgrafana%E8%AF%A6%E7%BB%86%E9%83%A8%E7%BD%B2/" class="read-more-link">Read more</a>
+    </div>
     
   </div>
 </article>
 
   
-    <article class="post">
+    <article class="post bg-white">
   <header class="post-header">
     <h1 class="post-title">
       
       <a class="post-link" href="/post/neovim%E8%87%AA%E7%94%A8golang%E5%BC%80%E5%8F%91/">Neovim自用Golang开发</a>
     </h1>
     
-
     <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      AGou-ops
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2022-01-13">
-      2022-01-13
-    </time>
-  </div>
-
-  
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        1224 words -
-        3 min read
-      </span>
-
-    
-
-
-    
-    
-      <span id="busuanzi_container_page_pv">
-        | 阅读 <span id="busuanzi_value_page_pv"></span>
-      </span>
-    
-
-
-    
-    
-  </div>
-</div>
-
+      <time datetime="2022-01-13" class="post-time">
+        2022-01-13
+      </time>
+      
+      <span class="more-meta"> 1224 words </span>
+      <span class="more-meta"> 3 min read </span>
+      
+      
+      
+    </div>
   </header>
   
   <div class="post-content">
     
-      <div class="post-summary">
-        <h2 id="tldr">TL;DR</h2>
+    <div class="post-summary">
+      <h2 id="tldr">TL;DR</h2>
 <p>github仓库：👉 <a href="https://github.com/AGou-ops/dotfiles">https://github.com/AGou-ops/dotfiles</a> 👈</p>
 <ul>
 <li><strong>Neovim及其插件简单视频介绍：https://www.bilibili.com/video/BV1am4y197bR/</strong></li>
 <li><strong>保姆级安装up主同款Neovim：https://www.bilibili.com/video/BV1YF411i72t/</strong></li>
 </ul>
-      </div>
-      <div class="read-more">
-        <a href="/post/neovim%E8%87%AA%E7%94%A8golang%E5%BC%80%E5%8F%91/" class="read-more-link"
-          >Read more</a
-        >
-      </div>
+    </div>
+    <div class="read-more">
+      <a href="/post/neovim%E8%87%AA%E7%94%A8golang%E5%BC%80%E5%8F%91/" class="read-more-link">Read more</a>
+    </div>
     
   </div>
 </article>
 
   
-    <article class="post">
+    <article class="post bg-white">
   <header class="post-header">
     <h1 class="post-title">
       
       <a class="post-link" href="/post/shell-tricks/">Shell Tricks</a>
     </h1>
     
-
     <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      AGou-ops
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2021-11-08">
-      2021-11-08
-    </time>
-  </div>
-
-  
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        3399 words -
-        7 min read
-      </span>
-
-    <div class="post-meta-category">
-        <a href="http://lamy9813.github.io/categories/tricks/"> tricks </a>
+      <time datetime="2021-11-08" class="post-time">
+        2021-11-08
+      </time>
+      <div class="post-category">
+          <a href="http://lamy9813.github.io/categories/tricks/"> tricks </a>
           <a href="http://lamy9813.github.io/categories/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/"> 持续更新 </a>
           
-      </div>
-
-
-    
-    
-      <span id="busuanzi_container_page_pv">
-        | 阅读 <span id="busuanzi_value_page_pv"></span>
-      </span>
-    
-
-
-    
-    
-  </div>
-</div>
-
+        </div>
+      <span class="more-meta"> 3399 words </span>
+      <span class="more-meta"> 7 min read </span>
+      
+      
+      
+    </div>
   </header>
   
   <div class="post-content">
     
-      <div class="post-summary">
-        <img src="https://api.ixiaowai.cn/gqapi/gqapi.php" style="zoom:65%;" />
+    <div class="post-summary">
+      <img src="https://api.ixiaowai.cn/gqapi/gqapi.php" style="zoom:65%;" />
 <p><strong>🚩该文章将持续更新。</strong></p>
 <p>分享和记录个人日常和工作中，学习和实际用到的shell片段以及一些小技巧。</p>
-      </div>
-      <div class="read-more">
-        <a href="/post/shell-tricks/" class="read-more-link"
-          >Read more</a
-        >
-      </div>
+    </div>
+    <div class="read-more">
+      <a href="/post/shell-tricks/" class="read-more-link">Read more</a>
+    </div>
     
   </div>
 </article>
 
   
-    <article class="post">
+    <article class="post bg-white">
   <header class="post-header">
     <h1 class="post-title">
       
       <a class="post-link" href="/post/tc-%E9%AB%98%E7%BA%A7%E6%B5%81%E6%8E%A7/">TC 高级流控</a>
     </h1>
     
-
     <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      AGou-ops
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2020-12-16">
-      2020-12-16
-    </time>
-  </div>
-
-  
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        1180 words -
-        3 min read
-      </span>
-
-    <div class="post-meta-category">
-        <a href="http://lamy9813.github.io/categories/%E6%B5%81%E6%8E%A7/"> 流控 </a>
+      <time datetime="2020-12-16" class="post-time">
+        2020-12-16
+      </time>
+      <div class="post-category">
+          <a href="http://lamy9813.github.io/categories/%E6%B5%81%E6%8E%A7/"> 流控 </a>
           
-      </div>
-
-
-    
-    
-      <span id="busuanzi_container_page_pv">
-        | 阅读 <span id="busuanzi_value_page_pv"></span>
-      </span>
-    
-
-
-    
-    
-  </div>
-</div>
-
+        </div>
+      <span class="more-meta"> 1180 words </span>
+      <span class="more-meta"> 3 min read </span>
+      
+      
+      
+    </div>
   </header>
   
   <div class="post-content">
     
-      <div class="post-summary">
-        <h2 id="tc-简介及原理">TC 简介及原理</h2>
+    <div class="post-summary">
+      <h2 id="tc-简介及原理">TC 简介及原理</h2>
 <p>tc 是 Linux 系统中的一个工具，全名为<code>traffic control</code>（流量控制）, 主要是通过在输出端口处建立一个队列来实现流量控制。tc 可以用来控制 netem 的工作模式，也就是说，想要使用 netem ，则需要内核开启了 netem，而且安装了 tc工具。</p>
 <p>tc 控制的是发包动作，不能控制收包动作。它直接对物理接口生效，如果控制了物理的<code>eth0</code>，那么逻辑网卡（比如<code>eth0:1</code>）也会受到影响，反之则不行，<strong>控制逻辑网卡是无效的</strong>。</p>
-      </div>
-      <div class="read-more">
-        <a href="/post/tc-%E9%AB%98%E7%BA%A7%E6%B5%81%E6%8E%A7/" class="read-more-link"
-          >Read more</a
-        >
-      </div>
+    </div>
+    <div class="read-more">
+      <a href="/post/tc-%E9%AB%98%E7%BA%A7%E6%B5%81%E6%8E%A7/" class="read-more-link">Read more</a>
+    </div>
     
   </div>
 </article>
 
   
-    <article class="post">
+    <article class="post bg-white">
   <header class="post-header">
     <h1 class="post-title">
       
       <a class="post-link" href="/post/vim-tricks/">Vim Hotkeys and Cheat Sheet</a>
     </h1>
     
-
     <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      AGou-ops
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2020-12-06">
-      2020-12-06
-    </time>
-  </div>
-
-  
-    <div class="post-meta-lastmod">
-      (LastMod:
-      2021-08-25)
-    </div>
-  
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        4855 words -
-        10 min read
-      </span>
-
-    <div class="post-meta-category">
-        <a href="http://lamy9813.github.io/categories/vim/"> vim </a>
+      <time datetime="2020-12-06" class="post-time">
+        2020-12-06
+      </time>
+      <div class="post-category">
+          <a href="http://lamy9813.github.io/categories/vim/"> vim </a>
           <a href="http://lamy9813.github.io/categories/%E6%8A%80%E5%B7%A7/"> 技巧 </a>
           <a href="http://lamy9813.github.io/categories/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/"> 持续更新 </a>
           
-      </div>
-
-
-    
-    
-      <span id="busuanzi_container_page_pv">
-        | 阅读 <span id="busuanzi_value_page_pv"></span>
-      </span>
-    
-
-
-    
-    
-  </div>
-</div>
-
+        </div>
+      <span class="more-meta"> 4855 words </span>
+      <span class="more-meta"> 10 min read </span>
+      
+      
+      
+    </div>
   </header>
   
   <div class="post-content">
     
-      <div class="post-summary">
-        <p><img src="https://api.ixiaowai.cn/gqapi/gqapi.php" alt=""></p>
+    <div class="post-summary">
+      <p><img src="https://api.ixiaowai.cn/gqapi/gqapi.php" alt=""></p>
 <blockquote>
 <p>该文章用于记录个人在使用<code>vim</code>期间常用的技巧和快捷键。</p>
 <ul>
@@ -749,72 +569,42 @@
 <li>2021年09月18日09:53:28： 更新插件快捷键；</li>
 </ul>
 </blockquote>
-      </div>
-      <div class="read-more">
-        <a href="/post/vim-tricks/" class="read-more-link"
-          >Read more</a
-        >
-      </div>
+    </div>
+    <div class="read-more">
+      <a href="/post/vim-tricks/" class="read-more-link">Read more</a>
+    </div>
     
   </div>
 </article>
 
   
-    <article class="post">
+    <article class="post bg-white">
   <header class="post-header">
     <h1 class="post-title">
       
       <a class="post-link" href="/post/%E6%90%AD%E5%BB%BA%E5%86%85%E7%BD%91yum%E6%BA%90/">搭建内网yum源(nginx、ftp)</a>
     </h1>
     
-
     <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      AGou-ops
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2020-08-04">
-      2020-08-04
-    </time>
-  </div>
-
-  
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        1504 words -
-        4 min read
-      </span>
-
-    <div class="post-meta-category">
-        <a href="http://lamy9813.github.io/categories/centos/"> CentOS </a>
+      <time datetime="2020-08-04" class="post-time">
+        2020-08-04
+      </time>
+      <div class="post-category">
+          <a href="http://lamy9813.github.io/categories/centos/"> CentOS </a>
           
-      </div>
-
-
-    
-    
-      <span id="busuanzi_container_page_pv">
-        | 阅读 <span id="busuanzi_value_page_pv"></span>
-      </span>
-    
-
-
-    
-    
-  </div>
-</div>
-
+        </div>
+      <span class="more-meta"> 1504 words </span>
+      <span class="more-meta"> 4 min read </span>
+      
+      
+      
+    </div>
   </header>
   
   <div class="post-content">
     
-      <div class="post-summary">
-        <blockquote>
+    <div class="post-summary">
+      <blockquote>
 <p>搭建内网yum源，摆脱软件包困扰。</p>
 </blockquote>
 <h2 id="选择合适稳定的公网yum仓库">选择合适稳定的公网yum仓库</h2>
@@ -825,214 +615,124 @@
 <li>网易：http://mirrors.163.com/</li>
 </ul>
 <p>更多国内镜像仓库参考：https://blog.csdn.net/wyqwilliam/article/details/90581159</p>
-      </div>
-      <div class="read-more">
-        <a href="/post/%E6%90%AD%E5%BB%BA%E5%86%85%E7%BD%91yum%E6%BA%90/" class="read-more-link"
-          >Read more</a
-        >
-      </div>
+    </div>
+    <div class="read-more">
+      <a href="/post/%E6%90%AD%E5%BB%BA%E5%86%85%E7%BD%91yum%E6%BA%90/" class="read-more-link">Read more</a>
+    </div>
     
   </div>
 </article>
 
   
-    <article class="post">
+    <article class="post bg-white">
   <header class="post-header">
     <h1 class="post-title">
       
       <a class="post-link" href="/post/%E7%BC%96%E5%86%99shell%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/">编写shell帮助信息通用小技巧</a>
     </h1>
     
-
     <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      AGou-ops
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2020-07-14">
-      2020-07-14
-    </time>
-  </div>
-
-  
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        208 words -
-        1 min read
-      </span>
-
-    <div class="post-meta-category">
-        <a href="http://lamy9813.github.io/categories/linux/"> Linux </a>
+      <time datetime="2020-07-14" class="post-time">
+        2020-07-14
+      </time>
+      <div class="post-category">
+          <a href="http://lamy9813.github.io/categories/linux/"> Linux </a>
           <a href="http://lamy9813.github.io/categories/shell/"> shell </a>
           
-      </div>
-
-
-    
-    
-      <span id="busuanzi_container_page_pv">
-        | 阅读 <span id="busuanzi_value_page_pv"></span>
-      </span>
-    
-
-
-    
-    
-  </div>
-</div>
-
+        </div>
+      <span class="more-meta"> 208 words </span>
+      <span class="more-meta"> 1 min read </span>
+      
+      
+      
+    </div>
   </header>
   
   <div class="post-content">
     
-      <div class="post-summary">
-        废话少说， 直接上脚本： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 #!/bin/bash ### ### Some shell version or description here. ### ### Usage: ### test &lt;input&gt; &lt;output&gt; ### ### Options: ### &lt;input&gt; Input file to read. ### &lt;output&gt; Output file to write. Use &#39;-&#39; for stdout. ### -h
-      </div>
-      <div class="read-more">
-        <a href="/post/%E7%BC%96%E5%86%99shell%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/" class="read-more-link"
-          >Read more</a
-        >
-      </div>
+    <div class="post-summary">
+      废话少说， 直接上脚本： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 #!/bin/bash ### ### Some shell version or description here. ### ### Usage: ### test &lt;input&gt; &lt;output&gt; ### ### Options: ### &lt;input&gt; Input file to read. ### &lt;output&gt; Output file to write. Use &#39;-&#39; for stdout. ### -h
+    </div>
+    <div class="read-more">
+      <a href="/post/%E7%BC%96%E5%86%99shell%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/" class="read-more-link">Read more</a>
+    </div>
     
   </div>
 </article>
 
   
-    <article class="post">
+    <article class="post bg-white">
   <header class="post-header">
     <h1 class="post-title">
       
       <a class="post-link" href="/post/web-benchmark/">Web 压测工具</a>
     </h1>
     
-
     <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      AGou-ops
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2020-07-14">
-      2020-07-14
-    </time>
-  </div>
-
-  
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        429 words -
-        1 min read
-      </span>
-
-    <div class="post-meta-category">
-        <a href="http://lamy9813.github.io/categories/benchmark/"> benchmark </a>
+      <time datetime="2020-07-14" class="post-time">
+        2020-07-14
+      </time>
+      <div class="post-category">
+          <a href="http://lamy9813.github.io/categories/benchmark/"> benchmark </a>
           <a href="http://lamy9813.github.io/categories/web/"> web </a>
           <a href="http://lamy9813.github.io/categories/tools/"> Tools </a>
           
-      </div>
-
-
-    
-    
-      <span id="busuanzi_container_page_pv">
-        | 阅读 <span id="busuanzi_value_page_pv"></span>
-      </span>
-    
-
-
-    
-    
-  </div>
-</div>
-
+        </div>
+      <span class="more-meta"> 429 words </span>
+      <span class="more-meta"> 1 min read </span>
+      
+      
+      
+    </div>
   </header>
   
   <div class="post-content">
     
-      <div class="post-summary">
-        <h2 id="web-benchmark-tools">web benchmark tools</h2>
+    <div class="post-summary">
+      <h2 id="web-benchmark-tools">web benchmark tools</h2>
 <h3 id="apache-bench">Apache Bench</h3>
 <blockquote>
 <p>ApacheBench 是一个用来衡量http服务器性能的单线程命令行工具。原本针对Apache http服务器，但是也适用于其他http服务器。</p>
 </blockquote>
 <p>如果你的操作系统没有<code>ab</code>工具， 那么只需安装<code>httpd-tools</code>(CentOS)或者<code>apache-utils</code>(Ubuntu)即可。</p>
-      </div>
-      <div class="read-more">
-        <a href="/post/web-benchmark/" class="read-more-link"
-          >Read more</a
-        >
-      </div>
+    </div>
+    <div class="read-more">
+      <a href="/post/web-benchmark/" class="read-more-link">Read more</a>
+    </div>
     
   </div>
 </article>
 
   
-    <article class="post">
+    <article class="post bg-white">
   <header class="post-header">
     <h1 class="post-title">
       
       <a class="post-link" href="/post/linux-%E5%AE%9E%E6%97%B6%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1%E6%B5%81%E9%87%8F/">Linux 实时查看网卡流量</a>
     </h1>
     
-
     <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      AGou-ops
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2020-07-11">
-      2020-07-11
-    </time>
-  </div>
-
-  
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        2271 words -
-        5 min read
-      </span>
-
-    <div class="post-meta-category">
-        <a href="http://lamy9813.github.io/categories/linux/"> Linux </a>
+      <time datetime="2020-07-11" class="post-time">
+        2020-07-11
+      </time>
+      <div class="post-category">
+          <a href="http://lamy9813.github.io/categories/linux/"> Linux </a>
           <a href="http://lamy9813.github.io/categories/tools/"> Tools </a>
           <a href="http://lamy9813.github.io/categories/%E8%BD%AC%E8%BD%BD/"> 转载 </a>
           
-      </div>
-
-
-    
-    
-      <span id="busuanzi_container_page_pv">
-        | 阅读 <span id="busuanzi_value_page_pv"></span>
-      </span>
-    
-
-
-    
-    
-  </div>
-</div>
-
+        </div>
+      <span class="more-meta"> 2271 words </span>
+      <span class="more-meta"> 5 min read </span>
+      
+      
+      
+    </div>
   </header>
   
   <div class="post-content">
     
-      <div class="post-summary">
-        <h2 id="nload工具">nload工具</h2>
+    <div class="post-summary">
+      <h2 id="nload工具">nload工具</h2>
 <p>nload用于实时查看网卡流量，默认系统都没有安装，首先安装方式如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1045,12 +745,10 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div>
-      </div>
-      <div class="read-more">
-        <a href="/post/linux-%E5%AE%9E%E6%97%B6%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1%E6%B5%81%E9%87%8F/" class="read-more-link"
-          >Read more</a
-        >
-      </div>
+    </div>
+    <div class="read-more">
+      <a href="/post/linux-%E5%AE%9E%E6%97%B6%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1%E6%B5%81%E9%87%8F/" class="read-more-link">Read more</a>
+    </div>
     
   </div>
 </article>
@@ -1099,12 +797,13 @@
 
 
 
+                </div>
+            </div>
+        </main>
 
-      </main>
-
-      <footer id="footer" class="footer">
-        <div class="icon-links">
-  
+        <footer id="footer" class="footer">
+            <div class="icon-links">
+    
   
     <a href="mailto:lamy9813@gmail.com" rel="me noopener" class="iconfont"
       title="email" >
@@ -1166,15 +865,8 @@
 </div>
 
 <div class="copyright">
-  <span class="power-by">
-    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
-  </span>
 
-  <span class="copyright-year">
+    <span class="copyright-year">
     &copy;
     2023
     <span class="heart">
@@ -1193,40 +885,41 @@
         
       </span></span>
 
-  
-  
-    <span id="busuanzi_container">
+    <span class="power-by">
+      <a title="Host on GitHub & AliOSS"><img alt="Ecologi (Carbon Offset)" src="https://img.shields.io/badge/Host%20on-GitHub%20%26%20AliOSS-blue"></a>
+    </span>
+    <span class="theme-info">
+      <a title="Provided by Algolia & Giscus"><img alt="Ecologi (Carbon Offset)" src="https://img.shields.io/badge/Providers-Algolia%20%26%20Giscus-brightgreen"></a>
+    </span></br>
+
+    
+    
+    <span id="busuanzi_container" style="font-size: 15px;">
       访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
     </span>
-  
-
-  
+     
 </div>
+        </footer>
 
-      </footer>
-
-      <div class="button__back-to-top">
-        <a href="#back-to-top">
-          <i class="iconfont">
-            
-            <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+        <div class="back-to-top" id="back-to-top">
+            <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="35" height="35">
   <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
 </svg>
 
-          </i>
-        </a>
-      </div>
+      </i>
+        </div>
     </div>
     
-<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js" crossorigin="anonymous"></script>
 
 
-
-
-<script type="text/javascript" src="/js/main.79ae5f0be59fb5d743b9a5ba254563b33b8e28386c5d348ab5352625c5dfa67a.js" integrity="sha256-ea5fC&#43;WftddDuaW6JUVjszuOKDhsXTSKtTUmJcXfpno=" crossorigin="anonymous"></script>
+ 
+<script type="text/javascript" src="/js/main.5eaee198cc2af0f91a8d11124cad4f984d12227dd9ee0456086337e50a5de11c.js" integrity="" crossorigin="anonymous"></script>
 
 
 
@@ -1236,50 +929,82 @@
 
 
 <script id="baidu_push">
-  (function(){
-    if (window.location.hostname === 'localhost') return;
-    var bp = document.createElement('script'); bp.async = true;
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-      bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    (function() {
+        if (window.location.hostname === 'localhost') return;
+        var bp = document.createElement('script');
+        bp.async = true;
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+
+ 
+<script src="/js/load-photoswipe.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+ 
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+ 
+
+
+ <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+    const options = {
+      bottom: '32px', 
+      right: 'unset', 
+      left: '32px', 
+      time: '0.5s', 
+      mixColor: '#fff', 
+      backgroundColor: '#fff',  
+      buttonColorDark: '#100f2c',  
+      buttonColorLight: '#fff', 
+      saveInCookies: true, 
+      label: '🌓', 
+      autoMatchOsTheme: true 
     }
-    else {
-      bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-  })();
+
+    const darkmode = new Darkmode(options);
+    darkmode.showWidget();
 </script>
 
 
 
-  
-    <script src="/js/load-photoswipe.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc="
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk="
-      crossorigin="anonymous"></script>
-  
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.3/dist/cdn/docsearch.min.js"></script>
+<script>
+    docsearch({
+        apiKey: "6a2c773473e3d77a8e761f3f64825c5a",
+        indexName: "main-blog",
+        appId: "5M8VQRD7W9",
+        inputSelector: '.docsearch-input',
+        debug: false,
+    });
+</script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.3/dist/cdn/docsearch.min.js"></script>
+<script>
+    docsearch({
+        apiKey: "6a2c773473e3d77a8e761f3f64825c5a",
+        indexName: "main-blog",
+        appId: "5M8VQRD7W9",
+        inputSelector: '.docsearch',
+        debug: false,
+    });
+</script>
+
+<script src="/js/code_expander.js"></script>
 
 
+</body>
 
-
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script src="/js/code_expander.js"></script>
-
-
-  </body>
 </html>

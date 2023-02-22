@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html
-  lang="en"
-  itemscope
-  itemtype="http://schema.org/WebPage"
->
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>
-          Linux 系统资源监控面板 - Lamy
-        </title>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Linux 系统资源监控面板 - Lamy</title>
     
 
+
 <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 <meta name="MobileOptimized" content="width"/>
 <meta name="HandheldFriendly" content="true"/>
@@ -51,7 +48,8 @@ WTF WTF（又名“wtfutil”）是终端的个人信息仪表板，可快速访
 
 
 
-<link rel="icon" href="/favicon.ico" />
+
+<link rel="icon" href="https://agou-images.oss-cn-qingdao.aliyuncs.com/BaseIMG/logo.png" />
 
 
 
@@ -63,14 +61,16 @@ WTF WTF（又名“wtfutil”）是终端的个人信息仪表板，可快速访
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.d8d87b982993a745e5e7b6a6cbf257be8c3e82aab5e485f0908ad7e6c3501ab2.css" integrity="sha256-2Nh7mCmTp0Xl57amy/JXvow&#43;gqq15IXwkIrX5sNQGrI=" media="screen" crossorigin="anonymous">
 
-
+<link rel="stylesheet" href="/sass/jane.min.d8d87b982993a745e5e7b6a6cbf257be8c3e82aab5e485f0908ad7e6c3501ab2.css" integrity="" media="screen" crossorigin="anonymous">
 
 
 
 
 <link rel="stylesheet" href="/css/layer.css">
+
+
+<link rel="stylesheet" href="http://lamy9813.github.io/code_expander.js">
 
 
 <meta property="og:title" content="Linux 系统资源监控面板" />
@@ -116,11 +116,17 @@ WTF（又名“wtfutil”）是终端的个人信息仪表板，可快速访问�
 
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2DZCW6NJZF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  </head>
-  <body>
-    <div id="back-to-top"></div>
+  gtag('config', 'G-2DZCW6NJZF');
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.3/dist/cdn/docsearch.min.css" />
+</head>
 
+<body>
     <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
     <a href="/" class="logo">Lamy's blog</a>
@@ -171,13 +177,12 @@ WTF（又名“wtfutil”）是终端的个人信息仪表板，可快速访问�
       </li>
     
 
-    
+
+    <input size="15"  maxlength="15" type="search" class="docsearch" placeholder="Search Here..." />
+
   </ul>
 </nav>
-
-
-    
-      
+  
 
 
 
@@ -233,38 +238,29 @@ WTF（又名“wtfutil”）是终端的个人信息仪表板，可快速访问�
     </div>
     </div>
 </div>
-
-    
-
-    
-
-    
-      <style>
+   
+    <style>
         .fork-me-on-github {
-          position: absolute;
-          top: 0;
-          left: 0;
-          border: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: 0;
         }
+        
         @media (max-width: 1080px) {
-          .fork-me-on-github {
-            display: none;
-          }
+            .fork-me-on-github {
+                display: none;
+            }
         }
-      </style>
+    </style>
 
-      <a href="https://github.com/lamy9813">
-        <img
-          class="fork-me-on-github"
-          src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"
-          alt="Fork me on GitHub"
-        />
-      </a>
+    <a href="https://github.com/lamy9813">
+        <img loading="lazy" width="149" height="149" class="fork-me-on-github" src="https://agou-images.oss-cn-qingdao.aliyuncs.com/BaseIMG/forkme_right_gray_6d6d6d.svg" data-recalc-dims="1" alt="Fork me on GitHub">
+    </a>
     
 
-
-    <header id="header" class="header">
-      <div class="logo-wrapper">
+    <header id="header" class="header container">
+        <div class="logo-wrapper">
   <a href="/" class="logo">
     
       Lamy's blog
@@ -334,70 +330,78 @@ WTF（又名“wtfutil”）是终端的个人信息仪表板，可快速访问�
 
     
     
-
     
+    <input size="20"  maxlength="15" type="search" class="docsearch-input"  placeholder="Search Here..." />
+
+
+
   </ul>
 </nav>
+
 
     </header>
 
     <div id="mobile-panel">
-      <main id="main" class="main bg-llight wallpaper">
-        <div class="content-wrapper">
-    <div id="content" class="content">
-      <article class="post">
+        <main id="main" class="main bg-llight">
+            <div class="content-wrapper">
+                <div id="content" class="content container">
+                    <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">Linux 系统资源监控面板</h1>
+      
+      <div class="post-meta">
+        <time datetime="2020-06-12" class="post-time">
+          2020-06-12
+        </time>
+        <div class="post-category">
+            <a href="http://lamy9813.github.io/categories/linux/"> Linux </a>
+            <a href="http://lamy9813.github.io/categories/tools/"> Tools </a>
+            
+          </div>
+        <span class="more-meta"> 1454 words </span>
+          <span class="more-meta"> 3 min read </span>
+
         
-        <header class="post-header">
-          <h1 class="post-title">Linux 系统资源监控面板</h1>
-          
+        
+          <span id="busuanzi_container_page_pv">
+            | 阅读 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
 
-          <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      AGou-ops
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2020-06-12">
-      2020-06-12
-    </time>
-  </div>
-
-  
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        1454 words -
-        3 min read
-      </span>
-
-    <div class="post-meta-category">
-        <a href="http://lamy9813.github.io/categories/linux/"> Linux </a>
-          <a href="http://lamy9813.github.io/categories/tools/"> Tools </a>
-          
+        
+        
       </div>
-
-
-    
-    
-      <span id="busuanzi_container_page_pv">
-        | 阅读 <span id="busuanzi_value_page_pv"></span>
-      </span>
-    
-
+    </header>
 
     
     
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Table of Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#wtf">WTF</a>
+      <ul>
+        <li><a href="#安装与使用">安装与使用</a></li>
+        <li><a href="#配置文件">配置文件</a></li>
+        <li><a href="#官方支持模块">官方支持模块</a></li>
+      </ul>
+    </li>
+    <li><a href="#bashtop">bashtop</a>
+      <ul>
+        <li><a href="#安装与使用-1">安装与使用</a></li>
+        <li><a href="#配置文件-1">配置文件</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </div>
 
-        </header>
-
-        
-        <div class="post-content">
-          <p><code>WTF</code>和<code>bashtop</code>是我个人目前在用的系统资源管理面板，界面非常的美观，极具极客风范，在这里我分别做简单介绍。</p>
+    
+    <div class="post-content">
+      <p><code>WTF</code>和<code>bashtop</code>是我个人目前在用的系统资源管理面板，界面非常的美观，极具极客风范，在这里我分别做简单介绍。</p>
 <h2 id="wtf">WTF</h2>
 <blockquote>
 <p>WTF（又名“wtfutil”）是终端的个人信息仪表板，可快速访问您非常重要但不常需要的统计信息和数据。</p>
@@ -943,10 +947,10 @@ Zendesk
 </span></span></code></pre></td></tr></table>
 </div>
 </div>
-        </div>
+    </div>
 
-        
-        
+    
+    
 <div class="post-copyright">
   <p class="copyright-item">
     <span class="item-title">Author</span>
@@ -967,103 +971,69 @@ Zendesk
 </div>
 
 
+    
+    
 
-        
-        
 <div class="post-reward">
-  <input type="checkbox" name="reward" id="reward" hidden />
-  <label class="reward-button" for="reward">Reward</label>
-  <div class="qr-code">
-    
-    
-      <label class="qr-code-image" for="reward">
+    <input type="checkbox" name="reward" id="reward" hidden />
+    <label class="reward-button" for="reward">Reward</label>
+    <div class="qr-code">
+         
+        <label class="qr-code-image" for="reward">
         <img class="image" src="https://s1.ax1x.com/2023/02/21/pSXa7Zt.jpg">
         <span>Wechat</span>
-      </label>
-    
-      <label class="qr-code-image" for="reward">
+      </label> 
+        <label class="qr-code-image" for="reward">
         <img class="image" src="https://s1.ax1x.com/2023/02/21/pSXaHdP.jpg">
         <span>Alipay</span>
       </label>
-  </div>
+    </div>
 </div>
 
-
-        <footer class="post-footer">
-          <div class="post-tags">
-              <a href="http://lamy9813.github.io/tags/linux/">Linux</a>
-                <a href="http://lamy9813.github.io/tags/%E7%9B%91%E6%8E%A7/">监控</a>
-                
-            </div>
-
-
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="http://lamy9813.github.io/tags/linux/">Linux</a>
+          <a href="http://lamy9813.github.io/tags/%E7%9B%91%E6%8E%A7/">监控</a>
           
-          <nav class="post-nav">
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/linux-%E6%97%A5%E5%BF%97%E5%88%86%E5%89%B2%E5%B7%A5%E5%85%B7/">
             
-              <a class="prev" href="/post/linux-%E6%97%A5%E5%BF%97%E5%88%86%E5%89%B2%E5%B7%A5%E5%85%B7/">
-                
-                <i class="iconfont">
-                  <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="18" height="18">
   <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
 </svg>
 
-                </i>
-                <span class="prev-text nav-default">Linux 日志分割工具-split和logrotate</span>
-                <span class="prev-text nav-mobile">Prev</span>
-              </a>
+            </i>
+            <span class="prev-text nav-default">Linux 日志分割工具-split和logrotate</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/linux%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0/">
+            <span class="next-text nav-default">Linux 生成随机数</span>
+            <span class="prev-text nav-mobile">Next</span>
             
-              <a class="next" href="/post/linux%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0/">
-                <span class="next-text nav-default">Linux 生成随机数</span>
-                <span class="prev-text nav-mobile">Next</span>
-                
-                <i class="iconfont">
-                  <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="18" height="18">
   <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
 </svg>
 
-                </i>
-              </a>
-          </nav>
-        </footer>
-      </article>
-
-      
-      
-        
-      
-
-
-      
-      
-
-  
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
 
   
   
-    <div class="post">
-  <script
-    src="https://giscus.app/client.js"
-    data-repo=""
-    data-repo-id=""
-    data-category=""
-    data-category-id=""
-    data-mapping="pathname"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="top"
-    data-theme="light"
-    data-lang="en"
-    
-    crossorigin="anonymous"
-    async
-  ></script>
-</div>
-
+  
   
 
   
@@ -1072,48 +1042,48 @@ Zendesk
   
 
   
-
-    
-
   
 
   
-
-
+  
+    <div class="post bg-white">
+      <script src="https://giscus.app/client.js"
+      data-repo="AGou-ops/comments"
+      data-repo-id="MDEwOlJlcG9zaXRvcnkyNDU4MjMwMTU="
+      data-category="General"
+      data-category-id="DIC_kwDODqb2J84COMZZ"
+      data-mapping="pathname"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="light"
+      data-lang="zh-CN"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async>
+</script>
     </div>
+  
+
+
+
+  
+
+  
+
+  
 
     
-    <nav class="toc" id="toc">
-    <div class="toc-title">Table of Contents</div>
-    <div class="toc-content custom-scrollbar">
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#wtf">WTF</a>
-      <ul>
-        <li><a href="#安装与使用">安装与使用</a></li>
-        <li><a href="#配置文件">配置文件</a></li>
-        <li><a href="#官方支持模块">官方支持模块</a></li>
-      </ul>
-    </li>
-    <li><a href="#bashtop">bashtop</a>
-      <ul>
-        <li><a href="#安装与使用-1">安装与使用</a></li>
-        <li><a href="#配置文件-1">配置文件</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-    </div>
-  </nav>
 
-
-  </div>
-
-      </main>
-
-      <footer id="footer" class="footer">
-        <div class="icon-links">
   
+
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer" class="footer">
+            <div class="icon-links">
+    
   
     <a href="mailto:lamy9813@gmail.com" rel="me noopener" class="iconfont"
       title="email" >
@@ -1175,15 +1145,8 @@ Zendesk
 </div>
 
 <div class="copyright">
-  <span class="power-by">
-    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
-  </span>
 
-  <span class="copyright-year">
+    <span class="copyright-year">
     &copy;
     2023
     <span class="heart">
@@ -1202,40 +1165,41 @@ Zendesk
         
       </span></span>
 
-  
-  
-    <span id="busuanzi_container">
+    <span class="power-by">
+      <a title="Host on GitHub & AliOSS"><img alt="Ecologi (Carbon Offset)" src="https://img.shields.io/badge/Host%20on-GitHub%20%26%20AliOSS-blue"></a>
+    </span>
+    <span class="theme-info">
+      <a title="Provided by Algolia & Giscus"><img alt="Ecologi (Carbon Offset)" src="https://img.shields.io/badge/Providers-Algolia%20%26%20Giscus-brightgreen"></a>
+    </span></br>
+
+    
+    
+    <span id="busuanzi_container" style="font-size: 15px;">
       访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
     </span>
-  
-
-  
+     
 </div>
+        </footer>
 
-      </footer>
-
-      <div class="button__back-to-top">
-        <a href="#back-to-top">
-          <i class="iconfont">
-            
-            <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+        <div class="back-to-top" id="back-to-top">
+            <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="35" height="35">
   <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
 </svg>
 
-          </i>
-        </a>
-      </div>
+      </i>
+        </div>
     </div>
     
-<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js" crossorigin="anonymous"></script>
 
 
-
-
-<script type="text/javascript" src="/js/main.79ae5f0be59fb5d743b9a5ba254563b33b8e28386c5d348ab5352625c5dfa67a.js" integrity="sha256-ea5fC&#43;WftddDuaW6JUVjszuOKDhsXTSKtTUmJcXfpno=" crossorigin="anonymous"></script>
+ 
+<script type="text/javascript" src="/js/main.5eaee198cc2af0f91a8d11124cad4f984d12227dd9ee0456086337e50a5de11c.js" integrity="" crossorigin="anonymous"></script>
 
 
 
@@ -1245,50 +1209,82 @@ Zendesk
 
 
 <script id="baidu_push">
-  (function(){
-    if (window.location.hostname === 'localhost') return;
-    var bp = document.createElement('script'); bp.async = true;
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-      bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    (function() {
+        if (window.location.hostname === 'localhost') return;
+        var bp = document.createElement('script');
+        bp.async = true;
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+
+ 
+<script src="/js/load-photoswipe.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+ 
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+ 
+
+
+ <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+    const options = {
+      bottom: '32px', 
+      right: 'unset', 
+      left: '32px', 
+      time: '0.5s', 
+      mixColor: '#fff', 
+      backgroundColor: '#fff',  
+      buttonColorDark: '#100f2c',  
+      buttonColorLight: '#fff', 
+      saveInCookies: true, 
+      label: '🌓', 
+      autoMatchOsTheme: true 
     }
-    else {
-      bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-  })();
+
+    const darkmode = new Darkmode(options);
+    darkmode.showWidget();
 </script>
 
 
 
-  
-    <script src="/js/load-photoswipe.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc="
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk="
-      crossorigin="anonymous"></script>
-  
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.3/dist/cdn/docsearch.min.js"></script>
+<script>
+    docsearch({
+        apiKey: "6a2c773473e3d77a8e761f3f64825c5a",
+        indexName: "main-blog",
+        appId: "5M8VQRD7W9",
+        inputSelector: '.docsearch-input',
+        debug: false,
+    });
+</script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.3/dist/cdn/docsearch.min.js"></script>
+<script>
+    docsearch({
+        apiKey: "6a2c773473e3d77a8e761f3f64825c5a",
+        indexName: "main-blog",
+        appId: "5M8VQRD7W9",
+        inputSelector: '.docsearch',
+        debug: false,
+    });
+</script>
+
+<script src="/js/code_expander.js"></script>
 
 
+</body>
 
-
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script src="/js/code_expander.js"></script>
-
-
-  </body>
 </html>
