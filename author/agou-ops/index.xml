@@ -9,32 +9,7 @@
     <managingEditor>lamy9813@gmail.com (Lamy)</managingEditor>
     <webMaster>lamy9813@gmail.com (Lamy)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Fri, 05 Aug 2022 17:02:21 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/author/agou-ops/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>MacOS偏门解决vim/Neovim光标跳转（j/k键）卡顿的问题。【使用karabiner】</title>
-      <link>http://lamy9813.github.io/post/macos-%E7%BB%88%E7%AB%AF%E4%B8%8B%E5%85%89%E6%A0%87%E7%A7%BB%E5%8A%A8%E9%97%AE%E9%A2%98/</link>
-      <pubDate>Fri, 05 Aug 2022 17:02:21 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
-      <guid>http://lamy9813.github.io/post/macos-%E7%BB%88%E7%AB%AF%E4%B8%8B%E5%85%89%E6%A0%87%E7%A7%BB%E5%8A%A8%E9%97%AE%E9%A2%98/</guid>
-      <description>&lt;p&gt;问题详情参考：&lt;a href=&#34;https://blog.deskangel.com/2021/04/03/vim-j-k-speed-issue/&#34;&gt;https://blog.deskangel.com/2021/04/03/vim-j-k-speed-issue/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;在iterm2中强制让英文输入法切换为内置的&lt;code&gt;ABC输入法&lt;/code&gt;而不使用搜狗或者其他输入法的英文状态.&lt;/p&gt;
-&lt;p&gt;在使用iterm2的时候，将&lt;code&gt;左shift&lt;/code&gt;键重新映射为&lt;code&gt;command+space&lt;/code&gt;键（在系统快捷键中设置切换输入法的快捷键，这里你可以自定义）。
-使用以下命令将上面这个键盘映射json文件导入到karabiner里面（浏览器打开就可以，会自动拉起karabiner，路径自定义。）&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;karabiner://karabiner/assets/complex_modifications/import?url&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;file:///Users/agou-ops/Desktop/iterm2.json
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 或者直接使用我上传好的在线gist文件.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;karabiner://karabiner/assets/complex_modifications/import?url&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;https://gist.githubusercontent.com/AGou-ops/cb8659d99ff47f32eeb14a81ad47a2a9/raw/85b9ecce462330c57de0930d9495d257ed903ac1/iterm2_key.json
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-    </item>
-    
+    <lastBuildDate>Sun, 24 Apr 2022 10:57:38 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/author/agou-ops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NGINX LOGS &amp; GEO MAP(Grafana)详细部署</title>
       <link>http://lamy9813.github.io/post/nginx-logs-geo-mapgrafana%E8%AF%A6%E7%BB%86%E9%83%A8%E7%BD%B2/</link>
