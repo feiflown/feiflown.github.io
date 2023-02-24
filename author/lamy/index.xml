@@ -20,6 +20,15 @@
     </item>
     
     <item>
+      <title>关于</title>
+      <link>http://lamy9813.github.io/friendlylink/</link>
+      <pubDate>Sun, 19 Feb 2023 14:01:47 +0800</pubDate>
+      <author>lamy9813@gmail.com (Lamy)</author>
+      <guid>http://lamy9813.github.io/friendlylink/</guid>
+      <description>友链 本站地址：https://lamy9813.github.io/ 本站地址：https://lamy9813.github.io/ 本站地址</description>
+    </item>
+    
+    <item>
       <title>MacOS偏门解决vim/Neovim光标跳转（j/k键）卡顿的问题。【使用karabiner】</title>
       <link>http://lamy9813.github.io/post/macos-%E7%BB%88%E7%AB%AF%E4%B8%8B%E5%85%89%E6%A0%87%E7%A7%BB%E5%8A%A8%E9%97%AE%E9%A2%98/</link>
       <pubDate>Fri, 05 Aug 2022 17:02:21 +0800</pubDate>
