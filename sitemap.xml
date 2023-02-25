@@ -9,6 +9,20 @@
   </url>
   
   <url>
+    <loc>http://lamy9813.github.io/tags/anime/</loc>
+    <lastmod>2023-02-22T15:56:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/categories/anime/</loc>
+    <lastmod>2023-02-22T15:56:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://lamy9813.github.io/author/</loc>
     <lastmod>2023-02-25T14:36:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -67,6 +81,13 @@
   <url>
     <loc>http://lamy9813.github.io/tags/</loc>
     <lastmod>2023-02-25T14:36:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/anime/</loc>
+    <lastmod>2023-02-22T15:56:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -165,27 +186,6 @@
   <url>
     <loc>http://lamy9813.github.io/tags/%E8%84%9A%E6%9C%AC/</loc>
     <lastmod>2022-08-05T17:02:21+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://lamy9813.github.io/tags/anime/</loc>
-    <lastmod>2023-02-22T15:56:19+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://lamy9813.github.io/categories/anime/</loc>
-    <lastmod>2023-02-22T15:56:19+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://lamy9813.github.io/anime/</loc>
-    <lastmod>2023-02-22T15:56:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

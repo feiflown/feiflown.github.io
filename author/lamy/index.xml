@@ -30,6 +30,15 @@
     </item>
     
     <item>
+      <title>我的动漫之旅(My Anime Trip.)</title>
+      <link>http://lamy9813.github.io/anime/</link>
+      <pubDate>Sat, 25 Feb 2023 14:36:48 +0800</pubDate>
+      <author>lamy9813@gmail.com (Lamy)</author>
+      <guid>http://lamy9813.github.io/anime/</guid>
+      <description>按照观看结束时间排序，序号仅用于计数。(2020-03-28 至 ????-??-??) 变更日志： 2020年10月01日：初始化表格、增加序号至39； 2020年11</description>
+    </item>
+    
+    <item>
       <title>友链</title>
       <link>http://lamy9813.github.io/friendlylink/</link>
       <pubDate>Sun, 19 Feb 2023 14:01:47 +0800</pubDate>
@@ -70,15 +79,6 @@
       <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/post/%E7%BC%96%E5%86%99shell%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/</guid>
       <description>废话少说， 直接上脚本： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 #!/bin/bash ### ### Some shell version or description here. ### ### Usage: ### test &amp;lt;input&amp;gt; &amp;lt;output&amp;gt; ### ### Options: ### &amp;lt;input&amp;gt; Input file to read. ### &amp;lt;output&amp;gt; Output file to write. Use &amp;#39;-&amp;#39; for stdout. ### -h</description>
-    </item>
-    
-    <item>
-      <title>我的动漫之旅(My Anime Trip.)</title>
-      <link>http://lamy9813.github.io/anime/</link>
-      <pubDate>Wed, 30 Sep 2020 19:14:44 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
-      <guid>http://lamy9813.github.io/anime/</guid>
-      <description>按照观看结束时间排序，序号仅用于计数。(2020-03-28 至 ????-??-??) 变更日志： 2020年10月01日：初始化表格、增加序号至39； 2020年11</description>
     </item>
     
   </channel>
