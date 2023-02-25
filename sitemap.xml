@@ -10,14 +10,63 @@
   
   <url>
     <loc>http://lamy9813.github.io/author/</loc>
-    <lastmod>2023-02-25T11:24:33+08:00</lastmod>
+    <lastmod>2023-02-25T14:36:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://lamy9813.github.io/categories/</loc>
-    <lastmod>2023-02-25T11:24:33+08:00</lastmod>
+    <lastmod>2023-02-25T14:36:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/tags/java/</loc>
+    <lastmod>2023-02-25T14:36:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/categories/java/</loc>
+    <lastmod>2023-02-25T14:36:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/author/lamy/</loc>
+    <lastmod>2023-02-25T14:36:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/</loc>
+    <lastmod>2023-02-25T14:36:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/post/povodaobodtopojo/</loc>
+    <lastmod>2023-02-25T14:36:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/post/</loc>
+    <lastmod>2023-02-25T14:36:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/tags/</loc>
+    <lastmod>2023-02-25T14:36:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -31,27 +80,6 @@
   
   <url>
     <loc>http://lamy9813.github.io/categories/friendlylink/</loc>
-    <lastmod>2023-02-25T11:24:33+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://lamy9813.github.io/author/lamy/</loc>
-    <lastmod>2023-02-25T11:24:33+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://lamy9813.github.io/</loc>
-    <lastmod>2023-02-25T11:24:33+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://lamy9813.github.io/tags/</loc>
     <lastmod>2023-02-25T11:24:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -94,13 +122,6 @@
   
   <url>
     <loc>http://lamy9813.github.io/categories/neovim/</loc>
-    <lastmod>2022-08-05T17:02:21+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://lamy9813.github.io/post/</loc>
     <lastmod>2022-08-05T17:02:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

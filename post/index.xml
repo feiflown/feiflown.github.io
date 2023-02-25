@@ -9,7 +9,17 @@
     <managingEditor>lamy9813@gmail.com (Lamy)</managingEditor>
     <webMaster>lamy9813@gmail.com (Lamy)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Fri, 05 Aug 2022 17:02:21 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Feb 2023 14:36:48 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PO、VO、DAO、BO、DTO、POJO</title>
+      <link>http://lamy9813.github.io/post/povodaobodtopojo/</link>
+      <pubDate>Sat, 25 Feb 2023 14:36:48 +0800</pubDate>
+      <author>lamy9813@gmail.com (Lamy)</author>
+      <guid>http://lamy9813.github.io/post/povodaobodtopojo/</guid>
+      <description>&lt;p&gt;PO、VO、DAO、BO、DTO、POJO&lt;/p&gt;
+&lt;p&gt;能分清吗？&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>MacOS偏门解决vim/Neovim光标跳转（j/k键）卡顿的问题。【使用karabiner】</title>
       <link>http://lamy9813.github.io/post/macos-%E7%BB%88%E7%AB%AF%E4%B8%8B%E5%85%89%E6%A0%87%E7%A7%BB%E5%8A%A8%E9%97%AE%E9%A2%98/</link>

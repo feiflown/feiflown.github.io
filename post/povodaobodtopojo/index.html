@@ -5,11 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <title>Lamy · Lamy&#39;s blog</title>
+    <title>PO、VO、DAO、BO、DTO、POJO - Lamy&#39;s blog</title>
     
 
 
-<link rel="alternate" type="application/rss+xml" href="http://lamy9813.github.io/author/lamy/index.xml" title="Lamy's blog" />
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -27,8 +26,10 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Lamy" />
-  <meta name="description" content="Welcome to Lamy&#39;s blog!
- 欢迎来到Lamy的博客！" />
+  <meta name="description" content="PO、VO、DAO、BO、DTO、POJO
+能分清吗？
+" />
+
   <meta name="keywords" content="Lamy, Lamy博客, Lamy的博客, Lamy blog" />
 
 
@@ -39,8 +40,8 @@
 <meta name="generator" content="Hugo 0.110.0" />
 
 
-<link rel="canonical" href="http://lamy9813.github.io/author/lamy/" />
-<link href="/author/lamy/index.xml" rel="alternate" type="application/rss+xml" title="Lamy&#39;s blog" />
+<link rel="canonical" href="http://lamy9813.github.io/post/povodaobodtopojo/" />
+
 
 
 
@@ -70,17 +71,22 @@
 <link rel="stylesheet" href="http://lamy9813.github.io/code_expander.js">
 
 
-<meta property="og:title" content="Lamy" />
-<meta property="og:description" content="Welcome to Lamy&#39;s blog!
- 欢迎来到Lamy的博客！" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://lamy9813.github.io/author/lamy/" />
-<meta itemprop="name" content="Lamy">
-<meta itemprop="description" content="Welcome to Lamy&#39;s blog!
- 欢迎来到Lamy的博客！"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Lamy"/>
-<meta name="twitter:description" content="Welcome to Lamy&#39;s blog!
- 欢迎来到Lamy的博客！"/>
+<meta property="og:title" content="PO、VO、DAO、BO、DTO、POJO" />
+<meta property="og:description" content="PO、VO、DAO、BO、DTO、POJO
+能分清吗？" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://lamy9813.github.io/post/povodaobodtopojo/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-02-25T14:36:48+08:00" />
+<meta property="article:modified_time" content="2023-02-25T14:36:48+08:00" />
+<meta itemprop="name" content="PO、VO、DAO、BO、DTO、POJO">
+<meta itemprop="description" content="PO、VO、DAO、BO、DTO、POJO
+能分清吗？"><meta itemprop="datePublished" content="2023-02-25T14:36:48+08:00" />
+<meta itemprop="dateModified" content="2023-02-25T14:36:48+08:00" />
+<meta itemprop="wordCount" content="1384">
+<meta itemprop="keywords" content="java," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="PO、VO、DAO、BO、DTO、POJO"/>
+<meta name="twitter:description" content="PO、VO、DAO、BO、DTO、POJO
+能分清吗？"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -340,76 +346,228 @@
         <main id="main" class="main bg-llight">
             <div class="content-wrapper">
                 <div id="content" class="content container">
-                    
-
-<section id="archive" class="archive">
-  
-    <div class="archive-title author">
-        <h2 class="archive-name">Author: Lamy</h2>
-      </div>
+                    <article class="post bg-white">
     
+    <header class="post-header">
+      <h1 class="post-title">PO、VO、DAO、BO、DTO、POJO</h1>
+      
+      <div class="post-meta">
+        <time datetime="2023-02-25" class="post-time">
+          2023-02-25
+        </time>
+        <div class="post-category">
+            <a href="http://lamy9813.github.io/categories/java/"> java </a>
+            
+          </div>
+        <span class="more-meta"> 1384 words </span>
+          <span class="more-meta"> 3 min read </span>
+
+        
+        
+          <span id="busuanzi_container_page_pv">
+            | 阅读 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Table of Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#一po">一、PO</a></li>
+    <li><a href="#二vo">二、VO</a></li>
+    <li><a href="#三dao">三、DAO</a></li>
+    <li><a href="#四bo">四、BO</a></li>
+    <li><a href="#五dto">五、DTO</a></li>
+    <li><a href="#六pojo">六、POJO</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>PO、VO、DAO、BO、DTO、POJO</p>
+<p>能分清吗？</p>
+<p><strong>《阿里巴巴Java开发规范》关于领域模型的部分介绍如下</strong></p>
+<p><strong>分层领域模型规约:</strong></p>
+<ul>
+<li>DO(Data Object):此对象与数据库表结构一一对应，通过 DAO 层向上传输数据源对象。</li>
+<li>DTO(Data Transfer Object):数据传输对象，Service 或 Manager 向外传输的对象。</li>
+<li>BO(Business Object):业务对象，由 Service 层输出的封装业务逻辑的对象。</li>
+<li>AO(ApplicationObject):应用对象，在Web层与Service层之间抽象的复用对象模型， 极为贴近展示层，复用度不高。</li>
+<li>VO(View Object):显示层对象，通常是 Web 向模板渲染引擎层传输的对象。</li>
+<li>Query:数据查询对象，各层接收上层的查询请求。注意超过 2 个参数的查询封装，禁止使用 Map 类来传输。</li>
+</ul>
+<p><strong>领域模型命名规约：</strong></p>
+<ul>
+<li>数据对象：xxxDO，xxx即为数据表名</li>
+<li>数据传输对象：xxxDTO，xxx为业务领域相关的名称。</li>
+<li>展示对象：xxxVO，xxx一般为网页名称。</li>
+<li>POJO是DO/DTO/BO/VO的统称，禁止命名成xxxPOJO。</li>
+</ul>
+<h2 id="一po">一、PO</h2>
+<blockquote>
+<p><strong>PO :(persistant object )，持久对象</strong></p>
+</blockquote>
+<p>可以看成是与数据库中的表相映射的java对象。使用Hibernate来生成PO是不错的选择。</p>
+<h2 id="二vo">二、VO</h2>
+<blockquote>
+<p><strong>VO :(value object) ，值对象</strong></p>
+</blockquote>
+<p>通常用于业务层之间的数据传递，和PO一样也是仅仅包含数据而已。但应是抽象出的业务对象,可以和表对应,也可以不,这根据业务的需要。</p>
+<p>PO只能用在数据层，VO用在商业逻辑层和表示层。各层操作属于该层自己的数据对象，这样就可以降低各层之间的耦合，便于以后系统的维护和扩展。</p>
+<h2 id="三dao">三、DAO</h2>
+<blockquote>
+<p><strong>DAO :(Data Access Objects) ，数据访问对象接口</strong></p>
+</blockquote>
+<p>DAO是Data Access Object数据访问接口，数据访问：顾名思义就是与数据库打交道。夹在业务逻辑与数据库资源中间。</p>
+<p>J2EE开发人员使用数据访问对象（DAO）设计模式把底层的数据访问逻辑和高层的商务逻辑分开.实现DAO模式能够更加专注于编写数据访问代码。</p>
+<p>DAO模式是标准的J2EE设计模式之一.开发人员使用这个模式把底层的数据访问操作和上层的商务逻辑分开.一个典型的DAO实现有下列几个组件：</p>
+<ol>
+<li>一个DAO工厂类；</li>
+<li>一个DAO接口；</li>
+<li>一个实现DAO接口的具体类；</li>
+<li>数据传递对象（有些时候叫做值对象）。</li>
+</ol>
+<p>具体的DAO类包含了从特定的数据源访问数据的逻辑。</p>
+<h2 id="四bo">四、BO</h2>
+<blockquote>
+<p><strong>BO :(Business Object)，业务对象层</strong></p>
+</blockquote>
+<p>表示应用程序领域内“事物”的所有实体类。这些实体类驻留在服务器上，并利用服务类来协助完成它们的职责。</p>
+<h2 id="五dto">五、DTO</h2>
+<blockquote>
+<p><strong>DTO:(Data Transfer Object)，数据传输对象</strong></p>
+</blockquote>
+<p>主要用于远程调用等需要大量传输对象的地方。比如我们一张表有100个字段，那么对应的PO就有100个属性。但是我们界面上只要显示10个字段，客户端用WEB service来获取数据，没有必要把整个PO对象传递到客户端，这时我们就可以用只有这10个属性的DTO来传递结果到客户端，这样也不会暴露服务端表结构.到达客户端以后，如果用这个对象来对应界面显示，那此时它的身份就转为VO</p>
+<h2 id="六pojo">六、POJO</h2>
+<blockquote>
+<p><strong>POJO :(Plain Old Java Objects)，简单的Java对象</strong></p>
+</blockquote>
+<p>实际就是普通JavaBeans,使用POJO名称是为了避免和EJB混淆起来, 而且简称比较直接.其中有一些属性及其getter、setter方法的类,有时可以作为value object或dto(Data Transform Object)来使用。</p>
+<p>当然,如果你有一个简单的运算属性也是可以的,但不允许有业务方法,也不能携带有connection之类的方法。</p>
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content"><a href="http://lamy9813.github.io/author/lamy/">Lamy</a></span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+      2023-02-25
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a href="http://www.wtfpl.net/about/" rel="noopener" target="_blank">WTFPL v2</a></span>
+  </p>
+</div>
+
+
+    
+    
+<div class="post-reward">
+    <input type="checkbox" name="reward" id="reward" hidden />
+    <label class="reward-button" for="reward">Reward</label>
+    <div class="qr-code">
+         
+        <label class="qr-code-image" for="reward">
+        <img class="image" src="https://s1.ax1x.com/2023/02/21/pSXa7Zt.jpg">
+        <span>Wechat</span>
+      </label> 
+        <label class="qr-code-image" for="reward">
+        <img class="image" src="https://s1.ax1x.com/2023/02/21/pSXaHdP.jpg">
+        <span>Alipay</span>
+      </label>
+    </div>
+</div>
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="http://lamy9813.github.io/tags/java/">java</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/macos-%E7%BB%88%E7%AB%AF%E4%B8%8B%E5%85%89%E6%A0%87%E7%A7%BB%E5%8A%A8%E9%97%AE%E9%A2%98/">
+            <span class="next-text nav-default">MacOS偏门解决vim/Neovim光标跳转（j/k键）卡顿的问题。【使用karabiner】</span>
+            <span class="prev-text nav-mobile">Next</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+  
   
 
   
-    <div class="archive-post">
-      <time datetime="2023-02-25" class="archive-post-time">
-        2023-02-25
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/povodaobodtopojo/" class="archive-post-link">
-          PO、VO、DAO、BO、DTO、POJO
-        </a>
-      </span>
+  
+
+  
+
+  
+  
+
+  
+  
+    <div class="post bg-white">
+      <script src="https://giscus.app/client.js"
+      data-repo="lamy9813/lamy9813.github.io"
+      data-repo-id="R_kgDOI_tN7g"
+      data-category="General"
+      data-category-id="DIC_kwDOI_tN7s4CUczP"
+      data-mapping="pathname"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="light"
+      data-lang="zh-CN"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async>
+</script>
     </div>
   
-    <div class="archive-post">
-      <time datetime="2022-08-05" class="archive-post-time">
-        2022-08-05
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/%E7%BC%96%E5%86%99shell%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/" class="archive-post-link">
-          编写shell帮助信息通用小技巧
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2022-08-05" class="archive-post-time">
-        2022-08-05
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/macos-%E7%BB%88%E7%AB%AF%E4%B8%8B%E5%85%89%E6%A0%87%E7%A7%BB%E5%8A%A8%E9%97%AE%E9%A2%98/" class="archive-post-link">
-          MacOS偏门解决vim/Neovim光标跳转（j/k键）卡顿的问题。【使用karabiner】
-        </a>
-      </span>
-    </div>
-  
-</section>
-
-
-
 
 
 
   
-  
+
   
 
   
-  
+
+    
 
   
-  
-
-  
-  
-
-  
-  
-
-
-
-
 
                 </div>
             </div>

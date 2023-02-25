@@ -9,7 +9,7 @@
     <managingEditor>lamy9813@gmail.com (Lamy)</managingEditor>
     <webMaster>lamy9813@gmail.com (Lamy)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Sun, 19 Feb 2023 14:01:47 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 25 Feb 2023 14:36:48 +0800</lastBuildDate>
     
         <atom:link href="http://lamy9813.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -245,6 +245,15 @@
     </item>
     
     <item>
+      <title>Posts</title>
+      <link>http://lamy9813.github.io/post/</link>
+      <pubDate>Sat, 25 Feb 2023 14:36:48 +0800</pubDate>
+      <author>lamy9813@gmail.com (Lamy)</author>
+      <guid>http://lamy9813.github.io/post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>友链</title>
       <link>http://lamy9813.github.io/friendlylink/</link>
       <pubDate>Sun, 19 Feb 2023 14:01:47 +0800</pubDate>
@@ -256,15 +265,6 @@
 &lt;li&gt;本站地址：&lt;a href=&#34;https://lamy9813.github.io/&#34;&gt;https://lamy9813.github.io/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Posts</title>
-      <link>http://lamy9813.github.io/post/</link>
-      <pubDate>Fri, 05 Aug 2022 17:02:21 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
-      <guid>http://lamy9813.github.io/post/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -306,7 +306,7 @@
     
     #menu&gt;li:nth-child(6)&gt;a {
         color: #FF69B4;
-        font-weight: bold;
+        font-weight: 700;
     }
     
     .wrapper {
