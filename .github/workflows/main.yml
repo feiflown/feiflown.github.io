@@ -1,12 +1,13 @@
 name: Algolia Upload Records
 on:
-[push] # 推送时执行
+  push:
+    branches: [main]
 jobs:
 algolia:
     runs-on: ubuntu-latest
+    
     steps:
     - name: Checkout
-        # 获取代码 Checkout
         uses: actions/checkout@v2
     - name: Upload Records
         # 使用 Action
