@@ -1,9 +1,18 @@
-- name: Upload Algolia Indexes
-    env:
-      ALGOLIA_APPID: ${{ secrets.ALGOLIA_APPID }}
-      ALGOLIA_ADMINKEY: ${{ secrets.ALGOLIA_ADMINKEY }}
-      ALGOLIA_INDEXNAME: ${{ secrets.ALGOLIA_INDEXNAME }}
-      ALGOLIA_INDEXFILE: "./algolia.json"
-    run: |
-      npm install --location=global @algolia/cli
-      algolia import -s $ALGOLIA_INDEXFILE -a $ALGOLIA_APPID -k $ALGOLIA_ADMINKEY -n $ALGOLIA_INDEXNAME
+name: Algolia Upload Records
+
+on:
+  [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Upload Records
+        uses: iChochy/Algolia-Upload-Records@main
+        env:
+          APPLICATION_ID: ${{secrets.APPLICATION_ID}}
+          ADMIN_API_KEY: ${{secrets.ADMIN_API_KEY}}
+          INDEX_NAME: ${{secrets.INDEX_NAME}}
+          FILE_PATH: ${{secrets.FILE_PATH}}
