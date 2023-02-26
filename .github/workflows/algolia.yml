@@ -1,19 +1,9 @@
-name: Algolia Upload Records
-on:
-[push] # 推送时执行
-jobs:
-algolia:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-        # 获取代码 Checkout
-        uses: actions/checkout@v2
-    - name: Upload Records
-        # 使用 Action
-        uses: iChochy/Algolia-Upload-Records@main
-        # 设置环境变量
-        env:
-        APPLICATION_ID: ${{secrets.ALGOLIA_APPID}} # appID
-        ADMIN_API_KEY: ${{secrets.ALGOLIA_KEY}} # key
-        INDEX_NAME: ${{secrets.ALGOLIA_INDEX}} # index
-        FILE_PATH: algolia.json
+- name: Upload Algolia Indexes
+    env:
+      ALGOLIA_APPID: ${{ secrets.ALGOLIA_APPID }}
+      ALGOLIA_ADMINKEY: ${{ secrets.ALGOLIA_ADMINKEY }}
+      ALGOLIA_INDEXNAME: ${{ secrets.ALGOLIA_INDEXNAME }}
+      ALGOLIA_INDEXFILE: "./public/algolia.json"
+    run: |
+      npm install --location=global @algolia/cli
+      algolia import -s $ALGOLIA_INDEXFILE -a $ALGOLIA_APPID -k $ALGOLIA_ADMINKEY -n $ALGOLIA_INDEXNAME
