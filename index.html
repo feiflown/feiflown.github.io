@@ -475,6 +475,45 @@
 </article>
 
   
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/k8s%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0/">K8s网络学习</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2021-11-02" class="post-time">
+        2021-11-02
+      </time>
+      <div class="post-category">
+          <a href="http://lamy9813.github.io/categories/kubernetes/"> kubernetes </a>
+          
+        </div>
+      <span class="more-meta"> 1273 words </span>
+      <span class="more-meta"> 3 min read </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p>从简单<code>p2p</code>网络到k8s复杂型网络。</p>
+<h2 id="简单p2p网络模型">简单p2p网络模型</h2>
+<p><img src="https://agou-images.oss-cn-qingdao.aliyuncs.com/others/image-20211102145031780.png" alt="image-20211102145031780"></p>
+<p>ℹ️简单说明：创建两个网络命名空间<code>client</code>和<code>server</code>，然后创建一对虚拟网卡将两端的命名空间相连起来，就好像直接相连的网线一样，中间没有阻拦，创建完的虚拟网卡对存在于默认的命名空间中，接着我们将其分别放入<code>client</code>和<code>server</code>命名空间中，最后为两个虚拟网卡对<code>veth-client</code>和<code>veth-server</code>分配IP地址并启用网卡。</p>
+    </div>
+    <div class="read-more">
+      <a href="/post/k8s%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+  
 </section>
 
 

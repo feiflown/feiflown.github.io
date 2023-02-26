@@ -191,6 +191,41 @@
   </url>
   
   <url>
+    <loc>http://lamy9813.github.io/author/agou-ops/</loc>
+    <lastmod>2021-11-02T14:30:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/post/k8s%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2021-11-02T14:30:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/tags/kubernetes/</loc>
+    <lastmod>2021-11-02T14:30:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/categories/kubernetes/</loc>
+    <lastmod>2021-11-02T14:30:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/tags/network/</loc>
+    <lastmod>2021-11-02T14:30:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://lamy9813.github.io/en/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
