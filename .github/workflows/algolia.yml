@@ -3,7 +3,7 @@
       ALGOLIA_APPID: ${{ secrets.ALGOLIA_APPID }}
       ALGOLIA_ADMINKEY: ${{ secrets.ALGOLIA_ADMINKEY }}
       ALGOLIA_INDEXNAME: ${{ secrets.ALGOLIA_INDEXNAME }}
-      ALGOLIA_INDEXFILE: "./public/algolia.json"
+      ALGOLIA_INDEXFILE: "./algolia.json"
     run: |
       npm install --location=global @algolia/cli
       algolia import -s $ALGOLIA_INDEXFILE -a $ALGOLIA_APPID -k $ALGOLIA_ADMINKEY -n $ALGOLIA_INDEXNAME
