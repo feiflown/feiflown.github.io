@@ -73,50 +73,5 @@
       <description></description>
     </item>
     
-    <item>
-      <title>kubernetes</title>
-      <link>http://lamy9813.github.io/categories/kubernetes/</link>
-      <pubDate>Tue, 02 Nov 2021 14:30:23 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
-      <guid>http://lamy9813.github.io/categories/kubernetes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>流控</title>
-      <link>http://lamy9813.github.io/categories/%E6%B5%81%E6%8E%A7/</link>
-      <pubDate>Wed, 16 Dec 2020 15:30:58 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
-      <guid>http://lamy9813.github.io/categories/%E6%B5%81%E6%8E%A7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DevOps</title>
-      <link>http://lamy9813.github.io/categories/devops/</link>
-      <pubDate>Tue, 27 Oct 2020 18:31:58 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
-      <guid>http://lamy9813.github.io/categories/devops/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>转载</title>
-      <link>http://lamy9813.github.io/categories/%E8%BD%AC%E8%BD%BD/</link>
-      <pubDate>Tue, 27 Oct 2020 18:31:58 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
-      <guid>http://lamy9813.github.io/categories/%E8%BD%AC%E8%BD%BD/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tools</title>
-      <link>http://lamy9813.github.io/categories/tools/</link>
-      <pubDate>Sat, 11 Jul 2020 22:12:17 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
-      <guid>http://lamy9813.github.io/categories/tools/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>
