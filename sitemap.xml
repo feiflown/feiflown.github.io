@@ -226,6 +226,34 @@
   </url>
   
   <url>
+    <loc>http://lamy9813.github.io/tags/tc/</loc>
+    <lastmod>2020-12-16T15:30:58+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/post/tc-%E9%AB%98%E7%BA%A7%E6%B5%81%E6%8E%A7/</loc>
+    <lastmod>2020-12-16T15:30:58+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/tags/%E6%B5%81%E6%8E%A7/</loc>
+    <lastmod>2020-12-16T15:30:58+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/categories/%E6%B5%81%E6%8E%A7/</loc>
+    <lastmod>2020-12-16T15:30:58+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://lamy9813.github.io/tags/devops/</loc>
     <lastmod>2020-10-27T18:31:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
