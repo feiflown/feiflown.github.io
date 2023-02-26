@@ -12,10 +12,10 @@
     <lastBuildDate>Sat, 11 Jul 2020 22:12:17 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/tags/%E7%BD%91%E5%8D%A1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux 实时查看网卡流量</title>
-      <link>http://lamy9813.github.io/post/linux-%E5%AE%9E%E6%97%B6%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1%E6%B5%81%E9%87%8F/</link>
+      <link>http://lamy9813.github.io/linux-%E5%AE%9E%E6%97%B6%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1%E6%B5%81%E9%87%8F/</link>
       <pubDate>Sat, 11 Jul 2020 22:12:17 +0800</pubDate>
       <author>lamy9813@gmail.com (Lamy)</author>
-      <guid>http://lamy9813.github.io/post/linux-%E5%AE%9E%E6%97%B6%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1%E6%B5%81%E9%87%8F/</guid>
+      <guid>http://lamy9813.github.io/linux-%E5%AE%9E%E6%97%B6%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1%E6%B5%81%E9%87%8F/</guid>
       <description>&lt;h2 id=&#34;nload工具&#34;&gt;nload工具&lt;/h2&gt;
 &lt;p&gt;nload用于实时查看网卡流量，默认系统都没有安装，首先安装方式如下：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
