@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <title>编写shell帮助信息通用小技巧 - Lamy&#39;s blog</title>
+    <title>Git Hook介绍与使用 - Lamy&#39;s blog</title>
     
 
 
@@ -25,7 +25,10 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="Lamy" /><meta name="description" content="为你的shell脚本编写帮助信息文档" />
+<meta name="author" content="AGou-ops" />
+  <meta name="description" content="Git 钩子和其它版本控制系统一样，Git 能在特定的重要动作发生时触发自定义脚本。
+有两组这样的钩子：客户端的和服务器端的。 客户端钩子由诸如提交和合并这样的操作所调用，而服务器端钩子作用于诸如接收被推送的提交这样的联网操作。 你可以随心所欲地运用这些钩子。
+" />
 
   <meta name="keywords" content="Lamy, Lamy博客, Lamy的博客, Lamy blog" />
 
@@ -37,7 +40,7 @@
 <meta name="generator" content="Hugo 0.110.0" />
 
 
-<link rel="canonical" href="http://lamy9813.github.io/post/%E7%BC%96%E5%86%99shell%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/" />
+<link rel="canonical" href="http://lamy9813.github.io/post/git-hook%E4%BB%8B%E7%BB%8D%E4%B8%8E%E4%BD%BF%E7%94%A8/" />
 
 
 
@@ -68,19 +71,22 @@
 <link rel="stylesheet" href="http://lamy9813.github.io/code_expander.js">
 
 
-<meta property="og:title" content="编写shell帮助信息通用小技巧" />
-<meta property="og:description" content="为你的shell脚本编写帮助信息文档" />
+<meta property="og:title" content="Git Hook介绍与使用" />
+<meta property="og:description" content="Git 钩子和其它版本控制系统一样，Git 能在特定的重要动作发生时触发自定义脚本。
+有两组这样的钩子：客户端的和服务器端的。 客户端钩子由诸如提交和合并这样的操作所调用，而服务器端钩子作用于诸如接收被推送的提交这样的联网操作。 你可以随心所欲地运用这些钩子。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://lamy9813.github.io/post/%E7%BC%96%E5%86%99shell%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2022-08-05T17:02:21+08:00" />
-<meta property="article:modified_time" content="2022-08-05T17:02:21+08:00" />
-<meta itemprop="name" content="编写shell帮助信息通用小技巧">
-<meta itemprop="description" content="为你的shell脚本编写帮助信息文档"><meta itemprop="datePublished" content="2022-08-05T17:02:21+08:00" />
-<meta itemprop="dateModified" content="2022-08-05T17:02:21+08:00" />
-<meta itemprop="wordCount" content="208">
-<meta itemprop="keywords" content="Linux,shell,脚本,帮助文档,技巧," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="编写shell帮助信息通用小技巧"/>
-<meta name="twitter:description" content="为你的shell脚本编写帮助信息文档"/>
+<meta property="og:url" content="http://lamy9813.github.io/post/git-hook%E4%BB%8B%E7%BB%8D%E4%B8%8E%E4%BD%BF%E7%94%A8/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-08-04T10:23:38+08:00" />
+<meta property="article:modified_time" content="2020-08-04T10:23:38+08:00" />
+<meta itemprop="name" content="Git Hook介绍与使用">
+<meta itemprop="description" content="Git 钩子和其它版本控制系统一样，Git 能在特定的重要动作发生时触发自定义脚本。
+有两组这样的钩子：客户端的和服务器端的。 客户端钩子由诸如提交和合并这样的操作所调用，而服务器端钩子作用于诸如接收被推送的提交这样的联网操作。 你可以随心所欲地运用这些钩子。"><meta itemprop="datePublished" content="2020-08-04T10:23:38+08:00" />
+<meta itemprop="dateModified" content="2020-08-04T10:23:38+08:00" />
+<meta itemprop="wordCount" content="1515">
+<meta itemprop="keywords" content="Git,hook," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Git Hook介绍与使用"/>
+<meta name="twitter:description" content="Git 钩子和其它版本控制系统一样，Git 能在特定的重要动作发生时触发自定义脚本。
+有两组这样的钩子：客户端的和服务器端的。 客户端钩子由诸如提交和合并这样的操作所调用，而服务器端钩子作用于诸如接收被推送的提交这样的联网操作。 你可以随心所欲地运用这些钩子。"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -343,19 +349,18 @@
                     <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">编写shell帮助信息通用小技巧</h1>
+      <h1 class="post-title">Git Hook介绍与使用</h1>
       
       <div class="post-meta">
-        <time datetime="2022-08-05" class="post-time">
-          2022-08-05
+        <time datetime="2020-08-04" class="post-time">
+          2020-08-04
         </time>
         <div class="post-category">
-            <a href="http://lamy9813.github.io/categories/linux/"> Linux </a>
-            <a href="http://lamy9813.github.io/categories/shell/"> shell </a>
+            <a href="http://lamy9813.github.io/categories/git/"> Git </a>
             
           </div>
-        <span class="more-meta"> 208 words </span>
-          <span class="more-meta"> 1 min read </span>
+        <span class="more-meta"> 1515 words </span>
+          <span class="more-meta"> 4 min read </span>
 
         
         
@@ -374,13 +379,214 @@
 <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Table of Contents</h2>
   <div class="post-toc-content">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#安装钩子">安装钩子</a></li>
+    <li><a href="#客户端钩子简单示例">客户端钩子简单示例</a></li>
+    <li><a href="#服务端钩子简单示例">服务端钩子简单示例</a></li>
+    <li><a href="#参考链接">参考链接</a></li>
+  </ul>
+</nav>
   </div>
 </div>
 
     
     <div class="post-content">
-      <p>废话少说， 直接上脚本：</p>
+      <p>Git 钩子和其它版本控制系统一样，Git 能在特定的重要动作发生时触发自定义脚本。</p>
+<p>有两组这样的钩子：客户端的和服务器端的。 客户端钩子由诸如提交和合并这样的操作所调用，而服务器端钩子作用于诸如接收被推送的提交这样的联网操作。 你可以随心所欲地运用这些钩子。</p>
+<h2 id="安装钩子">安装钩子</h2>
+<p>钩子都被存储在 Git 目录下的 hooks 子目录中。 也即绝大部分项目中的 <code>.git/hooks</code> 。 当你用 <code>git init</code> 初始化一个新版本库时，Git 默认会在这个目录中放置一些示例脚本。 这些脚本除了本身可以被调用外，它们还透露了被触发时所传入的参数。 所有的示例都是 shell 脚本，其中一些还混杂了 Perl 代码，不过，任何正确命名的可执行脚本都可以正常使用 —— 你可以用 Ruby 或 Python，或任何你熟悉的语言编写它们。 这些示例的名字都是以 <code>.sample</code> 结尾，如果你想启用它们，得先移除这个后缀。
+把一个正确命名（不带扩展名）且可执行的文件放入 <code>.git</code> 目录下的 hooks 子目录中，即可激活该钩子脚本。 这样一来，它就能被 Git 调用。</p>
+<p>创建一个空的仓库：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git --bare init 	<span class="c1"># 推荐使用</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># git init</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>其中<code>--bare</code>参数表示创建一个裸仓库，裸仓库何意？与普通空仓库有有什么区别？参考：https://www.cnblogs.com/irockcode/p/8761954.html
+<strong>但是需要注意的一点的是</strong>git仓库和git裸仓库的钩子所在位置不同:</p>
+<ul>
+<li>git普通仓库钩子在.git/hooks/中</li>
+<li>git裸仓库钩子在hooks/中</li>
+</ul>
+<p>裸仓库初始化完成后，在<code>hooks</code>文件夹中会发现一些以<code>.sample</code>结尾的实例文件：
+<img src="https://s1.ax1x.com/2020/03/17/8aldFU.png" alt="githook1"></p>
+<h2 id="客户端钩子简单示例">客户端钩子简单示例</h2>
+<p>使用<code>commit-msg</code>钩子实现commit信息字符数限制（实际可能没什么卵用,仅作为学习参考）</p>
+<ol>
+<li>编辑<code>.git/hooks/commit-msg</code>文件如下：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">➜  git-hook-test git:<span class="o">(</span>master<span class="o">)</span> ✗ cat .git/hooks/commit-msg                                                                  20:55:37
+</span></span><span class="line"><span class="cl"><span class="c1">#!/bin/sh</span>
+</span></span><span class="line"><span class="cl"><span class="nv">MSG</span><span class="o">=</span><span class="sb">`</span>awk <span class="s1">&#39;{printf(&#34;%s&#34;,$0)}&#39;</span> <span class="nv">$1</span><span class="sb">`</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> <span class="si">${#</span><span class="nv">MSG</span><span class="si">}</span> -lt <span class="m">5</span> <span class="o">]</span>  
+</span></span><span class="line"><span class="cl">  <span class="k">then</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;-------------------------------------------------------------------&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;commit message 只有</span><span class="si">${#</span><span class="nv">MSG</span><span class="si">}</span><span class="s2">字符，不符合要求&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;message的长度不能小于5, 本次提交失败，请完善commit message，再提交&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;-------------------------------------------------------------------&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">exit</span> <span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>为<code>commit-msg</code>文件添加执行权限：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chmod u+x .git/hooks/commit-msg
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>生成一次提交信息：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">➜  git-hook-test git:<span class="o">(</span>master<span class="o">)</span> ✗ git add .                                                                                  21:00:48
+</span></span><span class="line"><span class="cl">➜  git-hook-test git:<span class="o">(</span>master<span class="o">)</span> ✗ git commit -m <span class="s2">&#34;test&#34;</span>				                                                                    
+</span></span><span class="line"><span class="cl">-------------------------------------------------------------------
+</span></span><span class="line"><span class="cl">commit message 只有4字符
+</span></span><span class="line"><span class="cl">message的长度不能小于5, 本次提交失败，请完善commit message，再提交
+</span></span><span class="line"><span class="cl">-------------------------------------------------------------------
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>不满足最低5字符要求，提交失败。</p>
+<h2 id="服务端钩子简单示例">服务端钩子简单示例</h2>
+<p>使用<code>post-receive</code>将代码自动部署到服务器</p>
+<p>流程大致如下：在服务器端创建一个 Git 仓库(repository)，然后将本地的文件使用<code>git push</code>上传到这个仓库后，将上传到Git 仓库的文件，自动复制到服务器里网站目录文件夹下。</p>
+<ol>
+<li>在服务器端初始化一个空的Git仓库</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git init --bare myblog.git 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>在<code>hooks</code>目录中创建<code>post-receive</code>文件，并给予执行权限</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> hooks/
+</span></span><span class="line"><span class="cl">touch post-receive<span class="p">;</span>chmod u+x post-receive
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>编辑<code>post-receive</code>文件内容如下：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@localhost hooks<span class="o">]</span><span class="c1"># cat post-receive </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#!/bin/bash -l</span>
+</span></span><span class="line"><span class="cl"><span class="nv">GIT_REPO</span><span class="o">=</span>/root/myblog.git
+</span></span><span class="line"><span class="cl"><span class="nv">TMP_GIT_CLONE</span><span class="o">=</span>/tmp/myblog
+</span></span><span class="line"><span class="cl"><span class="nv">PUBLIC_WWW</span><span class="o">=</span>/var/www/html
+</span></span><span class="line"><span class="cl">rm -rf <span class="si">${</span><span class="nv">TMP_GIT_CLONE</span><span class="si">}</span>
+</span></span><span class="line"><span class="cl">git clone <span class="nv">$GIT_REPO</span> <span class="nv">$TMP_GIT_CLONE</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> <span class="nv">$TMP_GIT_CLONE</span>
+</span></span><span class="line"><span class="cl">rm -rf <span class="si">${</span><span class="nv">PUBLIC_WWW</span><span class="si">}</span>/*
+</span></span><span class="line"><span class="cl">cp -rf <span class="si">${</span><span class="nv">TMP_GIT_CLONE</span><span class="si">}</span>/* <span class="si">${</span><span class="nv">PUBLIC_WWW</span><span class="si">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="4">
+<li>本地添加远程Git仓库并进行测试</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">➜  <span class="nb">test</span> git:<span class="o">(</span>master<span class="o">)</span> ✗ git remote add deploy ssh://root@172.16.224.128:/root/myblog.git                                      21:20:35
+</span></span><span class="line"><span class="cl">➜  <span class="nb">test</span> git:<span class="o">(</span>master<span class="o">)</span> ✗ git add .                                                                                           21:20:52
+</span></span><span class="line"><span class="cl">➜  <span class="nb">test</span> git:<span class="o">(</span>master<span class="o">)</span> ✗ git commit -m <span class="s2">&#34;auto deploy test&#34;</span>                                                                    21:21:01
+</span></span><span class="line"><span class="cl"><span class="o">[</span>master <span class="o">(</span>root-commit<span class="o">)</span> 26fde86<span class="o">]</span> auto deploy <span class="nb">test</span>
+</span></span><span class="line"><span class="cl"> <span class="m">2</span> files changed, <span class="m">1</span> insertion<span class="o">(</span>+<span class="o">)</span>
+</span></span><span class="line"><span class="cl"> create mode <span class="m">100644</span> index.html
+</span></span><span class="line"><span class="cl"> create mode <span class="m">100644</span> testfile
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">➜  <span class="nb">test</span> git:<span class="o">(</span>master<span class="o">)</span> git push --set-upstream deploy master                                                                 21:28:19
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在git服务器端查看<code>post-receive</code>是否成功运行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@localhost ~<span class="o">]</span><span class="c1"># cd /var/www/html/</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@localhost html<span class="o">]</span><span class="c1"># ls</span>
+</span></span><span class="line"><span class="cl">index.html  testfile
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@localhost html<span class="o">]</span><span class="c1"># cat index.html</span>
+</span></span><span class="line"><span class="cl">auto deploy
+</span></span><span class="line"><span class="cl">auto deploy
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="5">
+<li>将代码推送指定分支：</li>
+</ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -400,69 +606,34 @@
 </span><span class="lnt">15
 </span><span class="lnt">16
 </span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="c1">###</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### Some shell version or description here.</span>
-</span></span><span class="line"><span class="cl"><span class="c1">###</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### Usage:</span>
-</span></span><span class="line"><span class="cl"><span class="c1">###   test &lt;input&gt; &lt;output&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="c1">###</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### Options:</span>
-</span></span><span class="line"><span class="cl"><span class="c1">###   &lt;input&gt;   Input file to read.</span>
-</span></span><span class="line"><span class="cl"><span class="c1">###   &lt;output&gt;  Output file to write. Use &#39;-&#39; for stdout.</span>
-</span></span><span class="line"><span class="cl"><span class="c1">###   -h | --help       Show this message.</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">help<span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    sed -rn <span class="s1">&#39;s/^### ?//;T;p&#39;</span> <span class="s2">&#34;</span><span class="nv">$0</span><span class="s2">&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 如果用户输入“-h”或者无参数，执行help函数</span>
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[[</span> <span class="nv">$#</span> <span class="o">==</span> <span class="m">0</span> <span class="o">]]</span> <span class="o">||</span> <span class="o">[[</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="s2">&#34;-h&#34;</span> <span class="o">]]</span> <span class="o">||</span> <span class="o">[[</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="s2">&#34;--help&#34;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">help</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">exit</span> <span class="m">1</span>
-</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash -l
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">while</span> <span class="nb">read</span> oldrev newrev ref
+</span></span><span class="line"><span class="cl"><span class="k">do</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">branch</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> <span class="nv">$ref</span> <span class="p">|</span> cut -d/ -f3<span class="sb">`</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;master&#34;</span> <span class="o">==</span> <span class="s2">&#34;</span><span class="nv">$branch</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">||</span> <span class="o">[</span> <span class="s2">&#34;production&#34;</span> <span class="o">==</span> <span class="s2">&#34;</span><span class="nv">$branch</span><span class="s2">&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">GIT_REPO</span><span class="o">=</span>/root/myblog.git
+</span></span><span class="line"><span class="cl">    <span class="nv">TMP_GIT_CLONE</span><span class="o">=</span>/tmp/myblog
+</span></span><span class="line"><span class="cl">    <span class="nv">PUBLIC_WWW</span><span class="o">=</span>/var/www/html
+</span></span><span class="line"><span class="cl">    rm -rf <span class="si">${</span><span class="nv">TMP_GIT_CLONE</span><span class="si">}</span>
+</span></span><span class="line"><span class="cl">    git clone <span class="nv">$GIT_REPO</span> <span class="nv">$TMP_GIT_CLONE</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">cd</span> <span class="nv">$TMP_GIT_CLONE</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">unset</span> GIT_DIR
+</span></span><span class="line"><span class="cl">    git checkout <span class="nv">$branch</span>
+</span></span><span class="line"><span class="cl">    rm -rf <span class="si">${</span><span class="nv">PUBLIC_WWW</span><span class="si">}</span>/*
+</span></span><span class="line"><span class="cl">    cp -rf <span class="si">${</span><span class="nv">TMP_GIT_CLONE</span><span class="si">}</span>/* <span class="si">${</span><span class="nv">PUBLIC_WWW</span><span class="si">}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>效果：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">╭─agou-ops@ideapad-15ISK ~/tmp 
-</span></span><span class="line"><span class="cl">╰─$ bash test.sh --help
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Some shell version or description here.
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Usage:
-</span></span><span class="line"><span class="cl">  <span class="nb">test</span> &lt;input&gt; &lt;output&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Options:
-</span></span><span class="line"><span class="cl">  &lt;input&gt;   Input file to read.
-</span></span><span class="line"><span class="cl">  &lt;output&gt;  Output file to write. Use <span class="s1">&#39;-&#39;</span> <span class="k">for</span> stdout.
-</span></span><span class="line"><span class="cl">  -h <span class="p">|</span> --help       Show this message.
-</span></span></code></pre></td></tr></table>
-</div>
-</div>
+</div><p>更多钩子参考：https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90</p>
+<h2 id="参考链接">参考链接</h2>
+<ul>
+<li><a href="https://www.ituring.com.cn/article/206985">git钩子-图灵社区</a></li>
+<li><a href="https://devslash.net/easy-git-hooks-with-python/">git hooks with python</a></li>
+<li><a href="https://www.jianshu.com/p/ccd135180783">commit-msg实用示例</a></li>
+</ul>
     </div>
 
     
@@ -470,12 +641,12 @@
 <div class="post-copyright">
   <p class="copyright-item">
     <span class="item-title">Author</span>
-    <span class="item-content"><a href="http://lamy9813.github.io/author/lamy/">Lamy</a></span>
+    <span class="item-content"><a href="http://lamy9813.github.io/author/agou-ops/">AGou-ops</a></span>
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-      2022-08-05
+      2020-08-04
       
     </span>
   </p>
@@ -507,18 +678,15 @@
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="http://lamy9813.github.io/tags/linux/">Linux</a>
-          <a href="http://lamy9813.github.io/tags/shell/">shell</a>
-          <a href="http://lamy9813.github.io/tags/%E8%84%9A%E6%9C%AC/">脚本</a>
-          <a href="http://lamy9813.github.io/tags/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/">帮助文档</a>
-          <a href="http://lamy9813.github.io/tags/%E6%8A%80%E5%B7%A7/">技巧</a>
+          <a href="http://lamy9813.github.io/tags/git/">Git</a>
+          <a href="http://lamy9813.github.io/tags/hook/">hook</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/macos-%E7%BB%88%E7%AB%AF%E4%B8%8B%E5%85%89%E6%A0%87%E7%A7%BB%E5%8A%A8%E9%97%AE%E9%A2%98/">
+          <a class="prev" href="/post/%E7%BC%96%E5%86%99shell%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -528,23 +696,10 @@
 </svg>
 
             </i>
-            <span class="prev-text nav-default">MacOS偏门解决vim/Neovim光标跳转（j/k键）卡顿的问题。【使用karabiner】</span>
+            <span class="prev-text nav-default">编写shell帮助信息通用小技巧</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
         
-          <a class="next" href="/post/git-hook%E4%BB%8B%E7%BB%8D%E4%B8%8E%E4%BD%BF%E7%94%A8/">
-            <span class="next-text nav-default">Git Hook介绍与使用</span>
-            <span class="prev-text nav-mobile">Next</span>
-            
-            <i class="iconfont">
-              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
-</svg>
-
-            </i>
-          </a>
       </nav>
     </footer>
   </article>

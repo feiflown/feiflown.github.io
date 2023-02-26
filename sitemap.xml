@@ -191,6 +191,41 @@
   </url>
   
   <url>
+    <loc>http://lamy9813.github.io/author/agou-ops/</loc>
+    <lastmod>2020-08-04T10:23:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/tags/git/</loc>
+    <lastmod>2020-08-04T10:23:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/categories/git/</loc>
+    <lastmod>2020-08-04T10:23:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/post/git-hook%E4%BB%8B%E7%BB%8D%E4%B8%8E%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2020-08-04T10:23:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://lamy9813.github.io/tags/hook/</loc>
+    <lastmod>2020-08-04T10:23:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://lamy9813.github.io/en/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
