@@ -81,5 +81,15 @@
       <description>废话少说， 直接上脚本： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 #!/bin/bash ### ### Some shell version or description here. ### ### Usage: ### test &amp;lt;input&amp;gt; &amp;lt;output&amp;gt; ### ### Options: ### &amp;lt;input&amp;gt; Input file to read. ### &amp;lt;output&amp;gt; Output file to write. Use &amp;#39;-&amp;#39; for stdout. ### -h</description>
     </item>
     
+    <item>
+      <title>第一把客制化</title>
+      <link>http://lamy9813.github.io/post/%E7%AC%AC%E4%B8%80%E6%8A%8A%E5%AE%A2%E5%88%B6%E5%8C%96/</link>
+      <pubDate>Mon, 28 Sep 2020 13:50:35 +0800</pubDate>
+      <author>lamy9813@gmail.com (Lamy)</author>
+      <guid>http://lamy9813.github.io/post/%E7%AC%AC%E4%B8%80%E6%8A%8A%E5%AE%A2%E5%88%B6%E5%8C%96/</guid>
+      <description>&lt;p&gt;第一把客制化&lt;/p&gt;
+&lt;p&gt;NJ68，应该是很多人的入坑键盘了，虽然不亮眼，但确实是新人接触客制化非常友好的键盘了。&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>
