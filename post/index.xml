@@ -54,5 +54,15 @@
       <description>废话少说， 直接上脚本： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 #!/bin/bash ### ### Some shell version or description here. ### ### Usage: ### test &amp;lt;input&amp;gt; &amp;lt;output&amp;gt; ### ### Options: ### &amp;lt;input&amp;gt; Input file to read. ### &amp;lt;output&amp;gt; Output file to write. Use &amp;#39;-&amp;#39; for stdout. ### -h</description>
     </item>
     
+    <item>
+      <title>Git Hook介绍与使用</title>
+      <link>http://lamy9813.github.io/post/git-hook%E4%BB%8B%E7%BB%8D%E4%B8%8E%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Tue, 04 Aug 2020 10:23:38 +0800</pubDate>
+      <author>lamy9813@gmail.com (Lamy)</author>
+      <guid>http://lamy9813.github.io/post/git-hook%E4%BB%8B%E7%BB%8D%E4%B8%8E%E4%BD%BF%E7%94%A8/</guid>
+      <description>&lt;p&gt;Git 钩子和其它版本控制系统一样，Git 能在特定的重要动作发生时触发自定义脚本。&lt;/p&gt;
+&lt;p&gt;有两组这样的钩子：客户端的和服务器端的。 客户端钩子由诸如提交和合并这样的操作所调用，而服务器端钩子作用于诸如接收被推送的提交这样的联网操作。 你可以随心所欲地运用这些钩子。&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>

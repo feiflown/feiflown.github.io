@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DevOps on Lamy&#39;s blog</title>
+    <link>http://lamy9813.github.io/tags/devops/</link>
+    <description>Recent content in DevOps on Lamy&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>lamy9813@gmail.com (Lamy)</managingEditor>
+    <webMaster>lamy9813@gmail.com (Lamy)</webMaster>
+    <copyright>WTFPLv2</copyright>
+    <lastBuildDate>Tue, 27 Oct 2020 18:31:58 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DevOps - Notes</title>
+      <link>http://lamy9813.github.io/devops-notes/</link>
+      <pubDate>Tue, 27 Oct 2020 18:31:58 +0800</pubDate>
+      <author>lamy9813@gmail.com (Lamy)</author>
+      <guid>http://lamy9813.github.io/devops-notes/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;篇幅有限，点击下方链接进行访问。&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DevOps Note-01（中文， @sunrisenan 备份站点）：&lt;a href=&#34;http://bak.agou-ops.top/&#34;&gt;http://bak.agou-ops.top/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;DevOps Note-02（英文， @vinayhegde1990 转载）：&lt;a href=&#34;http://agou-ops.top/devops&#34;&gt;http://agou-ops.top/devops&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -9,13 +9,26 @@
     <managingEditor>lamy9813@gmail.com (Lamy)</managingEditor>
     <webMaster>lamy9813@gmail.com (Lamy)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Sat, 11 Jul 2020 22:12:17 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/categories/%E8%BD%AC%E8%BD%BD/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Oct 2020 18:31:58 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/categories/%E8%BD%AC%E8%BD%BD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DevOps - Notes</title>
+      <link>http://lamy9813.github.io/devops-notes/</link>
+      <pubDate>Tue, 27 Oct 2020 18:31:58 +0800</pubDate>
+      <author>lamy9813@gmail.com (Lamy)</author>
+      <guid>http://lamy9813.github.io/devops-notes/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;篇幅有限，点击下方链接进行访问。&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DevOps Note-01（中文， @sunrisenan 备份站点）：&lt;a href=&#34;http://bak.agou-ops.top/&#34;&gt;http://bak.agou-ops.top/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;DevOps Note-02（英文， @vinayhegde1990 转载）：&lt;a href=&#34;http://agou-ops.top/devops&#34;&gt;http://agou-ops.top/devops&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
     <item>
       <title>Linux 实时查看网卡流量</title>
-      <link>http://lamy9813.github.io/post/linux-%E5%AE%9E%E6%97%B6%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1%E6%B5%81%E9%87%8F/</link>
+      <link>http://lamy9813.github.io/linux-%E5%AE%9E%E6%97%B6%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1%E6%B5%81%E9%87%8F/</link>
       <pubDate>Sat, 11 Jul 2020 22:12:17 +0800</pubDate>
       <author>lamy9813@gmail.com (Lamy)</author>
-      <guid>http://lamy9813.github.io/post/linux-%E5%AE%9E%E6%97%B6%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1%E6%B5%81%E9%87%8F/</guid>
+      <guid>http://lamy9813.github.io/linux-%E5%AE%9E%E6%97%B6%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1%E6%B5%81%E9%87%8F/</guid>
       <description>&lt;h2 id=&#34;nload工具&#34;&gt;nload工具&lt;/h2&gt;
 &lt;p&gt;nload用于实时查看网卡流量，默认系统都没有安装，首先安装方式如下：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
