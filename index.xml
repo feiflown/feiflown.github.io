@@ -245,15 +245,6 @@
     </item>
     
     <item>
-      <title>Posts</title>
-      <link>http://lamy9813.github.io/post/</link>
-      <pubDate>Sat, 25 Feb 2023 14:36:48 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
-      <guid>http://lamy9813.github.io/post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>我的动漫之旅(My Anime Trip.)</title>
       <link>http://lamy9813.github.io/anime/</link>
       <pubDate>Sat, 25 Feb 2023 14:36:48 +0800</pubDate>
@@ -1678,6 +1669,15 @@
 &lt;li&gt;本站地址：&lt;a href=&#34;https://lamy9813.github.io/&#34;&gt;https://lamy9813.github.io/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Posts</title>
+      <link>http://lamy9813.github.io/post/</link>
+      <pubDate>Tue, 03 Jan 2023 14:32:52 +0800</pubDate>
+      <author>lamy9813@gmail.com (Lamy)</author>
+      <guid>http://lamy9813.github.io/post/</guid>
+      <description></description>
     </item>
     
   </channel>

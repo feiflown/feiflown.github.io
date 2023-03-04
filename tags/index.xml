@@ -20,15 +20,6 @@
     </item>
     
     <item>
-      <title>java</title>
-      <link>http://lamy9813.github.io/tags/java/</link>
-      <pubDate>Sat, 25 Feb 2023 14:36:48 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
-      <guid>http://lamy9813.github.io/tags/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>friendlylink</title>
       <link>http://lamy9813.github.io/tags/friendlylink/</link>
       <pubDate>Sun, 19 Feb 2023 14:01:47 +0800</pubDate>
@@ -38,9 +29,18 @@
     </item>
     
     <item>
+      <title>lua</title>
+      <link>http://lamy9813.github.io/tags/lua/</link>
+      <pubDate>Tue, 03 Jan 2023 14:32:52 +0800</pubDate>
+      <author>lamy9813@gmail.com (Lamy)</author>
+      <guid>http://lamy9813.github.io/tags/lua/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Linux</title>
       <link>http://lamy9813.github.io/tags/linux/</link>
-      <pubDate>Fri, 05 Aug 2022 17:02:21 +0800</pubDate>
+      <pubDate>Sat, 05 Nov 2022 17:02:21 +0800</pubDate>
       <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/linux/</guid>
       <description></description>
@@ -49,7 +49,7 @@
     <item>
       <title>shell</title>
       <link>http://lamy9813.github.io/tags/shell/</link>
-      <pubDate>Fri, 05 Aug 2022 17:02:21 +0800</pubDate>
+      <pubDate>Sat, 05 Nov 2022 17:02:21 +0800</pubDate>
       <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/shell/</guid>
       <description></description>
@@ -58,7 +58,7 @@
     <item>
       <title>帮助文档</title>
       <link>http://lamy9813.github.io/tags/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/</link>
-      <pubDate>Fri, 05 Aug 2022 17:02:21 +0800</pubDate>
+      <pubDate>Sat, 05 Nov 2022 17:02:21 +0800</pubDate>
       <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/</guid>
       <description></description>
@@ -67,7 +67,7 @@
     <item>
       <title>技巧</title>
       <link>http://lamy9813.github.io/tags/%E6%8A%80%E5%B7%A7/</link>
-      <pubDate>Fri, 05 Aug 2022 17:02:21 +0800</pubDate>
+      <pubDate>Sat, 05 Nov 2022 17:02:21 +0800</pubDate>
       <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/%E6%8A%80%E5%B7%A7/</guid>
       <description></description>
@@ -76,9 +76,36 @@
     <item>
       <title>脚本</title>
       <link>http://lamy9813.github.io/tags/%E8%84%9A%E6%9C%AC/</link>
-      <pubDate>Fri, 05 Aug 2022 17:02:21 +0800</pubDate>
+      <pubDate>Sat, 05 Nov 2022 17:02:21 +0800</pubDate>
       <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/%E8%84%9A%E6%9C%AC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>java</title>
+      <link>http://lamy9813.github.io/tags/java/</link>
+      <pubDate>Wed, 14 Sep 2022 15:10:07 +0800</pubDate>
+      <author>lamy9813@gmail.com (Lamy)</author>
+      <guid>http://lamy9813.github.io/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>算法</title>
+      <link>http://lamy9813.github.io/tags/%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Wed, 14 Sep 2022 15:10:07 +0800</pubDate>
+      <author>lamy9813@gmail.com (Lamy)</author>
+      <guid>http://lamy9813.github.io/tags/%E7%AE%97%E6%B3%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>idea</title>
+      <link>http://lamy9813.github.io/tags/idea/</link>
+      <pubDate>Tue, 05 Oct 2021 20:00:11 +0800</pubDate>
+      <author>lamy9813@gmail.com (Lamy)</author>
+      <guid>http://lamy9813.github.io/tags/idea/</guid>
       <description></description>
     </item>
     
@@ -88,24 +115,6 @@
       <pubDate>Mon, 28 Sep 2020 13:50:35 +0800</pubDate>
       <author>lamy9813@gmail.com (Lamy)</author>
       <guid>http://lamy9813.github.io/tags/keyboard/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Git</title>
-      <link>http://lamy9813.github.io/tags/git/</link>
-      <pubDate>Tue, 04 Aug 2020 10:23:38 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
-      <guid>http://lamy9813.github.io/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hook</title>
-      <link>http://lamy9813.github.io/tags/hook/</link>
-      <pubDate>Tue, 04 Aug 2020 10:23:38 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
-      <guid>http://lamy9813.github.io/tags/hook/</guid>
       <description></description>
     </item>
     
