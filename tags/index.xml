@@ -9,7 +9,25 @@
     <managingEditor>feiflown@gmail.com (fei)</managingEditor>
     <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Sat, 25 Feb 2023 14:36:48 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Mar 2023 14:33:12 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>algolia</title>
+      <link>http://feiflown.github.io/tags/algolia/</link>
+      <pubDate>Mon, 20 Mar 2023 14:33:12 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/tags/algolia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>http://feiflown.github.io/tags/hugo/</link>
+      <pubDate>Mon, 20 Mar 2023 14:33:12 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Anime</title>
       <link>http://feiflown.github.io/tags/anime/</link>
@@ -34,6 +52,15 @@
       <pubDate>Thu, 16 Feb 2023 16:04:45 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/tags/%E5%90%90%E6%A7%BD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>keyboard</title>
+      <link>http://feiflown.github.io/tags/keyboard/</link>
+      <pubDate>Tue, 03 Jan 2023 14:32:52 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/tags/keyboard/</guid>
       <description></description>
     </item>
     
@@ -106,15 +133,6 @@
       <pubDate>Wed, 14 Sep 2022 15:10:07 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/tags/%E7%AE%97%E6%B3%95/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>keyboard</title>
-      <link>http://feiflown.github.io/tags/keyboard/</link>
-      <pubDate>Mon, 20 Jun 2022 20:32:24 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/tags/keyboard/</guid>
       <description></description>
     </item>
     

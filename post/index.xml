@@ -9,13 +9,22 @@
     <managingEditor>feiflown@gmail.com (fei)</managingEditor>
     <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Thu, 16 Feb 2023 16:04:45 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Mar 2023 14:33:12 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>更改图床</title>
-      <link>http://feiflown.github.io/post/%E6%8D%A2%E4%BA%86%E4%B8%AA%E5%9B%BE%E5%BA%8A/</link>
+      <title>GitHub Actions实现push自动更新algolia索引</title>
+      <link>http://feiflown.github.io/post/algolia-auto-update/</link>
+      <pubDate>Mon, 20 Mar 2023 14:33:12 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/algolia-auto-update/</guid>
+      <description>博客使用 Algolia 实现搜索功能，手动上传搜索记录数据一直很烦琐，只好苦学 API 和 Action，通过 GitHub Actions 实现自动上传搜索记录到 Algolia，完美呈现。 GitHub</description>
+    </item>
+    
+    <item>
+      <title>更换图床</title>
+      <link>http://feiflown.github.io/post/%E6%9B%B4%E6%8D%A2%E5%9B%BE%E5%BA%8A-sm.ms/</link>
       <pubDate>Thu, 16 Feb 2023 16:04:45 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/post/%E6%8D%A2%E4%BA%86%E4%B8%AA%E5%9B%BE%E5%BA%8A/</guid>
+      <guid>http://feiflown.github.io/post/%E6%9B%B4%E6%8D%A2%E5%9B%BE%E5%BA%8A-sm.ms/</guid>
       <description>&lt;p&gt;lua脚本&lt;/p&gt;
 &lt;p&gt;图床&lt;/p&gt;</description>
     </item>
@@ -27,6 +36,15 @@
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/post/lua%E8%84%9A%E6%9C%AC/</guid>
       <description>&lt;p&gt;lua脚本&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>tps40</title>
+      <link>http://feiflown.github.io/post/tps40/</link>
+      <pubDate>Tue, 03 Jan 2023 14:32:52 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/tps40/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -128,10 +146,10 @@
     
     <item>
       <title>RAMA KARA &amp; JTK 天问</title>
-      <link>http://feiflown.github.io/post/rama-kara-jtk-%E5%A4%A9%E9%97%AE/</link>
+      <link>http://feiflown.github.io/post/rama-kara%E7%B4%AB%E9%80%8F/</link>
       <pubDate>Mon, 17 May 2021 22:00:06 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/post/rama-kara-jtk-%E5%A4%A9%E9%97%AE/</guid>
+      <guid>http://feiflown.github.io/post/rama-kara%E7%B4%AB%E9%80%8F/</guid>
       <description>RAMA的宣传片是真的无敌，当初看到宣传片立马买了一把。 用了几周来分享一下使用感受，KARA的手感和声音还是不错的，虽然是塑料键盘但是组完以</description>
     </item>
     
@@ -181,6 +199,15 @@
       <guid>http://feiflown.github.io/post/%E7%AC%AC%E4%B8%80%E6%8A%8A%E5%AE%A2%E5%88%B6%E5%8C%96/</guid>
       <description>&lt;p&gt;第一把客制化&lt;/p&gt;
 &lt;p&gt;NJ68，应该是很多人的入坑键盘了，虽然不亮眼，但确实是新人接触客制化非常友好的键盘了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://feiflown.github.io/post/img/%E9%9F%B3%E8%A7%86%E9%A2%91%E8%BD%AC%E7%A0%81-%E6%92%AD%E6%94%BE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/img/%E9%9F%B3%E8%A7%86%E9%A2%91%E8%BD%AC%E7%A0%81-%E6%92%AD%E6%94%BE/</guid>
+      <description>音视频转码 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 sequenceDiagram participant saas as 业务S</description>
     </item>
     
   </channel>
