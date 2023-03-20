@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lamy&#39;s blog</title>
-    <link>http://lamy9813.github.io/</link>
-    <description>Recent content on Lamy&#39;s blog</description>
+    <title>fei&#39;s blog</title>
+    <link>http://feiflown.github.io/</link>
+    <description>Recent content on fei&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>lamy9813@gmail.com (Lamy)</managingEditor>
-    <webMaster>lamy9813@gmail.com (Lamy)</webMaster>
+    <managingEditor>feiflown@gmail.com (fei)</managingEditor>
+    <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
     <lastBuildDate>Sat, 25 Feb 2023 14:36:48 +0800</lastBuildDate>
     
-        <atom:link href="http://lamy9813.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://feiflown.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>关于</title>
-      <link>http://lamy9813.github.io/aboutme/</link>
+      <link>http://feiflown.github.io/aboutme/</link>
       <pubDate>Sun, 19 Feb 2023 14:01:47 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
-      <guid>http://lamy9813.github.io/aboutme/</guid>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/aboutme/</guid>
       <description>&lt;!DOCTYPE html&gt;
 
 &lt;html lang=&#34;en&#34;&gt;
@@ -179,7 +179,7 @@
       });
     });
   &lt;/script&gt;
-  &lt;script src=&#34;http://lamy9813.github.io/js/ua-parser.min.js&#34;&gt;&lt;/script&gt;
+  &lt;script src=&#34;http://feiflown.github.io/js/ua-parser.min.js&#34;&gt;&lt;/script&gt;
   &lt;script&gt;
 
     $.ajax({
@@ -228,7 +228,7 @@
 &lt;p&gt;&lt;em&gt;The WTFPL is a very permissive license for software and other scientific or artistic works that offers a great degree of freedom. In fact, it is probably the best license out there.&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;link rel=&#34;stylesheet&#34; href=&#34;http://lamy9813.github.io/css/hugo-easy-gallery.css&#34; /&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;http://feiflown.github.io/css/hugo-easy-gallery.css&#34; /&gt;
 &lt;div class=&#34;box&#34;&gt;
 &lt;figure  itemprop=&#34;associatedMedia&#34;
   itemscope itemtype=&#34;http://schema.org/ImageObject&#34; &gt;
@@ -246,10 +246,10 @@
     
     <item>
       <title>我的动漫之旅(My Anime Trip.)</title>
-      <link>http://lamy9813.github.io/anime/</link>
+      <link>http://feiflown.github.io/anime/</link>
       <pubDate>Sat, 25 Feb 2023 14:36:48 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
-      <guid>http://lamy9813.github.io/anime/</guid>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/anime/</guid>
       <description>&lt;style&gt;
     @font-face {
         font-family: &#39;iconFont&#39;;
@@ -369,7 +369,7 @@
 
 
 &lt;script src=&#34;https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;http://lamy9813.github.io/js/layer.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;http://feiflown.github.io/js/layer.js&#34;&gt;&lt;/script&gt;
 
 &lt;script type=&#34;text/javascript&#34;&gt;
     document.querySelector(&#34;#header &gt; div &gt; a&#34;).innerHTML = &#34;✨Anime Lover&#34;;
@@ -1659,24 +1659,24 @@
     
     <item>
       <title>友链</title>
-      <link>http://lamy9813.github.io/friendlylink/</link>
+      <link>http://feiflown.github.io/friendlylink/</link>
       <pubDate>Sun, 19 Feb 2023 14:01:47 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
-      <guid>http://lamy9813.github.io/friendlylink/</guid>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/friendlylink/</guid>
       <description>&lt;ul&gt;
-&lt;li&gt;本站地址：&lt;a href=&#34;https://lamy9813.github.io/&#34;&gt;https://lamy9813.github.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;本站地址：&lt;a href=&#34;https://lamy9813.github.io/&#34;&gt;https://lamy9813.github.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;本站地址：&lt;a href=&#34;https://lamy9813.github.io/&#34;&gt;https://lamy9813.github.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;本站地址：&lt;a href=&#34;https://lamy9813.github.io/&#34;&gt;https://feiflown.github.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;本站地址：&lt;a href=&#34;https://lamy9813.github.io/&#34;&gt;https://feiflown.github.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;本站地址：&lt;a href=&#34;https://lamy9813.github.io/&#34;&gt;https://feiflown.github.io/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
     
     <item>
       <title>Posts</title>
-      <link>http://lamy9813.github.io/post/</link>
+      <link>http://feiflown.github.io/post/</link>
       <pubDate>Thu, 16 Feb 2023 16:04:45 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
-      <guid>http://lamy9813.github.io/post/</guid>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/</guid>
       <description></description>
     </item>
     

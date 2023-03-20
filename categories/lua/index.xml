@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>lua on Lamy&#39;s blog</title>
-    <link>http://lamy9813.github.io/categories/lua/</link>
-    <description>Recent content in lua on Lamy&#39;s blog</description>
+    <title>lua on fei&#39;s blog</title>
+    <link>http://feiflown.github.io/categories/lua/</link>
+    <description>Recent content in lua on fei&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>lamy9813@gmail.com (Lamy)</managingEditor>
-    <webMaster>lamy9813@gmail.com (Lamy)</webMaster>
+    <managingEditor>feiflown@gmail.com (fei)</managingEditor>
+    <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Tue, 03 Jan 2023 14:32:52 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/categories/lua/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Jan 2023 14:32:52 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/categories/lua/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>lua脚本</title>
-      <link>http://lamy9813.github.io/post/lua%E8%84%9A%E6%9C%AC/</link>
+      <link>http://feiflown.github.io/post/lua%E8%84%9A%E6%9C%AC/</link>
       <pubDate>Tue, 03 Jan 2023 14:32:52 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
-      <guid>http://lamy9813.github.io/post/lua%E8%84%9A%E6%9C%AC/</guid>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/lua%E8%84%9A%E6%9C%AC/</guid>
       <description>&lt;p&gt;lua脚本&lt;/p&gt;</description>
     </item>
     

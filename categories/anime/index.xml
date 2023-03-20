@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Anime on Lamy&#39;s blog</title>
-    <link>http://lamy9813.github.io/categories/anime/</link>
-    <description>Recent content in Anime on Lamy&#39;s blog</description>
+    <title>Anime on fei&#39;s blog</title>
+    <link>http://feiflown.github.io/categories/anime/</link>
+    <description>Recent content in Anime on fei&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>lamy9813@gmail.com (Lamy)</managingEditor>
-    <webMaster>lamy9813@gmail.com (Lamy)</webMaster>
+    <managingEditor>feiflown@gmail.com (fei)</managingEditor>
+    <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Sat, 25 Feb 2023 14:36:48 +0800</lastBuildDate><atom:link href="http://lamy9813.github.io/categories/anime/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Feb 2023 14:36:48 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/categories/anime/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我的动漫之旅(My Anime Trip.)</title>
-      <link>http://lamy9813.github.io/anime/</link>
+      <link>http://feiflown.github.io/anime/</link>
       <pubDate>Sat, 25 Feb 2023 14:36:48 +0800</pubDate>
-      <author>lamy9813@gmail.com (Lamy)</author>
-      <guid>http://lamy9813.github.io/anime/</guid>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/anime/</guid>
       <description>按照观看结束时间排序，序号仅用于计数。(2020-03-28 至 ????-??-??) 变更日志： 2020年10月01日：初始化表格、增加序号至39； 2020年11</description>
     </item>
     
