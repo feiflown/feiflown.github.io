@@ -9,6 +9,48 @@
   </url>
   
   <url>
+    <loc>http://feiflown.github.io/f-link/</loc>
+    <lastmod>2023-03-22T11:00:57+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://feiflown.github.io/author/</loc>
+    <lastmod>2023-03-22T11:00:57+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://feiflown.github.io/author/fei/</loc>
+    <lastmod>2023-03-22T11:00:57+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://feiflown.github.io/</loc>
+    <lastmod>2023-03-22T11:00:57+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://feiflown.github.io/post/</loc>
+    <lastmod>2023-03-22T10:59:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://feiflown.github.io/post/img/%E9%9F%B3%E8%A7%86%E9%A2%91%E8%BD%AC%E7%A0%81-%E6%92%AD%E6%94%BE/</loc>
+    <lastmod>2023-03-22T10:59:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://feiflown.github.io/tags/algolia/</loc>
     <lastmod>2023-03-20T19:49:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -16,29 +58,8 @@
   </url>
   
   <url>
-    <loc>http://feiflown.github.io/author/</loc>
-    <lastmod>2023-03-20T19:49:55+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://feiflown.github.io/categories/</loc>
-    <lastmod>2023-03-20T19:49:55+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://feiflown.github.io/author/fei/</loc>
-    <lastmod>2023-03-20T19:49:55+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://feiflown.github.io/</loc>
-    <lastmod>2023-03-20T19:49:55+08:00</lastmod>
+    <lastmod>2023-03-22T11:00:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -65,15 +86,8 @@
   </url>
   
   <url>
-    <loc>http://feiflown.github.io/post/</loc>
-    <lastmod>2023-03-20T19:49:55+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://feiflown.github.io/tags/</loc>
-    <lastmod>2023-03-20T19:49:55+08:00</lastmod>
+    <lastmod>2023-03-22T11:00:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -100,22 +114,15 @@
   </url>
   
   <url>
-    <loc>http://feiflown.github.io/tags/friendlylink/</loc>
-    <lastmod>2023-03-20T10:32:37+08:00</lastmod>
+    <loc>http://feiflown.github.io/tags/f-link/</loc>
+    <lastmod>2023-03-22T11:00:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://feiflown.github.io/categories/friendlylink/</loc>
-    <lastmod>2023-03-20T10:32:37+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://feiflown.github.io/friendlylink/</loc>
-    <lastmod>2023-03-20T10:32:37+08:00</lastmod>
+    <loc>http://feiflown.github.io/categories/f-link/</loc>
+    <lastmod>2023-03-22T11:00:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -142,20 +149,6 @@
   </url>
   
   <url>
-    <loc>http://feiflown.github.io/tags/keyboard/</loc>
-    <lastmod>2023-03-20T19:49:55+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://feiflown.github.io/categories/keyboard/</loc>
-    <lastmod>2023-03-20T19:49:55+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://feiflown.github.io/tags/lua/</loc>
     <lastmod>2023-01-03T14:32:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -172,13 +165,6 @@
   <url>
     <loc>http://feiflown.github.io/post/lua%E8%84%9A%E6%9C%AC/</loc>
     <lastmod>2023-01-03T14:32:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://feiflown.github.io/post/tps40/</loc>
-    <lastmod>2023-03-20T19:49:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -289,6 +275,20 @@
   </url>
   
   <url>
+    <loc>http://feiflown.github.io/tags/keyboard/</loc>
+    <lastmod>2022-06-20T20:32:24+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://feiflown.github.io/categories/keyboard/</loc>
+    <lastmod>2022-06-20T20:32:24+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://feiflown.github.io/post/rama-kara%E8%B1%86%E4%B9%B3%E7%99%BD/</loc>
     <lastmod>2022-06-20T20:32:24+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -375,12 +375,6 @@
   <url>
     <loc>http://feiflown.github.io/post/%E7%AC%AC%E4%B8%80%E6%8A%8A%E5%AE%A2%E5%88%B6%E5%8C%96/</loc>
     <lastmod>2020-09-28T13:50:35+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://feiflown.github.io/post/img/%E9%9F%B3%E8%A7%86%E9%A2%91%E8%BD%AC%E7%A0%81-%E6%92%AD%E6%94%BE/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

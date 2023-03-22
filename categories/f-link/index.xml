@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>friendlylink on fei&#39;s blog</title>
-    <link>http://feiflown.github.io/tags/friendlylink/</link>
-    <description>Recent content in friendlylink on fei&#39;s blog</description>
+    <title>f-link on fei&#39;s Blog</title>
+    <link>http://feiflown.github.io/categories/f-link/</link>
+    <description>Recent content in f-link on fei&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>feiflown@gmail.com (fei)</managingEditor>
     <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Sun, 19 Feb 2023 14:01:47 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/tags/friendlylink/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Feb 2023 14:01:47 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/categories/f-link/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>友链</title>
-      <link>http://feiflown.github.io/friendlylink/</link>
+      <link>http://feiflown.github.io/f-link/</link>
       <pubDate>Sun, 19 Feb 2023 14:01:47 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/friendlylink/</guid>
+      <guid>http://feiflown.github.io/f-link/</guid>
       <description>本站地址：https://feiflown.github.io/ 本站地址：https://feiflown.github.io/ 本站地址：h</description>
     </item>
     

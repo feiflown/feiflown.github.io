@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>fei&#39;s blog</title>
+    <title>fei&#39;s Blog</title>
     <link>http://feiflown.github.io/</link>
-    <description>Recent content on fei&#39;s blog</description>
+    <description>Recent content on fei&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>feiflown@gmail.com (fei)</managingEditor>
     <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Mon, 20 Mar 2023 14:33:12 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 22 Mar 2023 10:59:23 +0800</lastBuildDate>
     
         <atom:link href="http://feiflown.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -245,9 +245,23 @@
     </item>
     
     <item>
+      <title>友链</title>
+      <link>http://feiflown.github.io/f-link/</link>
+      <pubDate>Sun, 19 Feb 2023 14:01:47 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/f-link/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;本站地址：&lt;a href=&#34;https://lamy9813.github.io/&#34;&gt;https://feiflown.github.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;本站地址：&lt;a href=&#34;https://lamy9813.github.io/&#34;&gt;https://feiflown.github.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;本站地址：&lt;a href=&#34;https://lamy9813.github.io/&#34;&gt;https://feiflown.github.io/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Posts</title>
       <link>http://feiflown.github.io/post/</link>
-      <pubDate>Mon, 20 Mar 2023 14:33:12 +0800</pubDate>
+      <pubDate>Wed, 22 Mar 2023 10:59:23 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/post/</guid>
       <description></description>
@@ -1662,20 +1676,6 @@
 &lt;ul&gt;
 &lt;li&gt;泡面番🍜：&lt;code&gt;【21】&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;续集番：&lt;code&gt;【6】&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>友链</title>
-      <link>http://feiflown.github.io/friendlylink/</link>
-      <pubDate>Sun, 19 Feb 2023 14:01:47 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/friendlylink/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;本站地址：&lt;a href=&#34;https://lamy9813.github.io/&#34;&gt;https://feiflown.github.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;本站地址：&lt;a href=&#34;https://lamy9813.github.io/&#34;&gt;https://feiflown.github.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;本站地址：&lt;a href=&#34;https://lamy9813.github.io/&#34;&gt;https://feiflown.github.io/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
