@@ -16,7 +16,16 @@
       <pubDate>Mon, 20 Mar 2023 14:33:12 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/post/algolia-auto-update/</guid>
-      <description>博客使用 Algolia 实现搜索功能，手动上传搜索记录数据一直很烦琐，只好苦学 API 和 Action，通过 GitHub Actions 实现自动上传搜索记录到 Algolia，完美呈现。 GitHub</description>
+      <description>&lt;p&gt;博客使用 Algolia 实现搜索功能，手动上传搜索记录数据一直很烦琐，只好苦学 API 和 Action，通过 GitHub Actions 实现自动上传搜索记录到 Algolia，完美呈现。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Algolia实现Hugo搜索功能</title>
+      <link>http://feiflown.github.io/post/algolia%E5%AE%9E%E7%8E%B0hugo%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</link>
+      <pubDate>Sat, 25 Feb 2023 14:55:49 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/algolia%E5%AE%9E%E7%8E%B0hugo%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</guid>
+      <description>&lt;p&gt;一直想实现博客的本地搜索，没有找到好的实现方式。尝试了好几个方案，现在使用 &lt;a href=&#34;https://www.algolia.com/&#34;&gt;Algolia&lt;/a&gt; 实现本地搜索。实现方式简单，每月可搜索 10000 次，可以一直白票下去&lt;/p&gt;</description>
     </item>
     
   </channel>

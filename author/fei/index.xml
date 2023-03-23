@@ -52,7 +52,16 @@
       <pubDate>Mon, 20 Mar 2023 14:33:12 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/post/algolia-auto-update/</guid>
-      <description>博客使用 Algolia 实现搜索功能，手动上传搜索记录数据一直很烦琐，只好苦学 API 和 Action，通过 GitHub Actions 实现自动上传搜索记录到 Algolia，完美呈现。 GitHub</description>
+      <description>&lt;p&gt;博客使用 Algolia 实现搜索功能，手动上传搜索记录数据一直很烦琐，只好苦学 API 和 Action，通过 GitHub Actions 实现自动上传搜索记录到 Algolia，完美呈现。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Algolia实现Hugo搜索功能</title>
+      <link>http://feiflown.github.io/post/algolia%E5%AE%9E%E7%8E%B0hugo%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</link>
+      <pubDate>Sat, 25 Feb 2023 14:55:49 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/algolia%E5%AE%9E%E7%8E%B0hugo%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</guid>
+      <description>&lt;p&gt;一直想实现博客的本地搜索，没有找到好的实现方式。尝试了好几个方案，现在使用 &lt;a href=&#34;https://www.algolia.com/&#34;&gt;Algolia&lt;/a&gt; 实现本地搜索。实现方式简单，每月可搜索 10000 次，可以一直白票下去&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -196,15 +205,6 @@
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/post/keyboard/%E7%AC%AC%E4%B8%80%E6%8A%8Amatrixfalcon/</guid>
       <description>第一把matrix——falcon 去年年中初入了这个坑，那时候也听说了matrix，当初想一把键盘要一两千？都是些什么韭菜啊，没想到，韭菜竟</description>
-    </item>
-    
-    <item>
-      <title>「falcon」开箱</title>
-      <link>http://feiflown.github.io/post/keyboard/falcon%E5%BC%80%E7%AE%B1/</link>
-      <pubDate>Wed, 20 Jan 2021 22:00:06 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/post/keyboard/falcon%E5%BC%80%E7%AE%B1/</guid>
-      <description>&lt;p&gt;终于收到了falcon，发一发开箱图&lt;/p&gt;</description>
     </item>
     
   </channel>

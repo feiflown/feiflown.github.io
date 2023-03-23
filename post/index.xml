@@ -34,7 +34,16 @@
       <pubDate>Mon, 20 Mar 2023 14:33:12 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/post/algolia-auto-update/</guid>
-      <description>博客使用 Algolia 实现搜索功能，手动上传搜索记录数据一直很烦琐，只好苦学 API 和 Action，通过 GitHub Actions 实现自动上传搜索记录到 Algolia，完美呈现。 GitHub</description>
+      <description>&lt;p&gt;博客使用 Algolia 实现搜索功能，手动上传搜索记录数据一直很烦琐，只好苦学 API 和 Action，通过 GitHub Actions 实现自动上传搜索记录到 Algolia，完美呈现。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Algolia实现Hugo搜索功能</title>
+      <link>http://feiflown.github.io/post/algolia%E5%AE%9E%E7%8E%B0hugo%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</link>
+      <pubDate>Sat, 25 Feb 2023 14:55:49 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/algolia%E5%AE%9E%E7%8E%B0hugo%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</guid>
+      <description>&lt;p&gt;一直想实现博客的本地搜索，没有找到好的实现方式。尝试了好几个方案，现在使用 &lt;a href=&#34;https://www.algolia.com/&#34;&gt;Algolia&lt;/a&gt; 实现本地搜索。实现方式简单，每月可搜索 10000 次，可以一直白票下去&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -198,16 +207,6 @@
       <guid>http://feiflown.github.io/post/keyboard/%E8%90%8C%E6%96%B0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%9D%91/</guid>
       <description>&lt;p&gt;萌新的第一个坑——mojo&lt;/p&gt;
 &lt;p&gt;用了半个月实在不想用了&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>第一把客制化</title>
-      <link>http://feiflown.github.io/post/keyboard/%E7%AC%AC%E4%B8%80%E6%8A%8A%E5%AE%A2%E5%88%B6%E5%8C%96/</link>
-      <pubDate>Mon, 28 Sep 2020 13:50:35 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/post/keyboard/%E7%AC%AC%E4%B8%80%E6%8A%8A%E5%AE%A2%E5%88%B6%E5%8C%96/</guid>
-      <description>&lt;p&gt;第一把客制化&lt;/p&gt;
-&lt;p&gt;NJ68，应该是很多人的入坑键盘了，虽然不亮眼，但确实是新人接触客制化非常友好的键盘了。&lt;/p&gt;</description>
     </item>
     
   </channel>
