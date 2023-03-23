@@ -9,7 +9,7 @@
     <managingEditor>feiflown@gmail.com (fei)</managingEditor>
     <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Mon, 20 Mar 2023 14:33:12 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/author/fei/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Mar 2023 23:23:52 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/author/fei/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于</title>
       <link>http://feiflown.github.io/aboutme/</link>
@@ -26,6 +26,15 @@
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/f-link/</guid>
       <description>本站地址：https://feiflown.github.io/ 本站地址：https://feiflown.github.io/ 本站地址：h</description>
+    </item>
+    
+    <item>
+      <title>tps40</title>
+      <link>http://feiflown.github.io/post/tps40/</link>
+      <pubDate>Tue, 21 Mar 2023 23:23:52 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/tps40/</guid>
+      <description>【备忘】 tps40 电泳白 + pc定位板 1969</description>
     </item>
     
     <item>
@@ -197,16 +206,6 @@
       <guid>http://feiflown.github.io/post/povodaobodtopojo/</guid>
       <description>&lt;p&gt;PO、VO、DAO、BO、DTO、POJO&lt;/p&gt;
 &lt;p&gt;能分清吗？&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>萌新的第一个坑——mojo</title>
-      <link>http://feiflown.github.io/post/%E8%90%8C%E6%96%B0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%9D%91/</link>
-      <pubDate>Sun, 01 Nov 2020 18:57:04 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/post/%E8%90%8C%E6%96%B0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%9D%91/</guid>
-      <description>&lt;p&gt;萌新的第一个坑——mojo&lt;/p&gt;
-&lt;p&gt;用了半个月实在不想用了&lt;/p&gt;</description>
     </item>
     
   </channel>

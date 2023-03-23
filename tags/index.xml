@@ -9,7 +9,25 @@
     <managingEditor>feiflown@gmail.com (fei)</managingEditor>
     <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Mon, 20 Mar 2023 14:33:12 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Mar 2023 23:23:52 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>keyboard</title>
+      <link>http://feiflown.github.io/tags/keyboard/</link>
+      <pubDate>Tue, 21 Mar 2023 23:23:52 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/tags/keyboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>备忘</title>
+      <link>http://feiflown.github.io/tags/%E5%A4%87%E5%BF%98/</link>
+      <pubDate>Tue, 21 Mar 2023 23:23:52 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/tags/%E5%A4%87%E5%BF%98/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>algolia</title>
       <link>http://feiflown.github.io/tags/algolia/</link>
@@ -124,15 +142,6 @@
       <pubDate>Wed, 14 Sep 2022 15:10:07 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/tags/%E7%AE%97%E6%B3%95/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>keyboard</title>
-      <link>http://feiflown.github.io/tags/keyboard/</link>
-      <pubDate>Mon, 20 Jun 2022 20:32:24 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/tags/keyboard/</guid>
       <description></description>
     </item>
     

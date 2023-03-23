@@ -9,7 +9,16 @@
     <managingEditor>feiflown@gmail.com (fei)</managingEditor>
     <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Mon, 20 Mar 2023 14:33:12 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Mar 2023 23:23:52 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tps40</title>
+      <link>http://feiflown.github.io/post/tps40/</link>
+      <pubDate>Tue, 21 Mar 2023 23:23:52 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/tps40/</guid>
+      <description>【备忘】 tps40 电泳白 + pc定位板 1969</description>
+    </item>
+    
     <item>
       <title>GitHub Actions实现push自动更新algolia索引</title>
       <link>http://feiflown.github.io/post/algolia-auto-update/</link>
