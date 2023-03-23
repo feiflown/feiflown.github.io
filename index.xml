@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>fei&#39;s Blog</title>
+    <title>fei&#39;s blog</title>
     <link>http://feiflown.github.io/</link>
-    <description>Recent content on fei&#39;s Blog</description>
+    <description>Recent content on fei&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>feiflown@gmail.com (fei)</managingEditor>
     <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Tue, 21 Mar 2023 23:23:52 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 23 Mar 2023 11:04:51 +0800</lastBuildDate>
     
         <atom:link href="http://feiflown.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -261,7 +261,7 @@
     <item>
       <title>Posts</title>
       <link>http://feiflown.github.io/post/</link>
-      <pubDate>Tue, 21 Mar 2023 23:23:52 +0800</pubDate>
+      <pubDate>Thu, 23 Mar 2023 11:04:51 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/post/</guid>
       <description></description>

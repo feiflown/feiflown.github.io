@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on fei&#39;s blog</title>
+    <link>http://feiflown.github.io/tags/git/</link>
+    <description>Recent content in git on fei&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>feiflown@gmail.com (fei)</managingEditor>
+    <webMaster>feiflown@gmail.com (fei)</webMaster>
+    <copyright>WTFPLv2</copyright>
+    <lastBuildDate>Thu, 23 Mar 2023 11:04:51 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>use-gitlab-github-together</title>
+      <link>http://feiflown.github.io/post/use-gitlab-github-together/</link>
+      <pubDate>Thu, 23 Mar 2023 11:04:51 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/use-gitlab-github-together/</guid>
+      <description>由于公司团队使用 GitLab 来托管代码，同时，个人在 Github 上还有一些代码仓库，可公司邮箱与个人邮箱是不同的，由此产生的 SSH key 也是不同的，这就造成了冲突 ，文章</description>
+    </item>
+    
+  </channel>
+</rss>
