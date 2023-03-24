@@ -233,9 +233,9 @@
 &lt;figure  itemprop=&#34;associatedMedia&#34;
   itemscope itemtype=&#34;http://schema.org/ImageObject&#34; &gt;
     &lt;div class=&#34;img&#34;&gt;
-      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://s2.loli.net/2023/02/24/X82kR6wHOBve4dV.png&#34; /&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/image-20211022084650825.png&#34; /&gt;
     &lt;/div&gt;
-    &lt;a href=&#34;https://s2.loli.net/2023/02/24/X82kR6wHOBve4dV.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+    &lt;a href=&#34;https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/image-20211022084650825.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
       &lt;figcaption&gt;&lt;h4&gt;图片来源于WTFPL官网&lt;/h4&gt;
       &lt;/figcaption&gt;
   &lt;/figure&gt;
@@ -292,9 +292,9 @@
          
     }
 
-    body{cursor:  url(https://s1.ax1x.com/2023/03/20/pptcsvn.png), default;}
+    body{cursor:  url(https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/pointer.png), default;}
     
-    a:hover{ cursor:  url(https://s1.ax1x.com/2023/03/20/pptcRET.png), default;}
+    a:hover{ cursor:  url(https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/cursor.png), default;}
 
     .bg-white {
         opacity: 0.89;
