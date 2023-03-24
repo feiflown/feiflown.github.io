@@ -9,7 +9,16 @@
     <managingEditor>feiflown@gmail.com (fei)</managingEditor>
     <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Mon, 20 Mar 2023 14:33:12 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Mar 2023 11:44:19 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Picgo&#43;GitHub&#43;jsDelivr搭建图床</title>
+      <link>http://feiflown.github.io/post/picgo&#43;github&#43;jsdelivr%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/</link>
+      <pubDate>Fri, 24 Mar 2023 11:44:19 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/picgo&#43;github&#43;jsdelivr%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/</guid>
+      <description>&lt;p&gt;利用GitHub+jsDelivr+PicGo搭建免费图床，CDN图床就是这么朴实无华，是基于免费CDN与免费开源网站制作的免费CDN图床。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>GitHub Actions实现push自动更新algolia索引</title>
       <link>http://feiflown.github.io/post/algolia-auto-update/</link>

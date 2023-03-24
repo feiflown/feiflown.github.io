@@ -17,63 +17,91 @@
   
   <url>
     <loc>http://feiflown.github.io/author/</loc>
-    <lastmod>2023-03-23T15:36:27+08:00</lastmod>
+    <lastmod>2023-03-24T17:17:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://feiflown.github.io/categories/</loc>
-    <lastmod>2023-03-23T15:36:27+08:00</lastmod>
+    <lastmod>2023-03-24T17:17:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://feiflown.github.io/author/fei/</loc>
-    <lastmod>2023-03-23T15:36:27+08:00</lastmod>
+    <lastmod>2023-03-24T17:17:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://feiflown.github.io/</loc>
-    <lastmod>2023-03-23T15:36:27+08:00</lastmod>
+    <lastmod>2023-03-24T17:17:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://feiflown.github.io/tags/git/</loc>
-    <lastmod>2023-03-23T11:54:35+08:00</lastmod>
+    <loc>http://feiflown.github.io/tags/hugo/</loc>
+    <lastmod>2023-03-24T17:17:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://feiflown.github.io/categories/git/</loc>
-    <lastmod>2023-03-23T11:54:35+08:00</lastmod>
+    <loc>http://feiflown.github.io/categories/hugo/</loc>
+    <lastmod>2023-03-24T17:17:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://feiflown.github.io/post/picgo&#43;github&#43;jsdelivr%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/</loc>
+    <lastmod>2023-03-24T11:44:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://feiflown.github.io/post/</loc>
-    <lastmod>2023-03-23T15:36:27+08:00</lastmod>
+    <lastmod>2023-03-24T17:17:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://feiflown.github.io/tags/</loc>
-    <lastmod>2023-03-23T15:36:27+08:00</lastmod>
+    <lastmod>2023-03-24T17:17:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://feiflown.github.io/tags/%E5%9B%BE%E5%BA%8A/</loc>
+    <lastmod>2023-03-24T11:44:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://feiflown.github.io/tags/git/</loc>
+    <lastmod>2023-03-24T17:17:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://feiflown.github.io/categories/git/</loc>
+    <lastmod>2023-03-24T17:17:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://feiflown.github.io/post/use-gitlab-github-together/</loc>
-    <lastmod>2023-03-23T11:54:35+08:00</lastmod>
+    <lastmod>2023-03-24T17:17:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -108,28 +136,14 @@
   
   <url>
     <loc>http://feiflown.github.io/tags/algolia/</loc>
-    <lastmod>2023-03-23T15:36:27+08:00</lastmod>
+    <lastmod>2023-03-24T17:17:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://feiflown.github.io/post/algolia-auto-update/</loc>
-    <lastmod>2023-03-23T15:36:27+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://feiflown.github.io/tags/hugo/</loc>
-    <lastmod>2023-03-23T15:36:27+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://feiflown.github.io/categories/hugo/</loc>
-    <lastmod>2023-03-23T15:36:27+08:00</lastmod>
+    <lastmod>2023-03-24T17:17:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

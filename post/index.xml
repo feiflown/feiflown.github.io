@@ -9,7 +9,16 @@
     <managingEditor>feiflown@gmail.com (fei)</managingEditor>
     <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Thu, 23 Mar 2023 11:04:51 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Mar 2023 11:44:19 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Picgo&#43;GitHub&#43;jsDelivr搭建图床</title>
+      <link>http://feiflown.github.io/post/picgo&#43;github&#43;jsdelivr%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/</link>
+      <pubDate>Fri, 24 Mar 2023 11:44:19 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/picgo&#43;github&#43;jsdelivr%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/</guid>
+      <description>&lt;p&gt;利用GitHub+jsDelivr+PicGo搭建免费图床，CDN图床就是这么朴实无华，是基于免费CDN与免费开源网站制作的免费CDN图床。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>use-gitlab-github-together</title>
       <link>http://feiflown.github.io/post/use-gitlab-github-together/</link>
@@ -52,8 +61,7 @@
       <pubDate>Thu, 16 Feb 2023 16:04:45 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/post/%E6%9B%B4%E6%8D%A2%E5%9B%BE%E5%BA%8A-sm.ms/</guid>
-      <description>&lt;p&gt;lua脚本&lt;/p&gt;
-&lt;p&gt;图床&lt;/p&gt;</description>
+      <description>&lt;p&gt;图床&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -197,16 +205,6 @@
       <guid>http://feiflown.github.io/post/povodaobodtopojo/</guid>
       <description>&lt;p&gt;PO、VO、DAO、BO、DTO、POJO&lt;/p&gt;
 &lt;p&gt;能分清吗？&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>萌新的第一个坑——mojo</title>
-      <link>http://feiflown.github.io/post/keyboard/%E8%90%8C%E6%96%B0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%9D%91/</link>
-      <pubDate>Sun, 01 Nov 2020 18:57:04 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/post/keyboard/%E8%90%8C%E6%96%B0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%9D%91/</guid>
-      <description>&lt;p&gt;萌新的第一个坑——mojo&lt;/p&gt;
-&lt;p&gt;用了半个月实在不想用了&lt;/p&gt;</description>
     </item>
     
   </channel>
