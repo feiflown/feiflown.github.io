@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>springcloud on fei&#39;s blog</title>
+    <link>http://feiflown.github.io/categories/springcloud/</link>
+    <description>Recent content in springcloud on fei&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>feiflown@gmail.com (fei)</managingEditor>
+    <webMaster>feiflown@gmail.com (fei)</webMaster>
+    <copyright>WTFPLv2</copyright>
+    <lastBuildDate>Mon, 27 Mar 2023 14:21:20 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/categories/springcloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hystrix服务熔断与监控</title>
+      <link>http://feiflown.github.io/post/hystrix%E6%9C%8D%E5%8A%A1%E7%86%94%E6%96%AD%E4%B8%8E%E7%9B%91%E6%8E%A7/</link>
+      <pubDate>Mon, 27 Mar 2023 14:21:20 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/hystrix%E6%9C%8D%E5%8A%A1%E7%86%94%E6%96%AD%E4%B8%8E%E7%9B%91%E6%8E%A7/</guid>
+      <description>什么是服务熔断 概念 应对微服务雪崩效应的一种链路保护机制，类似保险丝。 关于雪崩效应 微服务之间的数据交互是通过远程调用来完成的。服务A调用服务，</description>
+    </item>
+    
+    <item>
+      <title>Hystrix服务降级</title>
+      <link>http://feiflown.github.io/post/hystrix%E6%9C%8D%E5%8A%A1%E9%99%8D%E7%BA%A7/</link>
+      <pubDate>Mon, 27 Mar 2023 14:21:20 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/hystrix%E6%9C%8D%E5%8A%A1%E9%99%8D%E7%BA%A7/</guid>
+      <description>什么是服务降级 概念 一般指在服务器压力剧增的时候，根据实际业务使用情况以及流量，对一些服务和页面有策略的不处理或者用一种简单的方式进行处理，从</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <title>Picgo&#43;GitHub&#43;jsDelivr搭建图床 - fei&#39;s blog</title>
+    <title>Hystrix服务熔断与监控 - fei&#39;s blog</title>
     
 
 
@@ -26,8 +26,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="fei" />
-  <meta name="description" content="利用GitHub&#43;jsDelivr&#43;PicGo搭建免费图床，CDN图床就是这么朴实无华，是基于免费CDN与免费开源网站制作的免费CDN图床。
-" />
+  <meta name="description" content="什么是服务熔断 概念 应对微服务雪崩效应的一种链路保护机制，类似保险丝。 关于雪崩效应 微服务之间的数据交互是通过远程调用来完成的。服务A调用服务，" />
 
   <meta name="keywords" content="fei, fei博客, fei的博客, fei blog" />
 
@@ -39,7 +38,7 @@
 <meta name="generator" content="Hugo 0.110.0" />
 
 
-<link rel="canonical" href="http://feiflown.github.io/post/picgo&#43;github&#43;jsdelivr%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/" />
+<link rel="canonical" href="http://feiflown.github.io/post/hystrix%E6%9C%8D%E5%8A%A1%E7%86%94%E6%96%AD%E4%B8%8E%E7%9B%91%E6%8E%A7/" />
 
 
 
@@ -70,19 +69,19 @@
 <link rel="stylesheet" href="http://feiflown.github.io/code_expander.js">
 
 
-<meta property="og:title" content="Picgo&#43;GitHub&#43;jsDelivr搭建图床" />
-<meta property="og:description" content="利用GitHub&#43;jsDelivr&#43;PicGo搭建免费图床，CDN图床就是这么朴实无华，是基于免费CDN与免费开源网站制作的免费CDN图床。" />
+<meta property="og:title" content="Hystrix服务熔断与监控" />
+<meta property="og:description" content="什么是服务熔断 概念 应对微服务雪崩效应的一种链路保护机制，类似保险丝。 关于雪崩效应 微服务之间的数据交互是通过远程调用来完成的。服务A调用服务，" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://feiflown.github.io/post/picgo&#43;github&#43;jsdelivr%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2023-03-24T11:44:19+08:00" />
-<meta property="article:modified_time" content="2023-03-24T11:44:19+08:00" />
-<meta itemprop="name" content="Picgo&#43;GitHub&#43;jsDelivr搭建图床">
-<meta itemprop="description" content="利用GitHub&#43;jsDelivr&#43;PicGo搭建免费图床，CDN图床就是这么朴实无华，是基于免费CDN与免费开源网站制作的免费CDN图床。"><meta itemprop="datePublished" content="2023-03-24T11:44:19+08:00" />
-<meta itemprop="dateModified" content="2023-03-24T11:44:19+08:00" />
-<meta itemprop="wordCount" content="1152">
-<meta itemprop="keywords" content="图床,hugo," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Picgo&#43;GitHub&#43;jsDelivr搭建图床"/>
-<meta name="twitter:description" content="利用GitHub&#43;jsDelivr&#43;PicGo搭建免费图床，CDN图床就是这么朴实无华，是基于免费CDN与免费开源网站制作的免费CDN图床。"/>
+<meta property="og:url" content="http://feiflown.github.io/post/hystrix%E6%9C%8D%E5%8A%A1%E7%86%94%E6%96%AD%E4%B8%8E%E7%9B%91%E6%8E%A7/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-03-27T14:21:20+08:00" />
+<meta property="article:modified_time" content="2023-03-27T14:21:20+08:00" />
+<meta itemprop="name" content="Hystrix服务熔断与监控">
+<meta itemprop="description" content="什么是服务熔断 概念 应对微服务雪崩效应的一种链路保护机制，类似保险丝。 关于雪崩效应 微服务之间的数据交互是通过远程调用来完成的。服务A调用服务，"><meta itemprop="datePublished" content="2023-03-27T14:21:20+08:00" />
+<meta itemprop="dateModified" content="2023-03-27T14:21:20+08:00" />
+<meta itemprop="wordCount" content="1346">
+<meta itemprop="keywords" content="springcloud,hystrix," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hystrix服务熔断与监控"/>
+<meta name="twitter:description" content="什么是服务熔断 概念 应对微服务雪崩效应的一种链路保护机制，类似保险丝。 关于雪崩效应 微服务之间的数据交互是通过远程调用来完成的。服务A调用服务，"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -345,17 +344,17 @@
                     <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">Picgo&#43;GitHub&#43;jsDelivr搭建图床</h1>
+      <h1 class="post-title">Hystrix服务熔断与监控</h1>
       
       <div class="post-meta">
-        <time datetime="2023-03-24" class="post-time">
-          2023-03-24
+        <time datetime="2023-03-27" class="post-time">
+          2023-03-27
         </time>
         <div class="post-category">
-            <a href="http://feiflown.github.io/categories/hugo/"> hugo </a>
+            <a href="http://feiflown.github.io/categories/springcloud/"> springcloud </a>
             
           </div>
-        <span class="more-meta"> 1152 words </span>
+        <span class="more-meta"> 1346 words </span>
           <span class="more-meta"> 3 min read </span>
 
         
@@ -377,15 +376,22 @@
   <div class="post-toc-content">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#前言">前言</a></li>
-    <li><a href="#1创建repository">1.创建Repository</a></li>
-    <li><a href="#2配置token-key"><strong>2.配置token key</strong></a></li>
-    <li><a href="#3picgo配置"><strong>3.Picgo配置</strong></a></li>
-    <li><a href="#4markdown">4.Markdown</a>
+    <li><a href="#什么是服务熔断">什么是服务熔断</a>
       <ul>
-        <li><a href="#插件">==插件==</a></li>
+        <li><a href="#概念">概念</a></li>
+        <li><a href="#关于雪崩效应">关于雪崩效应</a></li>
+        <li><a href="#实现机制">实现机制</a></li>
+        <li><a href="#应用场景">应用场景</a></li>
       </ul>
     </li>
+    <li><a href="#hystrix实现服务熔断">Hystrix实现服务熔断</a>
+      <ul>
+        <li><a href="#环境搭建">环境搭建</a></li>
+        <li><a href="#实现服务熔断">实现服务熔断</a></li>
+      </ul>
+    </li>
+    <li><a href="#hystrix实现服务监控">Hystrix实现服务监控</a></li>
+    <li><a href="#测试">测试</a></li>
   </ul>
 </nav>
   </div>
@@ -393,52 +399,223 @@
 
     
     <div class="post-content">
-      <p>利用GitHub+jsDelivr+PicGo搭建免费图床，CDN图床就是这么朴实无华，是基于免费CDN与免费开源网站制作的免费CDN图床。</p>
-<h2 id="前言">前言</h2>
-<ol>
-<li>
-<p>markdown 写blog 时，插入图片，如果采用本地存储方式，上传博客时插入的图片路径就找不到了，这又需要将图片上传至图床生成 URL，在markdown 引入url，这很麻烦。</p>
-</li>
-<li>
-<p>现在国内用的各种图床，例如：SM.MS、Imgur、七牛云、又拍云、腾讯云COS、阿里云OSS等都有各种限制，或者需要收费。</p>
-</li>
-<li>
-<p>使用GitHub仓库创建一个图床，存在的问题是国内访问github的速度不是很快，可以利用jsDelivr CDN加速访问（jsDelivr 是一个免费开源的 CDN 解决方案）国内该平台是首个「打通中国大陆与海外的免费CDN服务」，网页开发者无须担心中国防火墙问题而影响使用。</p>
-</li>
-</ol>
-<h2 id="1创建repository">1.创建Repository</h2>
-<p>新建一个公共的仓库</p>
-<p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/image-20230324111450705.png" alt="image-20230324111450705"></p>
-<h2 id="2配置token-key"><strong>2.配置token key</strong></h2>
-<p>生成一个Token用于操作GitHub repository。</p>
-<p>依次点击Settings-&gt;Developer settings-&gt;Personal access tokens-&gt;Generate token</p>
-<p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/image-20230324110407445.png" alt="image-20230324110407445"></p>
-<p>填写描述，选择<code>repo</code>权限，然后拉到下面点击<code>Generate token</code>按钮</p>
-<p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/image-20230324110215997.png" alt="image-20230324110215997"></p>
-<blockquote>
-<p>创建成功后，会生成一串token，这串token之后不会再显示，所以第一次看到的时候，可以用个小本本保存起来哦，忘记了只有重新生成，每次都不一样。</p>
-</blockquote>
-<h2 id="3picgo配置"><strong>3.Picgo配置</strong></h2>
-<p>首先下载<a href="https://github.com/Molunerfinn/PicGo/releases">PicGo</a></p>
-<p>然后拿到了刚刚记录了GitHub token后，打开picgo，按照如下设置即可：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/image-20230324104355968.png" alt="image-20230324104355968"></p>
-<p><code>设定仓库名:</code>按照“账户名/仓库名的格式填写”，比如我的是：<code>feiflown/Image-Hosting</code></p>
-<p><code>分支名:</code>统一填写<code>main</code></p>
-<p><code>设定Token:</code>将之前的Token粘贴在这里</p>
-<p><code>指定存储路径:</code>留空</p>
-<p><code>自定义域名:</code>的作用是在上传图片后成功后，PicGo会将“自定义域名+上传的图片名”生成的访问链接，放到剪切板上。默认留空也可以正常使用。这里为了使用<a href="https://cloud.tencent.com/product/cdn?from=10680">CDN</a>加快图片的访问速度，自定义域名我们按照这样去填写：https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名</p>
-<p>比如我的是：https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting</p>
-<blockquote>
-<p>picgo中可以对上传的图片进行指定操作，不过删除只是删除picgo中的图片而已，GitHub上的不会删除哦</p>
-</blockquote>
-<h2 id="4markdown">4.Markdown</h2>
-<p><code>Tpora</code>进行以下配置</p>
-<p>文件-&gt;偏好设置-&gt;图像，设置上传服务为<code>PicGo</code>，路径设置为<code>PicGo.exe</code>路径</p>
-<p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/image-20230324112122985.png" alt="image-20230324112122985"></p>
-<p>使用时可直接对图片点击<code>上传图片</code>即可</p>
-<p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/img_2023-03-24_17-13-59-1679649323298.jpg" alt="img_2023-03-24_17-13-59"></p>
-<h3 id="插件">==插件==</h3>
-<p>PicGo 支持丰富的插件系统，这里是 <a href="https://github.com/PicGo/Awesome-PicGo">官方插件</a> 页面，截止 2021 年 6 月底，已经推出了 32 款插件应用，其中支持 GUI（图形用户界面，与之相对应的是 CLI —— 命令行界面）的插件共 30 款，涵盖「图床上传器」、「图片压缩」、「图片编辑」、「图床迁移」等多方面。</p>
+      <h2 id="什么是服务熔断">什么是服务熔断</h2>
+<h3 id="概念">概念</h3>
+<p>应对微服务雪崩效应的一种链路保护机制，类似保险丝。</p>
+<h3 id="关于雪崩效应">关于雪崩效应</h3>
+<p>微服务之间的数据交互是通过远程调用来完成的。服务A调用服务，服务B调用服务C，某一时间链路上对服务C的调用响应时间过长或者服务C不可用，随着时间的增长，对服务C的调用也越来越多，然后服务C崩溃了，但是链路调用还在，对服务B的调用也在持续增多，然后服务B崩溃，随之A也崩溃，导致<strong>雪崩效应</strong>。</p>
+<h3 id="实现机制">实现机制</h3>
+<p>当某服务出现不可用或响应超时的情况时，为了防止整个系统出现雪崩，暂时停止对该服务的调用。</p>
+<p>通过Hystrix实现服务熔断，Hystrix会监控微服务间调用的状况，当失败的调用到一定阈值，就会启动熔断机制，断路器打开。而在一段时间之后，断路器会变为半开状态，此时允许部分微服务调用，如果都成功了，即不超过设定好的阈值，那么断路器将恢复为关闭状态。</p>
+<p>如下图所示：（来自<a href="https://martinfowler.com/bliki/CircuitBreaker.html">Martin Fowler大神的博客</a>）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/img_20230327142120.jpg.jpg" alt="img_20230327142120.jpg"></p>
+<h3 id="应用场景">应用场景</h3>
+<p>微服务架构中，多个微服务相互调用出使用</p>
+<h2 id="hystrix实现服务熔断">Hystrix实现服务熔断</h2>
+<h3 id="环境搭建">环境搭建</h3>
+<h4 id="1-关于pomxml">1. 关于pom.xml</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;groupId&gt;</span>org.springframework.cloud<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;artifactId&gt;</span>spring-cloud-starter-netflix-hystrix<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependency&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;groupId&gt;</span>org.springframework.cloud<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;artifactId&gt;</span>spring-cloud-starter-netflix-eureka-client<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependency&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="2-启动类添加enablehystrix注解表示使用熔断器">2. 启动类添加@EnableHystrix注解，表示使用熔断器。</h4>
+<h3 id="实现服务熔断">实现服务熔断</h3>
+<h4 id="1-paymentservicejava">1. PaymentService.java</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">PaymentService</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="o">...</span>
+</span></span><span class="line"><span class="cl">    <span class="n">String</span> <span class="nf">circuitBreaker</span><span class="o">(</span><span class="n">Integer</span> <span class="n">id</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="2-paymentserviceimpljava">2. PaymentServiceImpl.java</h4>
+<p>设置服务熔断的核心配置：</p>
+<p>（1）启用断路器:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@HystrixProperty</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&#34;circuitBreaker.enabled&#34;</span><span class="o">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s">&#34;true&#34;</span><span class="o">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>（2）设置请求次数:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@HystrixProperty</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&#34;circuitBreaker.requestVolumeThreshold&#34;</span><span class="o">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s">&#34;10&#34;</span><span class="o">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>（3）设置时间窗口期:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@HystrixProperty</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&#34;circuitBreaker.sleepWindowInMilliseconds&#34;</span><span class="o">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s">&#34;10000&#34;</span><span class="o">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>（4）设置失败率:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@HystrixProperty</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&#34;circuitBreaker.errorThresholdPercentage&#34;</span><span class="o">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s">&#34;60&#34;</span><span class="o">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如上设置的值，如果在10秒内，失败率达到请求次数（10）的百分之60，也就是6次，就会打开断路器，否则断路器依然关闭。</p>
+<p>断路器打开后，在一定时间之后，断路器变为半开状态，允许部分请求访问，如果这些请求满足要求，不超阈值，则断路器恢复为关闭状态。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@Service</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">PaymentServiceImpl</span> <span class="kd">implements</span> <span class="n">PaymentService</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="o">...</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@HystrixCommand</span><span class="o">(</span><span class="n">fallbackMethod</span> <span class="o">=</span> <span class="s">&#34;circuitBreaker_fallback&#34;</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">commandProperties</span> <span class="o">=</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nd">@HystrixProperty</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&#34;circuitBreaker.enabled&#34;</span><span class="o">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s">&#34;true&#34;</span><span class="o">),</span>
+</span></span><span class="line"><span class="cl">                    <span class="nd">@HystrixProperty</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&#34;circuitBreaker.requestVolumeThreshold&#34;</span><span class="o">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s">&#34;10&#34;</span><span class="o">),</span>
+</span></span><span class="line"><span class="cl">                    <span class="nd">@HystrixProperty</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&#34;circuitBreaker.sleepWindowInMilliseconds&#34;</span><span class="o">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s">&#34;10000&#34;</span><span class="o">),</span>
+</span></span><span class="line"><span class="cl">                    <span class="nd">@HystrixProperty</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&#34;circuitBreaker.errorThresholdPercentage&#34;</span><span class="o">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s">&#34;60&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">            <span class="o">})</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">String</span> <span class="nf">circuitBreaker</span><span class="o">(</span><span class="n">Integer</span> <span class="n">id</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="n">id</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="o">)</span> <span class="k">throw</span> <span class="k">new</span> <span class="n">RuntimeException</span><span class="o">(</span><span class="s">&#34;id 不能小于0&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">String</span> <span class="n">uuid</span> <span class="o">=</span> <span class="n">IdUtil</span><span class="o">.</span><span class="na">simpleUUID</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">Thread</span><span class="o">.</span><span class="na">currentThread</span><span class="o">().</span><span class="na">getName</span><span class="o">()</span> <span class="o">+</span> <span class="s">&#34;\t&#34;</span> <span class="o">+</span> <span class="s">&#34;uuid:&#34;</span> <span class="o">+</span> <span class="n">uuid</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">String</span> <span class="nf">circuitBreaker_fallback</span><span class="o">(</span><span class="nd">@PathVariable</span><span class="o">(</span><span class="s">&#34;id&#34;</span><span class="o">)</span> <span class="n">Integer</span> <span class="n">id</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="s">&#34;id 不能小于0, 请重试~ id: &#34;</span> <span class="o">+</span> <span class="n">id</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="3-paymentcontrollerjava">3. PaymentController.java</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@RestController</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@Slf4j</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">PaymentController</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Resource</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">PaymentService</span> <span class="n">paymentService</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nd">@GetMapping</span><span class="o">(</span><span class="s">&#34;/payment/cir/{id}&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">String</span> <span class="nf">paymentCircuitBreaker</span><span class="o">(</span><span class="nd">@PathVariable</span><span class="o">(</span><span class="s">&#34;id&#34;</span><span class="o">)</span> <span class="n">Integer</span> <span class="n">id</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">paymentService</span><span class="o">.</span><span class="na">circuitBreaker</span><span class="o">(</span><span class="n">id</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">...</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="hystrix实现服务监控">Hystrix实现服务监控</h2>
+<p>一、在另一个module或者project中进行：</p>
+<p>（1）关于pom.xml</p>
+<p>除了一些基本依赖外：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;groupId&gt;</span>org.springframework.cloud<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;artifactId&gt;</span>spring-cloud-starter-netflix-hystrix-dashboard<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependency&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>（2）启动类开启@EnableHystrixDashboard注解。</p>
+<p>二、在要监控的服务的配置文件中添加：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl"><span class="c"># hystrix 9001监控配置</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">management</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">endpoints</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">web</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">exposure</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">include</span><span class="p">:</span><span class="w"> </span><span class="l">hystrix.stream, info, health</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="测试">测试</h2>
+<p>（一）打开：<code>http://{ip}:{port}/hystrix</code>；</p>
+<p>（二）监控：<code>http://{ip}:{port}/actuator/hystrix.stream</code>；</p>
+<p>（三）访问<code>http://localhost:8001/payment/cir/1</code>，可以正常访问；</p>
+<p>（四）多次访问<code>http://localhost:8001/payment/cir/-1</code>, 返回系统繁忙信息，发现断路器开启了：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/img_20230327142130.jpg.jpg" alt="img_20230327142130.jpg"></p>
+<p>此时，再访问<code>http://localhost:8001/payment/cir/1</code>，发现返回了系统繁忙信息。</p>
+<p>（五）多次访问<code>http://localhost:8001/payment/cir/1</code>，发现断路器关闭，恢复正常访问。</p>
+<p>本文转载自<a href="https://akynazh.site/posts/2022/07/hytrix-realizes-service-fusing-and-monitoring/#%E4%BB%80%E4%B9%88%E6%98%AF%E6%9C%8D%E5%8A%A1%E7%86%94%E6%96%AD">akynazh&rsquo;s blog</a>，如有侵权，请联系删除。</p>
+
     </div>
 
     
@@ -451,7 +628,7 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-      2023-03-24
+      2023-03-27
       
     </span>
   </p>
@@ -483,30 +660,17 @@
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="http://feiflown.github.io/tags/%E5%9B%BE%E5%BA%8A/">图床</a>
-          <a href="http://feiflown.github.io/tags/hugo/">hugo</a>
+          <a href="http://feiflown.github.io/tags/springcloud/">springcloud</a>
+          <a href="http://feiflown.github.io/tags/hystrix/">hystrix</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/hystrix%E6%9C%8D%E5%8A%A1%E9%99%8D%E7%BA%A7/">
-            
-            <i class="iconfont">
-              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
-</svg>
-
-            </i>
-            <span class="prev-text nav-default">Hystrix服务降级</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
         
-          <a class="next" href="/post/use-gitlab-github-together/">
-            <span class="next-text nav-default">use-gitlab-github-together</span>
+          <a class="next" href="/post/hystrix%E6%9C%8D%E5%8A%A1%E9%99%8D%E7%BA%A7/">
+            <span class="next-text nav-default">Hystrix服务降级</span>
             <span class="prev-text nav-mobile">Next</span>
             
             <i class="iconfont">

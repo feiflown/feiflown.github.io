@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <title>Picgo&#43;GitHub&#43;jsDelivr搭建图床 - fei&#39;s blog</title>
+    <title>Hystrix服务降级 - fei&#39;s blog</title>
     
 
 
@@ -26,8 +26,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="fei" />
-  <meta name="description" content="利用GitHub&#43;jsDelivr&#43;PicGo搭建免费图床，CDN图床就是这么朴实无华，是基于免费CDN与免费开源网站制作的免费CDN图床。
-" />
+  <meta name="description" content="什么是服务降级 概念 一般指在服务器压力剧增的时候，根据实际业务使用情况以及流量，对一些服务和页面有策略的不处理或者用一种简单的方式进行处理，从" />
 
   <meta name="keywords" content="fei, fei博客, fei的博客, fei blog" />
 
@@ -39,7 +38,7 @@
 <meta name="generator" content="Hugo 0.110.0" />
 
 
-<link rel="canonical" href="http://feiflown.github.io/post/picgo&#43;github&#43;jsdelivr%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/" />
+<link rel="canonical" href="http://feiflown.github.io/post/hystrix%E6%9C%8D%E5%8A%A1%E9%99%8D%E7%BA%A7/" />
 
 
 
@@ -70,19 +69,19 @@
 <link rel="stylesheet" href="http://feiflown.github.io/code_expander.js">
 
 
-<meta property="og:title" content="Picgo&#43;GitHub&#43;jsDelivr搭建图床" />
-<meta property="og:description" content="利用GitHub&#43;jsDelivr&#43;PicGo搭建免费图床，CDN图床就是这么朴实无华，是基于免费CDN与免费开源网站制作的免费CDN图床。" />
+<meta property="og:title" content="Hystrix服务降级" />
+<meta property="og:description" content="什么是服务降级 概念 一般指在服务器压力剧增的时候，根据实际业务使用情况以及流量，对一些服务和页面有策略的不处理或者用一种简单的方式进行处理，从" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://feiflown.github.io/post/picgo&#43;github&#43;jsdelivr%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2023-03-24T11:44:19+08:00" />
-<meta property="article:modified_time" content="2023-03-24T11:44:19+08:00" />
-<meta itemprop="name" content="Picgo&#43;GitHub&#43;jsDelivr搭建图床">
-<meta itemprop="description" content="利用GitHub&#43;jsDelivr&#43;PicGo搭建免费图床，CDN图床就是这么朴实无华，是基于免费CDN与免费开源网站制作的免费CDN图床。"><meta itemprop="datePublished" content="2023-03-24T11:44:19+08:00" />
-<meta itemprop="dateModified" content="2023-03-24T11:44:19+08:00" />
-<meta itemprop="wordCount" content="1152">
-<meta itemprop="keywords" content="图床,hugo," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Picgo&#43;GitHub&#43;jsDelivr搭建图床"/>
-<meta name="twitter:description" content="利用GitHub&#43;jsDelivr&#43;PicGo搭建免费图床，CDN图床就是这么朴实无华，是基于免费CDN与免费开源网站制作的免费CDN图床。"/>
+<meta property="og:url" content="http://feiflown.github.io/post/hystrix%E6%9C%8D%E5%8A%A1%E9%99%8D%E7%BA%A7/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-03-27T14:21:20+08:00" />
+<meta property="article:modified_time" content="2023-03-27T14:21:20+08:00" />
+<meta itemprop="name" content="Hystrix服务降级">
+<meta itemprop="description" content="什么是服务降级 概念 一般指在服务器压力剧增的时候，根据实际业务使用情况以及流量，对一些服务和页面有策略的不处理或者用一种简单的方式进行处理，从"><meta itemprop="datePublished" content="2023-03-27T14:21:20+08:00" />
+<meta itemprop="dateModified" content="2023-03-27T14:21:20+08:00" />
+<meta itemprop="wordCount" content="974">
+<meta itemprop="keywords" content="springcloud,hystrix," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hystrix服务降级"/>
+<meta name="twitter:description" content="什么是服务降级 概念 一般指在服务器压力剧增的时候，根据实际业务使用情况以及流量，对一些服务和页面有策略的不处理或者用一种简单的方式进行处理，从"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -345,18 +344,18 @@
                     <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">Picgo&#43;GitHub&#43;jsDelivr搭建图床</h1>
+      <h1 class="post-title">Hystrix服务降级</h1>
       
       <div class="post-meta">
-        <time datetime="2023-03-24" class="post-time">
-          2023-03-24
+        <time datetime="2023-03-27" class="post-time">
+          2023-03-27
         </time>
         <div class="post-category">
-            <a href="http://feiflown.github.io/categories/hugo/"> hugo </a>
+            <a href="http://feiflown.github.io/categories/springcloud/"> springcloud </a>
             
           </div>
-        <span class="more-meta"> 1152 words </span>
-          <span class="more-meta"> 3 min read </span>
+        <span class="more-meta"> 974 words </span>
+          <span class="more-meta"> 2 min read </span>
 
         
         
@@ -377,13 +376,18 @@
   <div class="post-toc-content">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#前言">前言</a></li>
-    <li><a href="#1创建repository">1.创建Repository</a></li>
-    <li><a href="#2配置token-key"><strong>2.配置token key</strong></a></li>
-    <li><a href="#3picgo配置"><strong>3.Picgo配置</strong></a></li>
-    <li><a href="#4markdown">4.Markdown</a>
+    <li><a href="#什么是服务降级">什么是服务降级</a>
       <ul>
-        <li><a href="#插件">==插件==</a></li>
+        <li><a href="#概念">概念</a></li>
+        <li><a href="#应用场景">应用场景</a></li>
+        <li><a href="#大致实现过程">大致实现过程</a></li>
+      </ul>
+    </li>
+    <li><a href="#使用hystrix实现服务降级">使用Hystrix实现服务降级</a>
+      <ul>
+        <li><a href="#环境搭建">环境搭建</a></li>
+        <li><a href="#实现服务降级">实现服务降级</a></li>
+        <li><a href="#测试">测试</a></li>
       </ul>
     </li>
   </ul>
@@ -393,52 +397,215 @@
 
     
     <div class="post-content">
-      <p>利用GitHub+jsDelivr+PicGo搭建免费图床，CDN图床就是这么朴实无华，是基于免费CDN与免费开源网站制作的免费CDN图床。</p>
-<h2 id="前言">前言</h2>
-<ol>
-<li>
-<p>markdown 写blog 时，插入图片，如果采用本地存储方式，上传博客时插入的图片路径就找不到了，这又需要将图片上传至图床生成 URL，在markdown 引入url，这很麻烦。</p>
-</li>
-<li>
-<p>现在国内用的各种图床，例如：SM.MS、Imgur、七牛云、又拍云、腾讯云COS、阿里云OSS等都有各种限制，或者需要收费。</p>
-</li>
-<li>
-<p>使用GitHub仓库创建一个图床，存在的问题是国内访问github的速度不是很快，可以利用jsDelivr CDN加速访问（jsDelivr 是一个免费开源的 CDN 解决方案）国内该平台是首个「打通中国大陆与海外的免费CDN服务」，网页开发者无须担心中国防火墙问题而影响使用。</p>
-</li>
-</ol>
-<h2 id="1创建repository">1.创建Repository</h2>
-<p>新建一个公共的仓库</p>
-<p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/image-20230324111450705.png" alt="image-20230324111450705"></p>
-<h2 id="2配置token-key"><strong>2.配置token key</strong></h2>
-<p>生成一个Token用于操作GitHub repository。</p>
-<p>依次点击Settings-&gt;Developer settings-&gt;Personal access tokens-&gt;Generate token</p>
-<p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/image-20230324110407445.png" alt="image-20230324110407445"></p>
-<p>填写描述，选择<code>repo</code>权限，然后拉到下面点击<code>Generate token</code>按钮</p>
-<p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/image-20230324110215997.png" alt="image-20230324110215997"></p>
-<blockquote>
-<p>创建成功后，会生成一串token，这串token之后不会再显示，所以第一次看到的时候，可以用个小本本保存起来哦，忘记了只有重新生成，每次都不一样。</p>
-</blockquote>
-<h2 id="3picgo配置"><strong>3.Picgo配置</strong></h2>
-<p>首先下载<a href="https://github.com/Molunerfinn/PicGo/releases">PicGo</a></p>
-<p>然后拿到了刚刚记录了GitHub token后，打开picgo，按照如下设置即可：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/image-20230324104355968.png" alt="image-20230324104355968"></p>
-<p><code>设定仓库名:</code>按照“账户名/仓库名的格式填写”，比如我的是：<code>feiflown/Image-Hosting</code></p>
-<p><code>分支名:</code>统一填写<code>main</code></p>
-<p><code>设定Token:</code>将之前的Token粘贴在这里</p>
-<p><code>指定存储路径:</code>留空</p>
-<p><code>自定义域名:</code>的作用是在上传图片后成功后，PicGo会将“自定义域名+上传的图片名”生成的访问链接，放到剪切板上。默认留空也可以正常使用。这里为了使用<a href="https://cloud.tencent.com/product/cdn?from=10680">CDN</a>加快图片的访问速度，自定义域名我们按照这样去填写：https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名</p>
-<p>比如我的是：https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting</p>
-<blockquote>
-<p>picgo中可以对上传的图片进行指定操作，不过删除只是删除picgo中的图片而已，GitHub上的不会删除哦</p>
-</blockquote>
-<h2 id="4markdown">4.Markdown</h2>
-<p><code>Tpora</code>进行以下配置</p>
-<p>文件-&gt;偏好设置-&gt;图像，设置上传服务为<code>PicGo</code>，路径设置为<code>PicGo.exe</code>路径</p>
-<p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/image-20230324112122985.png" alt="image-20230324112122985"></p>
-<p>使用时可直接对图片点击<code>上传图片</code>即可</p>
-<p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/img_2023-03-24_17-13-59-1679649323298.jpg" alt="img_2023-03-24_17-13-59"></p>
-<h3 id="插件">==插件==</h3>
-<p>PicGo 支持丰富的插件系统，这里是 <a href="https://github.com/PicGo/Awesome-PicGo">官方插件</a> 页面，截止 2021 年 6 月底，已经推出了 32 款插件应用，其中支持 GUI（图形用户界面，与之相对应的是 CLI —— 命令行界面）的插件共 30 款，涵盖「图床上传器」、「图片压缩」、「图片编辑」、「图床迁移」等多方面。</p>
+      <h2 id="什么是服务降级">什么是服务降级</h2>
+<h3 id="概念">概念</h3>
+<p>一般指在服务器压力剧增的时候，根据实际业务使用情况以及流量，对一些服务和页面有策略的不处理或者用一种简单的方式进行处理，从而释放服务器资源的资源以保证核心业务的正常高效运行。</p>
+<h3 id="应用场景">应用场景</h3>
+<p>多用于微服务架构中，一般当整个微服务架构整体的负载超出了预设的上限阈值（和服务器的配置性能有关系），或者即将到来的流量预计会超过预设的阈值时。</p>
+<h3 id="大致实现过程">大致实现过程</h3>
+<p>为了预防某些功能出现负荷过载或者响应慢的情况，在其内部暂时舍弃对一些非核心的接口和数据的请求，而直接返回一个提前准备好的fallback（退路）错误处理信息。这样，虽然提供的是一个有损的服务，但却保证了整个系统的稳定性和可用性。</p>
+<h2 id="使用hystrix实现服务降级">使用Hystrix实现服务降级</h2>
+<p>本实验配合了Feign实现，利用Feign通过接口的方式解耦服务这一特点，通过在实现服务接口的类来编写方法对应的fallback方法。</p>
+<h3 id="环境搭建">环境搭建</h3>
+<p>一、关于pom</p>
+<p>在消费方实现服务降级，除了基本包导入外，导入以下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">&lt;groupId&gt;</span>org.springframework.cloud<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;artifactId&gt;</span>spring-cloud-starter-netflix-hystrix<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependency&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;groupId&gt;</span>org.springframework.cloud<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;artifactId&gt;</span>spring-cloud-starter-openfeign<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependency&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;groupId&gt;</span>org.springframework.cloud<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;artifactId&gt;</span>spring-cloud-starter-netflix-eureka-server<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependency&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>二、关于application.yml</p>
+<p>除了基本配置外，以下两个超时时间的配置需要格外注意：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl"><span class="c"># 设置feign超时时间（默认为1秒）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">feign</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">hystrix</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">client</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">config</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">default</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">ConnectTimeOut</span><span class="p">:</span><span class="w"> </span><span class="m">5000</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">ReadTimeOut</span><span class="p">:</span><span class="w"> </span><span class="m">5000</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 设置hystrix超时时间（默认为1秒）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">hystrix</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">command</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">default</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">execution</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">isolation</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">thread</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">timeoutInMilliseconds</span><span class="p">:</span><span class="w"> </span><span class="m">2000</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>其他关于Feign的环境配置省略了。</p>
+<h3 id="实现服务降级">实现服务降级</h3>
+<p>一、PaymentService.java</p>
+<p>在使用了Feign的基础上使用Hystrix功能，指定fallback对应的实现类。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@Service</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@FeignClient</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">&#34;CLOUD-HYSTRIX-PAYMENT-SERVICE&#34;</span><span class="o">,</span> <span class="n">fallback</span> <span class="o">=</span> <span class="n">PaymentHystrixService</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">PaymentService</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="o">...</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@GetMapping</span><span class="o">(</span><span class="s">&#34;/payment/tt&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">CommonResult</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span> <span class="nf">timeoutTest</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>二、PaymentServiceImpl.java</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@Service</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">PaymentHystrixService</span> <span class="kd">implements</span> <span class="n">PaymentService</span><span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="o">...</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">CommonResult</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span> <span class="nf">timeoutTest</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="k">new</span> <span class="n">CommonResult</span><span class="o">&lt;&gt;(</span><span class="mi">500</span><span class="o">,</span> <span class="s">&#34;error&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>三、 PaymentController.java</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@RestController</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@Slf4j</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">PaymentController</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Resource</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">PaymentService</span> <span class="n">paymentService</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">...</span>
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">    * @description: 访问一个耗时超过3秒的服务
+</span></span></span><span class="line"><span class="cl"><span class="cm">    * @author Jiang Zhihang
+</span></span></span><span class="line"><span class="cl"><span class="cm">    * @date 2022/7/26 11:16
+</span></span></span><span class="line"><span class="cl"><span class="cm">    */</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@GetMapping</span><span class="o">(</span><span class="s">&#34;/consumer/payment/tt&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">CommonResult</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span> <span class="nf">timeoutTest</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">paymentService</span><span class="o">.</span><span class="na">timeoutTest</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="测试">测试</h3>
+<p>一、访问<code>http://localhost:8001/payment/tt</code>，由于hystrix配置最小超时时间为2秒，而访问时间超3秒，所以得到如下结果：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;code&#34;</span><span class="p">:</span> <span class="mi">500</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;message&#34;</span><span class="p">:</span> <span class="s2">&#34;error&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="kc">null</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>可以发现调用了fallback方法。</p>
+<p>二、修改hystrix超时时间为4秒，再次访问得到：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;code&#34;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;message&#34;</span><span class="p">:</span> <span class="s2">&#34;timeout test&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="kc">null</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>得到成功返回的数据。</p>
+<p>本文转载自<a href="https://akynazh.site/posts/2022/07/hytrix-enables-service-degradation/">akynazh&rsquo;s blog</a>，如有侵权，请联系删除。</p>
+
     </div>
 
     
@@ -451,7 +618,7 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-      2023-03-24
+      2023-03-27
       
     </span>
   </p>
@@ -483,15 +650,15 @@
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="http://feiflown.github.io/tags/%E5%9B%BE%E5%BA%8A/">图床</a>
-          <a href="http://feiflown.github.io/tags/hugo/">hugo</a>
+          <a href="http://feiflown.github.io/tags/springcloud/">springcloud</a>
+          <a href="http://feiflown.github.io/tags/hystrix/">hystrix</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/hystrix%E6%9C%8D%E5%8A%A1%E9%99%8D%E7%BA%A7/">
+          <a class="prev" href="/post/hystrix%E6%9C%8D%E5%8A%A1%E7%86%94%E6%96%AD%E4%B8%8E%E7%9B%91%E6%8E%A7/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -501,12 +668,12 @@
 </svg>
 
             </i>
-            <span class="prev-text nav-default">Hystrix服务降级</span>
+            <span class="prev-text nav-default">Hystrix服务熔断与监控</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
         
-          <a class="next" href="/post/use-gitlab-github-together/">
-            <span class="next-text nav-default">use-gitlab-github-together</span>
+          <a class="next" href="/post/picgo&#43;github&#43;jsdelivr%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/">
+            <span class="next-text nav-default">Picgo&#43;GitHub&#43;jsDelivr搭建图床</span>
             <span class="prev-text nav-mobile">Next</span>
             
             <i class="iconfont">

@@ -9,7 +9,7 @@
     <managingEditor>feiflown@gmail.com (fei)</managingEditor>
     <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Fri, 24 Mar 2023 11:44:19 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/author/fei/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Mar 2023 14:21:20 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/author/fei/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于</title>
       <link>http://feiflown.github.io/aboutme/</link>
@@ -26,6 +26,24 @@
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/f-link/</guid>
       <description>本站地址：https://feiflown.github.io/ 本站地址：https://feiflown.github.io/ 本站地址：h</description>
+    </item>
+    
+    <item>
+      <title>Hystrix服务熔断与监控</title>
+      <link>http://feiflown.github.io/post/hystrix%E6%9C%8D%E5%8A%A1%E7%86%94%E6%96%AD%E4%B8%8E%E7%9B%91%E6%8E%A7/</link>
+      <pubDate>Mon, 27 Mar 2023 14:21:20 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/hystrix%E6%9C%8D%E5%8A%A1%E7%86%94%E6%96%AD%E4%B8%8E%E7%9B%91%E6%8E%A7/</guid>
+      <description>什么是服务熔断 概念 应对微服务雪崩效应的一种链路保护机制，类似保险丝。 关于雪崩效应 微服务之间的数据交互是通过远程调用来完成的。服务A调用服务，</description>
+    </item>
+    
+    <item>
+      <title>Hystrix服务降级</title>
+      <link>http://feiflown.github.io/post/hystrix%E6%9C%8D%E5%8A%A1%E9%99%8D%E7%BA%A7/</link>
+      <pubDate>Mon, 27 Mar 2023 14:21:20 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/hystrix%E6%9C%8D%E5%8A%A1%E9%99%8D%E7%BA%A7/</guid>
+      <description>什么是服务降级 概念 一般指在服务器压力剧增的时候，根据实际业务使用情况以及流量，对一些服务和页面有策略的不处理或者用一种简单的方式进行处理，从</description>
     </item>
     
     <item>
@@ -186,25 +204,6 @@
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/post/idea%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
       <description>&lt;p&gt;idea快捷键&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>关于我的MiKU厨朋友入坑客制化这档事</title>
-      <link>http://feiflown.github.io/post/keyboard/%E5%B8%A6%E6%9C%8B%E5%8F%8B%E5%85%A5%E5%9D%91%E5%AE%A2%E5%88%B6%E5%8C%96/</link>
-      <pubDate>Tue, 06 Jul 2021 20:35:02 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/post/keyboard/%E5%B8%A6%E6%9C%8B%E5%8F%8B%E5%85%A5%E5%9D%91%E5%AE%A2%E5%88%B6%E5%8C%96/</guid>
-      <description>&lt;p&gt;带我的MiKU厨&lt;/p&gt;
-&lt;p&gt;关于我的MiKU厨朋友入坑客制化这档事&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>RAMA KARA紫透</title>
-      <link>http://feiflown.github.io/post/keyboard/rama-kara%E7%B4%AB%E9%80%8F/</link>
-      <pubDate>Mon, 17 May 2021 22:00:06 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/post/keyboard/rama-kara%E7%B4%AB%E9%80%8F/</guid>
-      <description>RAMA的宣传片是真的无敌，当初看到宣传片立马买了一把。 用了几周来分享一下使用感受，KARA的手感和声音还是不错的，虽然是塑料键盘但是组完以</description>
     </item>
     
   </channel>
