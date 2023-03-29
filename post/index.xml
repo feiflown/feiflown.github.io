@@ -9,7 +9,20 @@
     <managingEditor>feiflown@gmail.com (fei)</managingEditor>
     <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Mon, 27 Mar 2023 14:21:20 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Mar 2023 21:16:55 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>lua-秒杀系统</title>
+      <link>http://feiflown.github.io/post/lua-%E7%A7%92%E6%9D%80%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Tue, 28 Mar 2023 21:16:55 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/lua-%E7%A7%92%E6%9D%80%E7%B3%BB%E7%BB%9F/</guid>
+      <description>&lt;p&gt;秒杀系统一般要注意的问题就是 :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;库存少卖，超卖问题（原子性）&lt;/li&gt;
+&lt;li&gt;流量削峰，这里我们设定的时候每个用户只能秒杀一次所以比较好处理&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
     <item>
       <title>Hystrix服务熔断与监控</title>
       <link>http://feiflown.github.io/post/hystrix%E6%9C%8D%E5%8A%A1%E7%86%94%E6%96%AD%E4%B8%8E%E7%9B%91%E6%8E%A7/</link>
@@ -88,7 +101,7 @@
       <pubDate>Tue, 03 Jan 2023 14:32:52 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/post/lua%E8%84%9A%E6%9C%AC/</guid>
-      <description>&lt;p&gt;lua脚本&lt;/p&gt;</description>
+      <description>&lt;p&gt;Redis 的 Lua 脚本可以保证原子性，这是因为 Redis 将 Lua 脚本作为一个整体来执行，不会在执行过程中中断或者被其他客户端的请求所干扰。这样就保证了 Lua 脚本的原子性。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -196,15 +209,6 @@
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/post/keyboard/rama-kara%E7%B4%AB%E9%80%8F/</guid>
       <description>RAMA的宣传片是真的无敌，当初看到宣传片立马买了一把。 用了几周来分享一下使用感受，KARA的手感和声音还是不错的，虽然是塑料键盘但是组完以</description>
-    </item>
-    
-    <item>
-      <title>第一把matrix——falcon</title>
-      <link>http://feiflown.github.io/post/keyboard/%E7%AC%AC%E4%B8%80%E6%8A%8Amatrixfalcon/</link>
-      <pubDate>Fri, 22 Jan 2021 12:16:35 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/post/keyboard/%E7%AC%AC%E4%B8%80%E6%8A%8Amatrixfalcon/</guid>
-      <description>第一把matrix——falcon 去年，初入客制化，那时候也听说了matrix，当初想一把键盘要一两千？都是些什么韭菜啊，没想到，韭菜竟是我</description>
     </item>
     
   </channel>

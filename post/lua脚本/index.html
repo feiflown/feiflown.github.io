@@ -26,7 +26,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="fei" />
-  <meta name="description" content="lua脚本
+  <meta name="description" content="Redis 的 Lua 脚本可以保证原子性，这是因为 Redis 将 Lua 脚本作为一个整体来执行，不会在执行过程中中断或者被其他客户端的请求所干扰。这样就保证了 Lua 脚本的原子性。
 " />
 
   <meta name="keywords" content="fei, fei博客, fei的博客, fei blog" />
@@ -71,18 +71,18 @@
 
 
 <meta property="og:title" content="lua脚本" />
-<meta property="og:description" content="lua脚本" />
+<meta property="og:description" content="Redis 的 Lua 脚本可以保证原子性，这是因为 Redis 将 Lua 脚本作为一个整体来执行，不会在执行过程中中断或者被其他客户端的请求所干扰。这样就保证了 Lua 脚本的原子性。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://feiflown.github.io/post/lua%E8%84%9A%E6%9C%AC/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-01-03T14:32:52+08:00" />
 <meta property="article:modified_time" content="2023-01-03T14:32:52+08:00" />
 <meta itemprop="name" content="lua脚本">
-<meta itemprop="description" content="lua脚本"><meta itemprop="datePublished" content="2023-01-03T14:32:52+08:00" />
+<meta itemprop="description" content="Redis 的 Lua 脚本可以保证原子性，这是因为 Redis 将 Lua 脚本作为一个整体来执行，不会在执行过程中中断或者被其他客户端的请求所干扰。这样就保证了 Lua 脚本的原子性。"><meta itemprop="datePublished" content="2023-01-03T14:32:52+08:00" />
 <meta itemprop="dateModified" content="2023-01-03T14:32:52+08:00" />
-<meta itemprop="wordCount" content="41">
+<meta itemprop="wordCount" content="2799">
 <meta itemprop="keywords" content="lua," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="lua脚本"/>
-<meta name="twitter:description" content="lua脚本"/>
+<meta name="twitter:description" content="Redis 的 Lua 脚本可以保证原子性，这是因为 Redis 将 Lua 脚本作为一个整体来执行，不会在执行过程中中断或者被其他客户端的请求所干扰。这样就保证了 Lua 脚本的原子性。"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -355,8 +355,8 @@
             <a href="http://feiflown.github.io/categories/lua/"> lua </a>
             
           </div>
-        <span class="more-meta"> 41 words </span>
-          <span class="more-meta"> 1 min read </span>
+        <span class="more-meta"> 2799 words </span>
+          <span class="more-meta"> 6 min read </span>
 
         
         
@@ -375,14 +375,320 @@
 <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Table of Contents</h2>
   <div class="post-toc-content">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#什么是redis事务">什么是Redis事务？</a>
+      <ul>
+        <li><a href="#阶段性结论">阶段性结论</a></li>
+      </ul>
+    </li>
+    <li><a href="#简单的lua脚本入门">简单的Lua脚本入门</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#调用lua脚本操作redis">调用Lua脚本操作Redis</a>
+      <ul>
+        <li><a href="#redis控制台执行一般不直接使用">Redis控制台执行（一般不直接使用）</a></li>
+        <li><a href="#lua操作redis">lua操作Redis</a></li>
+        <li><a href="#java操作lua脚本实现redis">Java操作lua脚本实现redis</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </div>
 
     
     <div class="post-content">
-      <p>lua脚本</p>
-<p>加载lua脚本的时候不能执行其他的命令，类似于锁，保证redis的原子性</p>
+      <p>Redis 的 Lua 脚本可以保证原子性，这是因为 Redis 将 Lua 脚本作为一个整体来执行，不会在执行过程中中断或者被其他客户端的请求所干扰。这样就保证了 Lua 脚本的原子性。</p>
+<h2 id="什么是redis事务">什么是Redis事务？</h2>
+<p>Redis事务是一组命令的集合，可以一次性执行多个命令，而且这些命令会作为一个整体被执行，中间不会被其他客户端的命令请求所打断。Redis事务主要有以下两个作用：</p>
+<ol>
+<li><strong>保证多个命令的原子性</strong>：Redis事务可以保证多个命令的原子性，即要么所有命令都执行成功，要么所有命令都不执行。这种原子性可以保证数据的一致性，避免了中间状态对其他客户端的干扰。</li>
+<li><strong>提高性能</strong>：Redis事务可以将多个命令打包成一个批量操作，一次性传输给Redis服务器，减少了网络通信的开销，提高了性能。</li>
+</ol>
+<p>在Redis中，事务的执行过程分为三个阶段：开始事务、命令入队、执行事务。其中，开始事务和执行事务可以使用<code>MULTI</code>和<code>EXEC</code>命令来完成，命令入队可以使用<code>MULTI</code>和<code>EXEC</code>之间的任意命令。如果在执行事务之前，使用了<code>WATCH</code>命令对某个键进行监视，那么只有在该键没有被其他客户端修改的情况下，事务才会被执行。如果监视的键被修改了，那么事务就会被放弃，需要重新开始。</p>
+<p>看一个简单的事务执行例子：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">127.0.0.1:6379&gt; multi
+</span></span><span class="line"><span class="cl">OK
+</span></span><span class="line"><span class="cl">127.0.0.1:6379&gt; <span class="nb">set</span> name Hydra
+</span></span><span class="line"><span class="cl">QUEUED
+</span></span><span class="line"><span class="cl">127.0.0.1:6379&gt; <span class="nb">set</span> age <span class="m">18</span>
+</span></span><span class="line"><span class="cl">QUEUED
+</span></span><span class="line"><span class="cl">127.0.0.1:6379&gt; incr age
+</span></span><span class="line"><span class="cl">QUEUED
+</span></span><span class="line"><span class="cl">127.0.0.1:6379&gt; <span class="nb">exec</span>
+</span></span><span class="line"><span class="cl">1<span class="o">)</span> OK
+</span></span><span class="line"><span class="cl">2<span class="o">)</span> OK
+</span></span><span class="line"><span class="cl">3<span class="o">)</span> <span class="o">(</span>integer<span class="o">)</span> <span class="m">19</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>可以看到，在指令和操作数的数据类型等都正常的情况下，输入<code>EXEC</code>后所有命令被执行成功。</p>
+<h3 id="阶段性结论">阶段性结论</h3>
+<p>对上面的事务的运行结果进行一下分析：</p>
+<ul>
+<li>存在<strong>语法错误</strong>的情况下，所有命令都不会执行</li>
+<li>存在<strong>运行错误</strong>的情况下，除执行中出现错误的命令外，其他命令都能正常执行</li>
+</ul>
+<p>通过分析我们知道了redis中的事务是不满足原子性的，在运行错误的情况下，并没有提供类似数据库中的回滚功能。那么为什么redis不支持回滚呢，官方文档给出了说明，大意如下：</p>
+<ul>
+<li>redis命令失败只会发生在语法错误或数据类型错误的情况，这一结果都是由编程过程中的错误导致，这种情况应该在开发环境中检测出来，而不是生产环境</li>
+<li>不使用回滚，能使redis内部设计更简单，速度更快</li>
+<li>回滚不能避免编程逻辑中的错误，如果想要将一个键的值增加2却只增加了1，这种情况即使提供回滚也无法提供帮助</li>
+</ul>
+<p>基于以上原因，redis官方选择了更简单、更快的方法，不支持错误回滚。这样的话，如果在我们的业务场景中需要保证原子性，那么就要求了开发者通过其他手段保证命令全部执行成功或失败，例如在执行命令前进行参数类型的校验，或在事务执行出现错误时及时做事务补偿。</p>
+<h2 id="简单的lua脚本入门">简单的Lua脚本入门</h2>
+<p>在验证lua脚本的原子性之前，我们需要对它做一个简单的了解。redis从2.6版本开始支持执行lua脚本，它的功能和事务非常类似，一段lua脚本被视作一条命令执行，这样将多条redis命令写入lua，即可实现类似事务的执行结果。我们先看一下下面几个常用的命令。</p>
+<h4 id="eval-命令">EVAL 命令</h4>
+<p>最常用的<code>EVAL</code>用于执行一段脚本，它的命令的格式如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">EVAL script numkeys key <span class="o">[</span>key ...<span class="o">]</span> arg <span class="o">[</span>arg ...<span class="o">]</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>简单解释一下其中的参数：</p>
+<ul>
+<li><code>script</code>是一段lua脚本程序</li>
+<li><code>numkeys</code>指定后续参数有几个<code>key</code>，如没有<code>key</code>则为0</li>
+<li><code>key [key …]</code>表示脚本中用到的redis中的键，在lua脚本中通过<code>KEYS[i]</code>的形式获取</li>
+<li><code>arg [arg …]</code>表示附加参数，在lua脚本中通过<code>ARGV[i]</code>获取</li>
+</ul>
+<p>看一个简单的例子：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">127.0.0.1:6379&gt; <span class="nb">eval</span> <span class="s2">&#34;return {KEYS[1],KEYS[2],ARGV[1],ARGV[2]}&#34;</span> <span class="m">2</span> key1 key2 value1 vauel2
+</span></span><span class="line"><span class="cl">1<span class="o">)</span> <span class="s2">&#34;key1&#34;</span>
+</span></span><span class="line"><span class="cl">2<span class="o">)</span> <span class="s2">&#34;key2&#34;</span>
+</span></span><span class="line"><span class="cl">3<span class="o">)</span> <span class="s2">&#34;value1&#34;</span>
+</span></span><span class="line"><span class="cl">4<span class="o">)</span> <span class="s2">&#34;vauel2&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在上面的命令中，双引号中是lua脚本程序，后面的2表示存在两个key，分别是<code>key1</code>和<code>key2</code>，之后的参数是附加参数<code>value1</code>和<code>value2</code>。</p>
+<p>如果想要使用lua脚本执行<code>set</code>命令，可以写成这样：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">127.0.0.1:6379&gt; EVAL <span class="s2">&#34;redis.call(&#39;SET&#39;, KEYS[1], ARGV[1]);&#34;</span> <span class="m">1</span> name Hydra
+</span></span><span class="line"><span class="cl"><span class="o">(</span>nil<span class="o">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这里使用了redis内置的lua函数<code>redis.call</code>来完成<code>set</code>命令，这里打印的执行结果<code>nil</code>是因为没有返回值，如果不习惯的话，其实我们可以在脚本中添加<code>return 0;</code>的返回语句。</p>
+<h4 id="script-load-和-evalsha命令">SCRIPT LOAD 和 EVALSHA命令</h4>
+<p>这两个命令放在一起是因为它们一般成对使用。先看<code>SCRIPT LOAD</code>，它用于把脚本加载到缓存中，返回<code>SHA1</code>校验和，这时候只是缓存了命令，但是命令没有被马上执行，看一个例子：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">127.0.0.1:6379&gt; SCRIPT LOAD <span class="s2">&#34;return redis.call(&#39;GET&#39;, KEYS[1]);&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;228d85f44a89b14a5cdb768a29c4c4d907133f56&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这里返回了一个<code>SHA1</code>的校验和，接下来就可以使用<code>EVALSHA</code>来执行脚本了：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">127.0.0.1:6379&gt; EVALSHA <span class="s2">&#34;228d85f44a89b14a5cdb768a29c4c4d907133f56&#34;</span> <span class="m">1</span> name
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;Hydra&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这里使用这个<code>SHA1</code>值就相当于导入了上面缓存的命令，在之后再拼接<code>numkeys</code>、<code>key</code>、<code>arg</code>等参数，命令就能够正常执行了。</p>
+<h4 id="其他命令">其他命令</h4>
+<p>使用<code>SCRIPT EXISTS</code>命令判断脚本是否被缓存：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">127.0.0.1:6379&gt; SCRIPT EXISTS 228d85f44a89b14a5cdb768a29c4c4d907133f56
+</span></span><span class="line"><span class="cl">1<span class="o">)</span> <span class="o">(</span>integer<span class="o">)</span> <span class="m">1</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>使用<code>SCRIPT FLUSH</code>命令清除redis中的lua脚本缓存：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">127.0.0.1:6379&gt; SCRIPT FLUSH
+</span></span><span class="line"><span class="cl">OK
+</span></span><span class="line"><span class="cl">127.0.0.1:6379&gt; SCRIPT EXISTS 228d85f44a89b14a5cdb768a29c4c4d907133f56
+</span></span><span class="line"><span class="cl">1<span class="o">)</span> <span class="o">(</span>integer<span class="o">)</span> <span class="m">0</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>可以看到，执行了<code>SCRIPT FLUSH</code>后，再次通过<code>SHA1</code>值查看脚本时已经不存在。最后，还可以使用<code>SCRIPT KILL</code>命令杀死当前正在运行的 lua 脚本，但是只有当脚本没有执行写操作时才会生效。</p>
+<p>从这些操作看来，lua脚本具有下面的优点：</p>
+<ul>
+<li>多次网络请求可以在一次请求中完成，减少网络开销，减少了网络延迟</li>
+<li>客户端发送的脚本会存在redis中，其他客户端可以复用这一脚本，而不需要再重复编码完成相同的逻辑</li>
+</ul>
+<h2 id="调用lua脚本操作redis">调用Lua脚本操作Redis</h2>
+<p>Redis提供量执行Lua脚本的命令：<a href="https://redis.io/commands/eval/">https://redis.io/commands/eval/</a></p>
+<h3 id="redis控制台执行一般不直接使用">Redis控制台执行（一般不直接使用）</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nb">eval</span> <span class="s2">&#34;return redis.call(&#39;set&#39;,&#39;name&#39;,&#39;zhangsan&#39;)&#34;</span> <span class="mi">0</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注</p>
+<ul>
+<li>eval 是Redis的命令 去执行lua脚本内容</li>
+<li>“return redis.call(‘set’,’name’,’zhangsan’)” lua语法：set 一个key名name，值是zhangsan</li>
+<li>0 脚本需要传参的个数。lua与shell一样，0代表一个参数</li>
+</ul>
+<h3 id="lua操作redis">lua操作Redis</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="n">redis.call</span><span class="p">(</span><span class="s1">&#39;命令名称&#39;</span><span class="p">,</span><span class="s1">&#39;key&#39;</span><span class="p">,</span><span class="s1">&#39;其他参数&#39;</span><span class="p">...)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="c1">-- 将 key 的值加上 1</span>
+</span></span><span class="line"><span class="cl"><span class="n">redis.call</span><span class="p">(</span><span class="s1">&#39;INCR&#39;</span><span class="p">,</span> <span class="s1">&#39;key&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">-- 如果 key 的值大于 10，则将其设置为 0</span>
+</span></span><span class="line"><span class="cl"><span class="kr">if</span> <span class="n">tonumber</span><span class="p">(</span><span class="n">redis.call</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="s1">&#39;key&#39;</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">10</span> <span class="kr">then</span>
+</span></span><span class="line"><span class="cl">    <span class="n">redis.call</span><span class="p">(</span><span class="s1">&#39;SET&#39;</span><span class="p">,</span> <span class="s1">&#39;key&#39;</span><span class="p">,</span> <span class="s1">&#39;0&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kr">end</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">-- 返回 key 的值</span>
+</span></span><span class="line"><span class="cl"><span class="kr">return</span> <span class="n">redis.call</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="s1">&#39;key&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在上面的示例中，我们首先使用 <code>INCR</code> 命令将 <code>key</code> 的值加上 1。然后，我们使用 <code>GET</code> 命令获取 <code>key</code> 的当前值，并检查其是否大于 10。如果是，则使用 <code>SET</code> 命令将 <code>key</code> 的值设置为 0。最后，我们使用 <code>GET</code> 命令返回 <code>key</code> 的当前值。</p>
+<h3 id="java操作lua脚本实现redis">Java操作lua脚本实现redis</h3>
+<p>lua 脚本被当做一命令集合一起被执行，且 redis 是单线处理机制，因此不需要 WATCH 保证隔离性，天然具备隔离性。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// lua脚本需要放在resources下
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">DefaultRedisScript</span><span class="o">&lt;</span><span class="n">Long</span><span class="o">&gt;</span> <span class="n">script</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DefaultRedisScript</span><span class="o">&lt;&gt;();</span>
+</span></span><span class="line"><span class="cl"><span class="n">script</span><span class="o">.</span><span class="na">setResultType</span><span class="o">(</span><span class="n">Long</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">script</span><span class="o">.</span><span class="na">setScriptSource</span><span class="o">(</span><span class="k">new</span> <span class="n">ResourceScriptSource</span><span class="o">(</span>
+</span></span><span class="line"><span class="cl">    <span class="k">new</span> <span class="n">ClassPathResource</span><span class="o">(</span><span class="s">&#34;lua/sekill.lua&#34;</span><span class="o">)));</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>lua脚本需要放在resources下</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="c1">--接受到参数1</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">userId</span> <span class="o">=</span> <span class="n">KEYS</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="c1">--接收到参数2</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">goodsId</span> <span class="o">=</span> <span class="n">KEYS</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="c1">--redis中的 key 存储为 局部变量</span>
+</span></span><span class="line"><span class="cl"><span class="c1">--秒杀商品数量</span>
+</span></span><span class="line"><span class="cl"><span class="c1">--.. 是lua 里面字符串的拼接</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">cntkey</span> <span class="o">=</span> <span class="n">goodsId</span> <span class="o">..</span> <span class="s2">&#34;_count&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">--秒杀用户 id</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">orderkey</span> <span class="o">=</span> <span class="n">goodsId</span> <span class="o">..</span> <span class="s2">&#34;_&#34;</span> <span class="o">..</span> <span class="n">userId</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">--判断用户是否秒杀过</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">orderExists</span> <span class="o">=</span> <span class="n">redis.call</span><span class="p">(</span><span class="s2">&#34;get&#34;</span><span class="p">,</span> <span class="n">orderkey</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">if</span> <span class="p">(</span><span class="n">orderExists</span> <span class="ow">and</span> <span class="n">tonumber</span><span class="p">(</span><span class="n">orderExists</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="kr">then</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">return</span> <span class="mi">2</span><span class="p">;</span> <span class="c1">-- 下单失败：用户不可重复下单</span>
+</span></span><span class="line"><span class="cl"><span class="kr">end</span>
+</span></span><span class="line"><span class="cl"><span class="c1">--判断库存是否为空</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">num</span> <span class="o">=</span> <span class="n">redis.call</span><span class="p">(</span><span class="s2">&#34;get&#34;</span><span class="p">,</span> <span class="n">cntkey</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">if</span> <span class="p">(</span><span class="n">num</span> <span class="ow">and</span> <span class="n">tonumber</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="kr">then</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">return</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">-- 库存不足</span>
+</span></span><span class="line"><span class="cl"><span class="kr">else</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">--秒杀成功</span>
+</span></span><span class="line"><span class="cl">    <span class="n">redis.call</span><span class="p">(</span><span class="s2">&#34;decr&#34;</span><span class="p">,</span> <span class="n">cntkey</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">redis.call</span><span class="p">(</span><span class="s2">&#34;set&#34;</span><span class="p">,</span> <span class="n">orderkey</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">end</span>
+</span></span><span class="line"><span class="cl"><span class="kr">return</span> <span class="mi">1</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     

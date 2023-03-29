@@ -9,14 +9,27 @@
     <managingEditor>feiflown@gmail.com (fei)</managingEditor>
     <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Tue, 03 Jan 2023 14:32:52 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/tags/lua/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Mar 2023 21:16:55 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/tags/lua/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>lua-秒杀系统</title>
+      <link>http://feiflown.github.io/post/lua-%E7%A7%92%E6%9D%80%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Tue, 28 Mar 2023 21:16:55 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/lua-%E7%A7%92%E6%9D%80%E7%B3%BB%E7%BB%9F/</guid>
+      <description>&lt;p&gt;秒杀系统一般要注意的问题就是 :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;库存少卖，超卖问题（原子性）&lt;/li&gt;
+&lt;li&gt;流量削峰，这里我们设定的时候每个用户只能秒杀一次所以比较好处理&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
     <item>
       <title>lua脚本</title>
       <link>http://feiflown.github.io/post/lua%E8%84%9A%E6%9C%AC/</link>
       <pubDate>Tue, 03 Jan 2023 14:32:52 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/post/lua%E8%84%9A%E6%9C%AC/</guid>
-      <description>&lt;p&gt;lua脚本&lt;/p&gt;</description>
+      <description>&lt;p&gt;Redis 的 Lua 脚本可以保证原子性，这是因为 Redis 将 Lua 脚本作为一个整体来执行，不会在执行过程中中断或者被其他客户端的请求所干扰。这样就保证了 Lua 脚本的原子性。&lt;/p&gt;</description>
     </item>
     
   </channel>
