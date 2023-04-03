@@ -9,7 +9,16 @@
     <managingEditor>feiflown@gmail.com (fei)</managingEditor>
     <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Tue, 28 Mar 2023 21:16:55 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Mar 2023 21:16:55 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>java</title>
+      <link>http://feiflown.github.io/categories/java/</link>
+      <pubDate>Fri, 31 Mar 2023 21:16:55 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/categories/java/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>lua</title>
       <link>http://feiflown.github.io/categories/lua/</link>
@@ -88,15 +97,6 @@
       <pubDate>Sat, 05 Nov 2022 17:02:21 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/categories/shell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>java</title>
-      <link>http://feiflown.github.io/categories/java/</link>
-      <pubDate>Wed, 14 Sep 2022 15:10:07 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/categories/java/</guid>
       <description></description>
     </item>
     

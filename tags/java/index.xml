@@ -9,7 +9,31 @@
     <managingEditor>feiflown@gmail.com (fei)</managingEditor>
     <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Wed, 14 Sep 2022 15:10:07 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Mar 2023 21:16:55 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>策略模式优化–结合工厂模式</title>
+      <link>http://feiflown.github.io/post/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F%E4%BC%98%E5%8C%96%E7%BB%93%E5%90%88%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Fri, 31 Mar 2023 21:16:55 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F%E4%BC%98%E5%8C%96%E7%BB%93%E5%90%88%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</guid>
+      <description>&lt;p&gt;策略模式优点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;算法自由切换：高层模块传入哪个具体抽象类的实例就执行哪个&lt;/li&gt;
+&lt;li&gt;具有良好的扩展性：扩展满足开闭原则&lt;/li&gt;
+&lt;li&gt;避免使用多重条件判断&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;策略模式缺点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;所有具体策略角色都需要对高层模块暴露，即需要在高层模块中实例化具体策略角色，然后赋值给上下文角色类中的抽象角色引用&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;可能出现策略膨胀问题：例如比赛不是BO5，而是BO10000，那要打印所有结果的话，就会有非常多的具体策略类，这就是策略膨胀。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;针对这些策略模式的缺点，我们可以通过将策略模式与简单工厂模式结合使用来解决这些问题。整合之后的代码与上面的通用代码只有上下文角色类与高层模块类不同。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>排序算法</title>
       <link>http://feiflown.github.io/post/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</link>
