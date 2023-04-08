@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>redis on fei&#39;s blog</title>
+    <link>http://feiflown.github.io/tags/redis/</link>
+    <description>Recent content in redis on fei&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>feiflown@gmail.com (fei)</managingEditor>
+    <webMaster>feiflown@gmail.com (fei)</webMaster>
+    <copyright>WTFPLv2</copyright>
+    <lastBuildDate>Fri, 31 Mar 2023 21:16:55 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/tags/redis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>redisson获取锁</title>
+      <link>http://feiflown.github.io/post/redisson%E8%8E%B7%E5%8F%96%E9%94%81/</link>
+      <pubDate>Fri, 31 Mar 2023 21:16:55 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/redisson%E8%8E%B7%E5%8F%96%E9%94%81/</guid>
+      <description>&lt;p&gt;策略模式优点：&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

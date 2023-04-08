@@ -5,11 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <title>java · fei&#39;s blog</title>
+    <title>ThreadPoolExecutor - fei&#39;s blog</title>
     
 
 
-<link rel="alternate" type="application/rss+xml" href="http://feiflown.github.io/tags/java/index.xml" title="fei's blog" />
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -27,8 +26,9 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="fei" />
-  <meta name="description" content="Welcome to fei&#39;s blog!
- 欢迎来到fei的博客！" />
+  <meta name="description" content="策略模式优点：
+" />
+
   <meta name="keywords" content="fei, fei博客, fei的博客, fei blog" />
 
 
@@ -39,8 +39,8 @@
 <meta name="generator" content="Hugo 0.110.0" />
 
 
-<link rel="canonical" href="http://feiflown.github.io/tags/java/" />
-<link href="/tags/java/index.xml" rel="alternate" type="application/rss+xml" title="fei&#39;s blog" />
+<link rel="canonical" href="http://feiflown.github.io/post/threadpoolexecutor/" />
+
 
 
 
@@ -70,17 +70,19 @@
 <link rel="stylesheet" href="http://feiflown.github.io/code_expander.js">
 
 
-<meta property="og:title" content="java" />
-<meta property="og:description" content="Welcome to fei&#39;s blog!
- 欢迎来到fei的博客！" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://feiflown.github.io/tags/java/" />
-<meta itemprop="name" content="java">
-<meta itemprop="description" content="Welcome to fei&#39;s blog!
- 欢迎来到fei的博客！"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="java"/>
-<meta name="twitter:description" content="Welcome to fei&#39;s blog!
- 欢迎来到fei的博客！"/>
+<meta property="og:title" content="ThreadPoolExecutor" />
+<meta property="og:description" content="策略模式优点：" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://feiflown.github.io/post/threadpoolexecutor/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-03-31T21:16:55+08:00" />
+<meta property="article:modified_time" content="2023-04-08T17:03:15+08:00" />
+<meta itemprop="name" content="ThreadPoolExecutor">
+<meta itemprop="description" content="策略模式优点："><meta itemprop="datePublished" content="2023-03-31T21:16:55+08:00" />
+<meta itemprop="dateModified" content="2023-04-08T17:03:15+08:00" />
+<meta itemprop="wordCount" content="135">
+<meta itemprop="keywords" content="java,多线程," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ThreadPoolExecutor"/>
+<meta name="twitter:description" content="策略模式优点："/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -267,7 +269,7 @@
 
       </li>
     
-        <li class="menu-item">
+        <li class="menu-item active">
         
           
           
@@ -340,143 +342,275 @@
         <main id="main" class="main bg-llight">
             <div class="content-wrapper">
                 <div id="content" class="content container">
-                    
-
-<section id="archive" class="archive">
-  
+                    <article class="post bg-white">
     
-      <div class="archive-title tag">
-        <h2 class="archive-name">Tag: java</h2>
+    <header class="post-header">
+      <h1 class="post-title">ThreadPoolExecutor</h1>
+      
+      <div class="post-meta">
+        <time datetime="2023-03-31" class="post-time">
+          2023-03-31
+        </time>
+        <div class="post-category">
+            <a href="http://feiflown.github.io/categories/java/"> java </a>
+            
+          </div>
+        <span class="more-meta"> 135 words </span>
+          <span class="more-meta"> 1 min read </span>
+
+        
+        
+          <span id="busuanzi_container_page_pv">
+            | 阅读 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
+
+        
+        
       </div>
+    </header>
+
     
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Table of Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#executors">Executors</a></li>
+    <li><a href="#线程池">线程池</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>策略模式优点：</p>
+<h2 id="executors">Executors</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="n">String</span> <span class="nf">taskExecute</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">ExecutionException</span><span class="o">,</span> <span class="n">InterruptedException</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">LocalDateTime</span> <span class="n">now</span> <span class="o">=</span> <span class="n">LocalDateTime</span><span class="o">.</span><span class="na">now</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">DateTimeFormatter</span> <span class="n">formatter</span> <span class="o">=</span> <span class="n">DateTimeFormatter</span><span class="o">.</span><span class="na">ofPattern</span><span class="o">(</span><span class="s">&#34;yyyy-MM-dd&#39;T&#39;HH:mm:ss+08:00&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ExecutorService</span> <span class="n">executorService</span> <span class="o">=</span> <span class="n">Executors</span><span class="o">.</span><span class="na">newFixedThreadPool</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Future</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">future</span> <span class="o">=</span> <span class="n">executorService</span><span class="o">.</span><span class="na">submit</span><span class="o">(()</span> <span class="o">-&gt;</span> <span class="n">now</span><span class="o">.</span><span class="na">format</span><span class="o">(</span><span class="n">formatter</span><span class="o">));</span>
+</span></span><span class="line"><span class="cl">    <span class="n">String</span> <span class="n">result</span> <span class="o">=</span> <span class="n">future</span><span class="o">.</span><span class="na">get</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">executorService</span><span class="o">.</span><span class="na">shutdown</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">result</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Files</span><span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">String</span> <span class="n">id</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="nf">chick</span><span class="o">(</span><span class="n">List</span><span class="o">&lt;</span><span class="n">Files</span><span class="o">&gt;</span> <span class="n">files</span><span class="o">){</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">fileIds</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ExecutorService</span> <span class="n">executorService</span> <span class="o">=</span> <span class="n">Executors</span><span class="o">.</span><span class="na">newFixedThreadPool</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span><span class="o">(</span><span class="n">Files</span> <span class="n">file</span> <span class="o">:</span> <span class="n">files</span><span class="o">){</span>
+</span></span><span class="line"><span class="cl">        <span class="n">executorService</span><span class="o">.</span><span class="na">execute</span><span class="o">(()</span> <span class="o">-&gt;</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span><span class="o">(</span><span class="s">&#34;1&#34;</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">file</span><span class="o">.</span><span class="na">getId</span><span class="o">())){</span>
+</span></span><span class="line"><span class="cl">                <span class="n">fileIds</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">file</span><span class="o">.</span><span class="na">getId</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="o">});</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="n">executorService</span><span class="o">.</span><span class="na">shutdown</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span><span class="o">(!</span><span class="n">executorService</span><span class="o">.</span><span class="na">isTerminated</span><span class="o">()){}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">fileIds</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="线程池">线程池</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">cpuCount</span> <span class="o">=</span> <span class="n">Runtime</span><span class="o">.</span><span class="na">getRuntime</span><span class="o">().</span><span class="na">availableProcessors</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">fileThreadPool</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ThreadPoolExecutor</span><span class="o">(</span><span class="n">cpuCount</span> <span class="o">+</span> <span class="mi">1</span><span class="o">,</span> <span class="n">cpuCount</span> <span class="o">+</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">TimeUnit</span><span class="o">.</span><span class="na">SECONDS</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                                        <span class="k">new</span> <span class="n">ArrayBlockingQueue</span><span class="o">&lt;&gt;(</span><span class="mi">1024</span><span class="o">),</span> 
+</span></span><span class="line"><span class="cl">                                        <span class="k">new</span> <span class="n">ThreadPoolExecutor</span><span class="o">.</span><span class="na">CallerRunsPolicy</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content"><a href="http://feiflown.github.io/author/fei/">fei</a></span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+      2023-04-08
+      
+        
+        
+        
+          
+          
+        
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a href="http://www.wtfpl.net/about/" rel="noopener" target="_blank">WTFPL v2</a></span>
+  </p>
+</div>
+
+
+    
+    
+<div class="post-reward">
+    <input type="checkbox" name="reward" id="reward" hidden />
+    <label class="reward-button" for="reward">Reward</label>
+    <div class="qr-code">
+         
+        <label class="qr-code-image" for="reward">
+        <img class="image" src="https://s2.loli.net/2023/02/27/Bmir7M4kLzupNl6.jpg">
+        <span>Wechat</span>
+      </label> 
+        <label class="qr-code-image" for="reward">
+        <img class="image" src="https://s2.loli.net/2023/02/27/iN47MRdaAExHJ5T.jpg">
+        <span>Alipay</span>
+      </label>
+    </div>
+</div>
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="http://feiflown.github.io/tags/java/">java</a>
+          <a href="http://feiflown.github.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/redisson%E8%8E%B7%E5%8F%96%E9%94%81/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">redisson获取锁</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/yml-system%E9%85%8D%E7%BD%AE/">
+            <span class="next-text nav-default">yml system配置</span>
+            <span class="prev-text nav-mobile">Next</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+  
   
 
   
-    <div class="archive-post">
-      <time datetime="2023-04-08" class="archive-post-time">
-        2023-04-08
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/completablefuture&#43;threadpoolexecutor/" class="archive-post-link">
-          CompletableFuture&#43;ThreadPoolExecutor
-        </a>
-      </span>
+  
+
+  
+
+  
+  
+
+  
+  
+    <div class="post bg-white">
+      <script src="https://giscus.app/client.js"
+      data-repo="feiflown/feiflown.github.io"
+      data-repo-id="R_kgDOI_tN7g"
+      data-category="General"
+      data-category-id="DIC_kwDOI_tN7s4CUczP"
+      data-mapping="pathname"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="light"
+      data-lang="zh-CN"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async>
+</script>
     </div>
   
-    <div class="archive-post">
-      <time datetime="2023-03-31" class="archive-post-time">
-        2023-03-31
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F%E4%BC%98%E5%8C%96%E7%BB%93%E5%90%88%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/" class="archive-post-link">
-          策略模式优化–结合工厂模式
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2023-03-31" class="archive-post-time">
-        2023-03-31
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/yml-system%E9%85%8D%E7%BD%AE/" class="archive-post-link">
-          yml system配置
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2023-03-31" class="archive-post-time">
-        2023-03-31
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/threadpoolexecutor/" class="archive-post-link">
-          ThreadPoolExecutor
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2023-03-31" class="archive-post-time">
-        2023-03-31
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/redisson%E8%8E%B7%E5%8F%96%E9%94%81/" class="archive-post-link">
-          redisson获取锁
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2022-09-14" class="archive-post-time">
-        2022-09-14
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" class="archive-post-link">
-          排序算法
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2022-03-05" class="archive-post-time">
-        2022-03-05
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/%E7%99%BB%E5%BD%95%E9%89%B4%E6%9D%83-jwt%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F/" class="archive-post-link">
-          登录鉴权-JWT实现方式
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2021-10-05" class="archive-post-time">
-        2021-10-05
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/idea%E5%BF%AB%E6%8D%B7%E9%94%AE/" class="archive-post-link">
-          idea快捷键
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2020-11-26" class="archive-post-time">
-        2020-11-26
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/povodaobodtopojo/" class="archive-post-link">
-          PO、VO、DAO、BO、DTO、POJO
-        </a>
-      </span>
-    </div>
-  
-</section>
-
-
-
 
 
 
   
-  
+
   
 
   
-  
+
+    
 
   
-  
-
-  
-  
-
-  
-  
-
-
-
-
 
                 </div>
             </div>

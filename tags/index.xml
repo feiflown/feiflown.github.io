@@ -9,13 +9,49 @@
     <managingEditor>feiflown@gmail.com (fei)</managingEditor>
     <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Fri, 31 Mar 2023 21:16:55 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Apr 2023 17:00:12 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>java</title>
       <link>http://feiflown.github.io/tags/java/</link>
-      <pubDate>Fri, 31 Mar 2023 21:16:55 +0800</pubDate>
+      <pubDate>Sat, 08 Apr 2023 17:00:12 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>多线程</title>
+      <link>http://feiflown.github.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</link>
+      <pubDate>Sat, 08 Apr 2023 17:00:12 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>异步</title>
+      <link>http://feiflown.github.io/tags/%E5%BC%82%E6%AD%A5/</link>
+      <pubDate>Sat, 08 Apr 2023 17:00:12 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/tags/%E5%BC%82%E6%AD%A5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>redis</title>
+      <link>http://feiflown.github.io/tags/redis/</link>
+      <pubDate>Fri, 31 Mar 2023 21:16:55 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/tags/redis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>yml</title>
+      <link>http://feiflown.github.io/tags/yml/</link>
+      <pubDate>Fri, 31 Mar 2023 21:16:55 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/tags/yml/</guid>
       <description></description>
     </item>
     
@@ -151,42 +187,6 @@
       <pubDate>Sat, 05 Nov 2022 17:02:21 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/tags/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>技巧</title>
-      <link>http://feiflown.github.io/tags/%E6%8A%80%E5%B7%A7/</link>
-      <pubDate>Sat, 05 Nov 2022 17:02:21 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/tags/%E6%8A%80%E5%B7%A7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>脚本</title>
-      <link>http://feiflown.github.io/tags/%E8%84%9A%E6%9C%AC/</link>
-      <pubDate>Sat, 05 Nov 2022 17:02:21 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/tags/%E8%84%9A%E6%9C%AC/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>算法</title>
-      <link>http://feiflown.github.io/tags/%E7%AE%97%E6%B3%95/</link>
-      <pubDate>Wed, 14 Sep 2022 15:10:07 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/tags/%E7%AE%97%E6%B3%95/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>idea</title>
-      <link>http://feiflown.github.io/tags/idea/</link>
-      <pubDate>Tue, 05 Oct 2021 20:00:11 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/tags/idea/</guid>
       <description></description>
     </item>
     

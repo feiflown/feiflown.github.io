@@ -9,7 +9,7 @@
     <managingEditor>feiflown@gmail.com (fei)</managingEditor>
     <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Fri, 31 Mar 2023 21:16:55 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/author/fei/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Apr 2023 17:00:12 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/author/fei/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于</title>
       <link>http://feiflown.github.io/aboutme/</link>
@@ -26,6 +26,42 @@
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/f-link/</guid>
       <description>本站地址：https://feiflown.github.io/ 本站地址：https://feiflown.github.io/ 本站地址：h</description>
+    </item>
+    
+    <item>
+      <title>CompletableFuture&#43;ThreadPoolExecutor</title>
+      <link>http://feiflown.github.io/post/completablefuture&#43;threadpoolexecutor/</link>
+      <pubDate>Sat, 08 Apr 2023 17:00:12 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/completablefuture&#43;threadpoolexecutor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>redisson获取锁</title>
+      <link>http://feiflown.github.io/post/redisson%E8%8E%B7%E5%8F%96%E9%94%81/</link>
+      <pubDate>Fri, 31 Mar 2023 21:16:55 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/redisson%E8%8E%B7%E5%8F%96%E9%94%81/</guid>
+      <description>&lt;p&gt;策略模式优点：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ThreadPoolExecutor</title>
+      <link>http://feiflown.github.io/post/threadpoolexecutor/</link>
+      <pubDate>Fri, 31 Mar 2023 21:16:55 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/threadpoolexecutor/</guid>
+      <description>&lt;p&gt;策略模式优点：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>yml system配置</title>
+      <link>http://feiflown.github.io/post/yml-system%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Fri, 31 Mar 2023 21:16:55 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/yml-system%E9%85%8D%E7%BD%AE/</guid>
+      <description>&lt;p&gt;策略模式优点：&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -107,7 +143,7 @@
       <pubDate>Tue, 21 Mar 2023 23:23:52 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/post/keyboard/neko/</guid>
-      <description>时隔一年半Neko终于到了 其实半年前Neko就发货了，可惜我是在香港代理买的，就为了省点邮费 没想到的是居然拖了半年才发货，更离谱的是好像今年</description>
+      <description>时隔一年半Neko终于到了 其实半年前Neko就发货了，然而我是在香港代理买的，就为了省点邮费 没想到居然拖了半年才发货，更离谱的是好像今年年后</description>
     </item>
     
     <item>
@@ -171,58 +207,6 @@
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/post/%E7%BC%96%E5%86%99shell%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/</guid>
       <description>废话少说， 直接上脚本： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 #!/bin/bash ### ### Some shell version or description here. ### ### Usage: ### test &amp;lt;input&amp;gt; &amp;lt;output&amp;gt; ### ### Options: ### &amp;lt;input&amp;gt; Input file to read. ### &amp;lt;output&amp;gt; Output file to write. Use &amp;#39;-&amp;#39; for stdout. ### -h</description>
-    </item>
-    
-    <item>
-      <title>排序算法</title>
-      <link>http://feiflown.github.io/post/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</link>
-      <pubDate>Wed, 14 Sep 2022 15:10:07 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/post/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</guid>
-      <description>&lt;p&gt;排序算法&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>MacOS偏门解决vim/Neovim光标跳转（j/k键）卡顿的问题。【使用karabiner】</title>
-      <link>http://feiflown.github.io/post/macos-%E7%BB%88%E7%AB%AF%E4%B8%8B%E5%85%89%E6%A0%87%E7%A7%BB%E5%8A%A8%E9%97%AE%E9%A2%98/</link>
-      <pubDate>Fri, 05 Aug 2022 17:02:21 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/post/macos-%E7%BB%88%E7%AB%AF%E4%B8%8B%E5%85%89%E6%A0%87%E7%A7%BB%E5%8A%A8%E9%97%AE%E9%A2%98/</guid>
-      <description>&lt;p&gt;问题详情参考：&lt;a href=&#34;https://blog.deskangel.com/2021/04/03/vim-j-k-speed-issue/&#34;&gt;https://blog.deskangel.com/2021/04/03/vim-j-k-speed-issue/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;在iterm2中强制让英文输入法切换为内置的&lt;code&gt;ABC输入法&lt;/code&gt;而不使用搜狗或者其他输入法的英文状态.&lt;/p&gt;
-&lt;p&gt;在使用iterm2的时候，将&lt;code&gt;左shift&lt;/code&gt;键重新映射为&lt;code&gt;command+space&lt;/code&gt;键（在系统快捷键中设置切换输入法的快捷键，这里你可以自定义）。
-使用以下命令将上面这个键盘映射json文件导入到karabiner里面（浏览器打开就可以，会自动拉起karabiner，路径自定义。）&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;karabiner://karabiner/assets/complex_modifications/import?url&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;file:///Users/agou-ops/Desktop/iterm2.json
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 或者直接使用我上传好的在线gist文件.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;karabiner://karabiner/assets/complex_modifications/import?url&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;https://gist.githubusercontent.com/AGou-ops/cb8659d99ff47f32eeb14a81ad47a2a9/raw/85b9ecce462330c57de0930d9495d257ed903ac1/iterm2_key.json
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>RAMA KARA豆乳白</title>
-      <link>http://feiflown.github.io/post/keyboard/rama-kara%E8%B1%86%E4%B9%B3%E7%99%BD/</link>
-      <pubDate>Mon, 20 Jun 2022 20:32:24 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/post/keyboard/rama-kara%E8%B1%86%E4%B9%B3%E7%99%BD/</guid>
-      <description>基佬紫用久了，又换了把豆乳白，真好看啊~</description>
-    </item>
-    
-    <item>
-      <title>静电容退烧</title>
-      <link>http://feiflown.github.io/post/keyboard/%E9%9D%99%E7%94%B5%E5%AE%B9%E9%80%80%E7%83%A7/</link>
-      <pubDate>Sun, 12 Jun 2022 14:39:25 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/post/keyboard/%E9%9D%99%E7%94%B5%E5%AE%B9%E9%80%80%E7%83%A7/</guid>
-      <description>&lt;p&gt;静电容胶碗sony、des、hhkb、kc什么的都玩了一遍了，退烧了&lt;/p&gt;</description>
     </item>
     
   </channel>
