@@ -9,7 +9,34 @@
     <managingEditor>feiflown@gmail.com (fei)</managingEditor>
     <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Sat, 08 Apr 2023 17:00:12 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 May 2023 15:11:34 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>keyboard</title>
+      <link>http://feiflown.github.io/tags/keyboard/</link>
+      <pubDate>Sun, 28 May 2023 15:11:34 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/tags/keyboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>备忘</title>
+      <link>http://feiflown.github.io/tags/%E5%A4%87%E5%BF%98/</link>
+      <pubDate>Sun, 28 May 2023 15:11:34 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/tags/%E5%A4%87%E5%BF%98/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>idea</title>
+      <link>http://feiflown.github.io/tags/idea/</link>
+      <pubDate>Sat, 08 Apr 2023 17:00:12 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/tags/idea/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>java</title>
       <link>http://feiflown.github.io/tags/java/</link>
@@ -119,29 +146,11 @@
     </item>
     
     <item>
-      <title>keyboard</title>
-      <link>http://feiflown.github.io/tags/keyboard/</link>
-      <pubDate>Tue, 21 Mar 2023 23:23:52 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/tags/keyboard/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>吐槽</title>
       <link>http://feiflown.github.io/tags/%E5%90%90%E6%A7%BD/</link>
       <pubDate>Tue, 21 Mar 2023 23:23:52 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/tags/%E5%90%90%E6%A7%BD/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>备忘</title>
-      <link>http://feiflown.github.io/tags/%E5%A4%87%E5%BF%98/</link>
-      <pubDate>Tue, 21 Mar 2023 23:23:52 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/tags/%E5%A4%87%E5%BF%98/</guid>
       <description></description>
     </item>
     
@@ -178,15 +187,6 @@
       <pubDate>Sat, 05 Nov 2022 17:02:21 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/tags/shell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>帮助文档</title>
-      <link>http://feiflown.github.io/tags/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/</link>
-      <pubDate>Sat, 05 Nov 2022 17:02:21 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/tags/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/</guid>
       <description></description>
     </item>
     
