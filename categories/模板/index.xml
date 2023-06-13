@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>模板 on fei&#39;s blog</title>
+    <link>http://feiflown.github.io/categories/%E6%A8%A1%E6%9D%BF/</link>
+    <description>Recent content in 模板 on fei&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>feiflown@gmail.com (fei)</managingEditor>
+    <webMaster>feiflown@gmail.com (fei)</webMaster>
+    <copyright>WTFPLv2</copyright>
+    <lastBuildDate>Tue, 03 Jan 2023 14:32:52 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/categories/%E6%A8%A1%E6%9D%BF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>模板</title>
+      <link>http://feiflown.github.io/post/%E6%A8%A1%E6%9D%BF/</link>
+      <pubDate>Tue, 03 Jan 2023 14:32:52 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/%E6%A8%A1%E6%9D%BF/</guid>
+      <description>&lt;p&gt;模板&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

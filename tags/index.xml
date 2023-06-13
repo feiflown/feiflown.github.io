@@ -9,7 +9,16 @@
     <managingEditor>feiflown@gmail.com (fei)</managingEditor>
     <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Sun, 28 May 2023 15:11:34 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Jun 2023 14:51:08 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>apollo</title>
+      <link>http://feiflown.github.io/tags/apollo/</link>
+      <pubDate>Thu, 08 Jun 2023 14:51:08 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/tags/apollo/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>keyboard</title>
       <link>http://feiflown.github.io/tags/keyboard/</link>
@@ -173,20 +182,11 @@
     </item>
     
     <item>
-      <title>Linux</title>
-      <link>http://feiflown.github.io/tags/linux/</link>
-      <pubDate>Sat, 05 Nov 2022 17:02:21 +0800</pubDate>
+      <title>模板</title>
+      <link>http://feiflown.github.io/tags/%E6%A8%A1%E6%9D%BF/</link>
+      <pubDate>Tue, 03 Jan 2023 14:32:52 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>shell</title>
-      <link>http://feiflown.github.io/tags/shell/</link>
-      <pubDate>Sat, 05 Nov 2022 17:02:21 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/tags/shell/</guid>
+      <guid>http://feiflown.github.io/tags/%E6%A8%A1%E6%9D%BF/</guid>
       <description></description>
     </item>
     
