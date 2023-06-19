@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>热部署 on fei&#39;s blog</title>
+    <link>http://feiflown.github.io/categories/%E7%83%AD%E9%83%A8%E7%BD%B2/</link>
+    <description>Recent content in 热部署 on fei&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>feiflown@gmail.com (fei)</managingEditor>
+    <webMaster>feiflown@gmail.com (fei)</webMaster>
+    <copyright>WTFPLv2</copyright>
+    <lastBuildDate>Mon, 19 Jun 2023 14:54:12 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/categories/%E7%83%AD%E9%83%A8%E7%BD%B2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JRebel热部署</title>
+      <link>http://feiflown.github.io/post/jrebel%E7%83%AD%E9%83%A8%E7%BD%B2/</link>
+      <pubDate>Mon, 19 Jun 2023 14:54:12 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/jrebel%E7%83%AD%E9%83%A8%E7%BD%B2/</guid>
+      <description>&lt;h2 id=&#34;jrebel介绍&#34;&gt;JRebel介绍&lt;/h2&gt;
+&lt;p&gt;JRebel是一款JVM插件，它使得Java代码修改后不用重启系统，立即生效。IDEA上原生是不支持热部署的，一般更新了 Java 文件后要手动重启 Tomcat 服务器，修改才能生效；所以推荐使用 JRebel 插件进行热部署。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

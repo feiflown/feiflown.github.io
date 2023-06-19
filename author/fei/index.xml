@@ -9,7 +9,7 @@
     <managingEditor>feiflown@gmail.com (fei)</managingEditor>
     <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Thu, 08 Jun 2023 14:51:08 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/author/fei/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Jun 2023 14:54:12 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/author/fei/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于</title>
       <link>http://feiflown.github.io/aboutme/</link>
@@ -20,12 +20,22 @@
     </item>
     
     <item>
+      <title>JRebel热部署</title>
+      <link>http://feiflown.github.io/post/jrebel%E7%83%AD%E9%83%A8%E7%BD%B2/</link>
+      <pubDate>Mon, 19 Jun 2023 14:54:12 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/jrebel%E7%83%AD%E9%83%A8%E7%BD%B2/</guid>
+      <description>&lt;h2 id=&#34;jrebel介绍&#34;&gt;JRebel介绍&lt;/h2&gt;
+&lt;p&gt;JRebel是一款JVM插件，它使得Java代码修改后不用重启系统，立即生效。IDEA上原生是不支持热部署的，一般更新了 Java 文件后要手动重启 Tomcat 服务器，修改才能生效；所以推荐使用 JRebel 插件进行热部署。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Apollo</title>
       <link>http://feiflown.github.io/post/apollo/</link>
       <pubDate>Thu, 08 Jun 2023 14:51:08 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/post/apollo/</guid>
-      <description>前言 Apollo（阿波罗）是携程框架部门研发的开源配置管理中心，能够集中化管理应用不同环境、不同集群的配置，配置修改后能够实时推送到应用端，</description>
+      <description>前言 Apollo（阿波罗）是携程框架部门开发的开源配置管理中心，可以集中管理应用在不同环境和集群中的配置。修改后的配置会实时推送到应用端，并</description>
     </item>
     
     <item>
@@ -207,15 +217,6 @@
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/anime/</guid>
       <description>按照观看结束时间排序，序号仅用于计数。(2021-01-04 至 ????-??-??) 变更日志： 2021年01月04日：初始化表格、增加序号至22； 2021年11</description>
-    </item>
-    
-    <item>
-      <title>更换图床</title>
-      <link>http://feiflown.github.io/post/%E6%9B%B4%E6%8D%A2%E5%9B%BE%E5%BA%8A-sm.ms/</link>
-      <pubDate>Thu, 16 Feb 2023 16:04:45 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/post/%E6%9B%B4%E6%8D%A2%E5%9B%BE%E5%BA%8A-sm.ms/</guid>
-      <description>&lt;p&gt;图床&lt;/p&gt;</description>
     </item>
     
   </channel>

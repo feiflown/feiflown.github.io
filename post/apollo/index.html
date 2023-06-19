@@ -26,7 +26,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="fei" />
-  <meta name="description" content="前言 Apollo（阿波罗）是携程框架部门研发的开源配置管理中心，能够集中化管理应用不同环境、不同集群的配置，配置修改后能够实时推送到应用端，" />
+  <meta name="description" content="前言 Apollo（阿波罗）是携程框架部门开发的开源配置管理中心，可以集中管理应用在不同环境和集群中的配置。修改后的配置会实时推送到应用端，并" />
 
   <meta name="keywords" content="fei, fei博客, fei的博客, fei blog" />
 
@@ -70,18 +70,18 @@
 
 
 <meta property="og:title" content="Apollo" />
-<meta property="og:description" content="前言 Apollo（阿波罗）是携程框架部门研发的开源配置管理中心，能够集中化管理应用不同环境、不同集群的配置，配置修改后能够实时推送到应用端，" />
+<meta property="og:description" content="前言 Apollo（阿波罗）是携程框架部门开发的开源配置管理中心，可以集中管理应用在不同环境和集群中的配置。修改后的配置会实时推送到应用端，并" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://feiflown.github.io/post/apollo/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-06-08T14:51:08+08:00" />
-<meta property="article:modified_time" content="2023-06-13T11:31:26+08:00" />
+<meta property="article:modified_time" content="2023-06-14T17:27:17+08:00" />
 <meta itemprop="name" content="Apollo">
-<meta itemprop="description" content="前言 Apollo（阿波罗）是携程框架部门研发的开源配置管理中心，能够集中化管理应用不同环境、不同集群的配置，配置修改后能够实时推送到应用端，"><meta itemprop="datePublished" content="2023-06-08T14:51:08+08:00" />
-<meta itemprop="dateModified" content="2023-06-13T11:31:26+08:00" />
-<meta itemprop="wordCount" content="1556">
+<meta itemprop="description" content="前言 Apollo（阿波罗）是携程框架部门开发的开源配置管理中心，可以集中管理应用在不同环境和集群中的配置。修改后的配置会实时推送到应用端，并"><meta itemprop="datePublished" content="2023-06-08T14:51:08+08:00" />
+<meta itemprop="dateModified" content="2023-06-14T17:27:17+08:00" />
+<meta itemprop="wordCount" content="1645">
 <meta itemprop="keywords" content="apollo," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Apollo"/>
-<meta name="twitter:description" content="前言 Apollo（阿波罗）是携程框架部门研发的开源配置管理中心，能够集中化管理应用不同环境、不同集群的配置，配置修改后能够实时推送到应用端，"/>
+<meta name="twitter:description" content="前言 Apollo（阿波罗）是携程框架部门开发的开源配置管理中心，可以集中管理应用在不同环境和集群中的配置。修改后的配置会实时推送到应用端，并"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -378,7 +378,7 @@
             <a href="http://feiflown.github.io/categories/apollo/"> apollo </a>
             
           </div>
-        <span class="more-meta"> 1556 words </span>
+        <span class="more-meta"> 1645 words </span>
           <span class="more-meta"> 4 min read </span>
 
         
@@ -423,56 +423,53 @@
     
     <div class="post-content">
       <h2 id="前言">前言</h2>
-<p>Apollo（阿波罗）是携程框架部门研发的开源配置管理中心，能够集中化管理应用不同环境、不同集群的配置，配置修改后能够实时推送到应用端，并且具备规范的权限、流程治理等特性。<a href="https://www.apolloconfig.com/#/">apollo官网</a></p>
+<p>Apollo（阿波罗）是携程框架部门开发的开源配置管理中心，可以集中管理应用在不同环境和集群中的配置。修改后的配置会实时推送到应用端，并具备规范的权限和流程治理等特性。<a href="https://www.apolloconfig.com/#/">Apollo官网</a></p>
 <p>Apollo支持4个维度管理Key-Value格式的配置：</p>
 <ol>
-<li>application(应用)</li>
-<li>environment(环境)</li>
-<li>cluster(集群)</li>
-<li>namespace(命名空间)</li>
+<li>应用（application）</li>
+<li>环境（environment）</li>
+<li>集群（cluster）</li>
+<li>命名空间（namespace）</li>
 </ol>
-<p>上面说到了 namespace，apollo 和 nacos 都有这个概念，不过，在 apollo 里，namespace 可以看成是一个具体的配置文件，而 nacos 里，namespace 表示具体的环境。它们的数据模型如下图。使用 apollo 是通过连接不同的 config server 来区分环境，而 nacos 则通过指定 namespace 来区分。</p>
+<p>在Apollo中，namespace可以看作是一个具体的配置文件，而在Nacos中，namespace表示具体的环境。它们的数据模型如下图所示。使用Apollo时，通过连接不同的config server来区分环境，而Nacos则通过指定namespace来区分。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/image-20230609103729458.png" alt="image-20230609103729458"></p>
-<h4 id="apollo是如何设计的">apollo是如何设计的？</h4>
+<h4 id="apollo的设计">Apollo的设计</h4>
 <p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/img_20230608150459-1686207927956.png" alt="img_20230608150459"></p>
 <ul>
-<li>config service提供配置的读取、推送等功能，服务对象是apollo客户端</li>
-<li>admin service提供配置的修改、发布等功能，服务对象是apollo portal（管理界面）</li>
-<li>config service和admin service都是多实例、无状态部署，所以需要将自己注册到eureka中并保持心跳</li>
-<li>在eureka之上我们架了一层meta server用于封装eureka的服务发现接口</li>
-<li>client通过域名访问meta server获取config service服务列表（IP+Port），而后直接通过IP+Port访问服务，同时在Client侧会做load balance、错误重试</li>
-<li>Portal通过域名访问meta server获取admin service服务列表（IP+Port），而后直接通过IP+Port访问服务，同时在Portal侧会做load balance、错误重试</li>
-<li>为了简化部署，我们实际上会把config service、eureka和meta server三个逻辑角色部署在同一个JVM进程中</li>
+<li>Config service提供配置的读取、推送等功能，服务对象是Apollo客户端。</li>
+<li>Admin service提供配置的修改、发布等功能，服务对象是Apollo Portal（管理界面）。</li>
+<li>Config service和Admin service都是多实例、无状态部署，因此需要将自己注册到Eureka中并保持心跳。</li>
+<li>在Eureka之上我们架了一层Meta server用于封装Eureka的服务发现接口。</li>
+<li>Client通过域名访问Meta server获取Config service服务列表（IP+Port），然后直接通过IP+Port访问服务，同时在Client侧会做load balance、错误重试。</li>
+<li>Portal通过域名访问Meta server获取Admin service服务列表（IP+Port），然后直接通过IP+Port访问服务，同时在Portal侧会做load balance、错误重试。</li>
+<li>为了简化部署，我们实际上会把Config service、Eureka和Meta server三个逻辑角色部署在同一个JVM进程中。</li>
 </ul>
-<p>SLB和eureka 都可以实现负载均衡，但是呢？使用 eureka 来实现负载均衡的话，就要求 client 必须引入 eureka client，但我不想引入怎么办。于是，apollo 开发团队又搞出一个新的项目 meta server 来屏蔽对 eureka 的依赖。</p>
-<p>在上面的结构图中，我们会发现，meta server 如果挂了，<code>config service</code>做再多集群也没用，也就是说 meta server 也需要做集群，这时应该怎么处理呢？apollo 官方给出了方案&ndash;使用 SLB。</p>
-<p>那么，为什么不一开始就使用 SLB 呢？？</p>
-<p>官网关于这个问题的回答，之所以这么设计是为了避免客户端和 config service 之间的长连接给 SLB 增加过多的负担。</p>
-<p>更多说明见 <a href="https://www.apolloconfig.com/#/zh/README">apollo文档</a></p>
+<p>SLB和Eureka都可以实现负载均衡，但是如果使用Eureka来实现负载均衡，则要求客户端必须引入Eureka client。如果不想引入Eureka client，Apollo开发团队就又搞出了一个新的项目Meta server来屏蔽对Eureka的依赖。</p>
+<p>在上面的结构图中，我们会发现，如果Meta server挂了，Config service做再多集群也没用，也就是说Meta server也需要做集群，这时应该怎么处理呢？Apollo官方给出了方案&ndash;使用SLB。</p>
+<p>那么，为什么不一开始就使用SLB呢？？</p>
+<p>官网关于这个问题的回答是，这么设计是为了避免客户端和Config service之间的长连接给SLB增加过多的负担。</p>
+<p>更多说明见<a href="https://www.apolloconfig.com/#/zh/README">Apollo文档</a></p>
 <h2 id="部署文档">部署文档</h2>
 <h4 id="创建数据库">创建数据库</h4>
-<p>新建数据库<code>ApolloPortalDB</code>和<code>ApolloConfigDB</code>，具体脚本为<a href="https://github.com/apolloconfig/apollo/tree/v1.0.0/scripts/sql">sql</a></p>
-<h4 id="更改startupsh">更改==startup.sh==</h4>
-<p>更改<code>config service</code>、<code>admin service</code>端口</p>
+<p>新建数据库ApolloPortalDB和ApolloConfigDB，具体脚本为<a href="https://github.com/apolloconfig/apollo/tree/v1.0.0/scripts/sql">sql</a>。</p>
+<h4 id="更改startupsh">更改startup.sh</h4>
+<p>更改Config service、Admin service端口。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/image-20230609110449975.png" alt="image-20230609110449975"></p>
-<h4 id="更改applicationyml">更改==application.yml==</h4>
-<p>更改<code>config service</code>、<code>admin service</code>的eureka地址</p>
+<h4 id="更改applicationyml">更改application.yml</h4>
+<p>更改Config service、Admin service的Eureka地址。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/image-20230609110553453.png" alt="image-20230609110553453"></p>
-<h4 id="更改buildbat">更改==build.bat==</h4>
-<p>更改数据库地址和<code>meta server</code>地址</p>
+<h4 id="更改buildbat">更改build.bat</h4>
+<p>更改数据库地址和Meta server地址。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/image-20230609105717348.png" alt="image-20230609105717348"></p>
 <h4 id="打包">打包</h4>
-<p>再运行<code>build.bat</code>脚本，打包，得到jar包 &raquo; <code>apollo-adminservice-2.0.1.jar</code>，<code>apollo-configservice-2.0.1.jar</code></p>
-<blockquote>
-<p>由于2.0.1版本的portal存在序列化问题，无法启动</p>
-<p>portal使用2.1.0版本的</p>
-</blockquote>
-<p>同理更改build.bat脚本，运行，打包，得到jar包 &raquo; <code>apollo-portal-2.1.0.jar</code></p>
-<h4 id="更改eureka地址">更改eureka地址</h4>
-<p>最后需要更改mysql的eureka地址为meta server地址</p>
+<p>再运行build.bat脚本，打包，得到jar包 &raquo; apollo-adminservice-2.0.1.jar，apollo-configservice-2.0.1.jar。</p>
+<p>由于2.0.1版本的Portal存在序列化问题，无法启动。因此，Portal使用2.1.0版本的。</p>
+<p>同理更改build.bat脚本，运行，打包，得到jar包 &raquo; apollo-portal-2.1.0.jar。</p>
+<h4 id="更改eureka地址">更改Eureka地址</h4>
+<p>最后需要更改MySQL的Eureka地址为Meta server地址。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/image-20230608162032099.png" alt="image-20230608162032099"></p>
 <h4 id="部署">部署</h4>
-<p>jar包上传到服务器，执行命令，需要创建目录/home/apolloportal/logs</p>
+<p>将jar包上传到服务器，执行命令，需要创建目录/home/apolloportal/logs。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -493,7 +490,7 @@
 </span></span><span class="line"><span class="cl">nohup java -jar -Denv<span class="o">=</span>dev -Ddev_meta<span class="o">=</span>http://localhost:8071 -Dlogging.file.name<span class="o">=</span>/home/apolloportal/logs/apollo-portal.log apollo-portal-2.1.0.jar &gt; /dev/null 2&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="p">&amp;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="确认eureka是否注册成功">确认eureka是否注册成功</h4>
+</div><h4 id="确认eureka是否注册成功">确认Eureka是否注册成功</h4>
 <p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/image-20230609104727296.png" alt="image-20230609104727296"></p>
 <h2 id="开发文档">开发文档</h2>
 <h4 id="导入依赖">导入依赖</h4>
@@ -507,7 +504,7 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="l">&lt;!--apollo--&gt;</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="l">&lt;!--Apollo--&gt;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">&lt;dependency&gt;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="l">&lt;groupId&gt;com.ctrip.framework.apollo&lt;/groupId&gt;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="l">&lt;artifactId&gt;apollo-client&lt;/artifactId&gt;</span><span class="w">
@@ -517,7 +514,7 @@
 </div>
 </div><h4 id="增加启动注解">增加启动注解</h4>
 <p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/image-20230608170501064.png" alt="image-20230608170501064"></p>
-<h4 id="连接apollo">连接apollo</h4>
+<h4 id="连接apollo">连接Apollo</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -545,7 +542,7 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-      2023-06-13
+      2023-06-14
       
         
         
@@ -591,6 +588,19 @@
       
       <nav class="post-nav">
         
+          <a class="prev" href="/post/jrebel%E7%83%AD%E9%83%A8%E7%BD%B2/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">JRebel热部署</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
         
           <a class="next" href="/post/keyboard/cycle7/">
             <span class="next-text nav-default">Cycle7</span>

@@ -16,7 +16,7 @@
       <pubDate>Thu, 08 Jun 2023 14:51:08 +0800</pubDate>
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/post/apollo/</guid>
-      <description>前言 Apollo（阿波罗）是携程框架部门研发的开源配置管理中心，能够集中化管理应用不同环境、不同集群的配置，配置修改后能够实时推送到应用端，</description>
+      <description>前言 Apollo（阿波罗）是携程框架部门开发的开源配置管理中心，可以集中管理应用在不同环境和集群中的配置。修改后的配置会实时推送到应用端，并</description>
     </item>
     
   </channel>
