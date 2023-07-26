@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RocketMQ on fei&#39;s blog</title>
+    <link>http://feiflown.github.io/tags/rocketmq/</link>
+    <description>Recent content in RocketMQ on fei&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>feiflown@gmail.com (fei)</managingEditor>
+    <webMaster>feiflown@gmail.com (fei)</webMaster>
+    <copyright>WTFPLv2</copyright>
+    <lastBuildDate>Thu, 08 Jun 2023 14:51:08 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/tags/rocketmq/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RocketMQ</title>
+      <link>http://feiflown.github.io/post/rocketmq/</link>
+      <pubDate>Thu, 08 Jun 2023 14:51:08 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/rocketmq/</guid>
+      <description>前言 RocketMQ的官网：http://rocketmq.apache.org/ Github RocketMQ的下载地址：http://rocketm</description>
+    </item>
+    
+  </channel>
+</rss>

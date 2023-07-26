@@ -10,28 +10,28 @@
   
   <url>
     <loc>http://feiflown.github.io/author/</loc>
-    <lastmod>2023-06-19T14:54:12+08:00</lastmod>
+    <lastmod>2023-07-26T15:59:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://feiflown.github.io/categories/</loc>
-    <lastmod>2023-06-19T14:54:12+08:00</lastmod>
+    <lastmod>2023-07-26T15:59:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://feiflown.github.io/author/fei/</loc>
-    <lastmod>2023-06-19T14:54:12+08:00</lastmod>
+    <lastmod>2023-07-26T15:59:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://feiflown.github.io/</loc>
-    <lastmod>2023-06-19T14:54:12+08:00</lastmod>
+    <lastmod>2023-07-26T15:59:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -45,14 +45,14 @@
   
   <url>
     <loc>http://feiflown.github.io/post/</loc>
-    <lastmod>2023-06-19T14:54:12+08:00</lastmod>
+    <lastmod>2023-07-26T15:59:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://feiflown.github.io/tags/</loc>
-    <lastmod>2023-06-19T14:54:12+08:00</lastmod>
+    <lastmod>2023-07-26T15:59:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -88,6 +88,27 @@
   <url>
     <loc>http://feiflown.github.io/post/apollo/</loc>
     <lastmod>2023-06-14T17:27:17+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://feiflown.github.io/tags/rocketmq/</loc>
+    <lastmod>2023-07-26T15:59:36+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://feiflown.github.io/categories/rocketmq/</loc>
+    <lastmod>2023-07-26T15:59:36+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://feiflown.github.io/post/rocketmq/</loc>
+    <lastmod>2023-07-26T15:59:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

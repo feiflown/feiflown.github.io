@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>RocketMQ - fei&#39;s blog</title>
+    
+
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="fei" />
+  <meta name="description" content="前言 RocketMQ的官网：http://rocketmq.apache.org/ Github RocketMQ的下载地址：http://rocketm" />
+
+  <meta name="keywords" content="fei, fei博客, fei的博客, fei blog" />
+
+
+<meta name="baidu-site-verification" content="eS8otJ2dE7My4oKT" />
+
+
+
+<meta name="generator" content="Hugo 0.110.0" />
+
+
+<link rel="canonical" href="http://feiflown.github.io/post/rocketmq/" />
+
+
+
+
+
+
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/logo.png" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.de26e3784582a3ceb744970505a7645bb1c057ead00c1b54261e18fcad9568be.css" integrity="" media="screen" crossorigin="anonymous">
+
+
+
+
+<link rel="stylesheet" href="/css/layer.css">
+
+
+<link rel="stylesheet" href="http://feiflown.github.io/code_expander.js">
+
+
+<meta property="og:title" content="RocketMQ" />
+<meta property="og:description" content="前言 RocketMQ的官网：http://rocketmq.apache.org/ Github RocketMQ的下载地址：http://rocketm" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://feiflown.github.io/post/rocketmq/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-06-08T14:51:08+08:00" />
+<meta property="article:modified_time" content="2023-07-26T15:59:36+08:00" />
+<meta itemprop="name" content="RocketMQ">
+<meta itemprop="description" content="前言 RocketMQ的官网：http://rocketmq.apache.org/ Github RocketMQ的下载地址：http://rocketm"><meta itemprop="datePublished" content="2023-06-08T14:51:08+08:00" />
+<meta itemprop="dateModified" content="2023-07-26T15:59:36+08:00" />
+<meta itemprop="wordCount" content="1677">
+<meta itemprop="keywords" content="RocketMQ," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="RocketMQ"/>
+<meta name="twitter:description" content="前言 RocketMQ的官网：http://rocketmq.apache.org/ Github RocketMQ的下载地址：http://rocketm"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2DZCW6NJZF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2DZCW6NJZF');
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.3/dist/cdn/docsearch.min.css" />
+</head>
+
+<body>
+    <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">fei's blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://feiflown.github.io/">主页</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://feiflown.github.io/post/">归档</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://feiflown.github.io/tags/">标签</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://feiflown.github.io/aboutme/">关于</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://feiflown.github.io/anime/">Anime</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://chat-gpt-next-cte79x58z-feiflown.vercel.app/" rel="noopener" target="_blank">
+              ChatGPT
+              
+              <i class="iconfont">
+                <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M623.36 272.96 473.216 423.04C467.2 429.056 467.072 438.656 472.896 444.416c0 0-6.72-6.656 1.6 1.6C496.064 467.648 528.64 500.224 528.64 500.224 534.464 506.048 544 505.856 550.016 499.904l150.08-150.144 67.328 66.432c9.024 8.96 27.456 4.544 30.4-8.96 19.968-92.608 46.656-227.52 46.656-227.52 6.848-34.496-16.192-56.704-49.92-49.92 0 0-134.656 26.816-227.328 46.784C560.32 178.048 556.352 182.272 554.752 187.136c-3.2 6.208-3.008 14.208 3.776 20.992L623.36 272.96z"></path>
+  <path d="M841.152 457.152c-30.528 0-54.784 24.512-54.784 54.656l0 274.752L237.696 786.56 237.696 237.696l206.016 0c6.656 0 10.752 0 13.248 0C487.68 237.696 512 213.184 512 182.848 512 152.32 487.36 128 456.96 128L183.04 128C153.216 128 128 152.576 128 182.848c0 3.136 0.256 6.272 0.768 9.28C128.256 195.136 128 198.272 128 201.408l0 639.488c0 0.064 0 0.192 0 0.256 0 0.128 0 0.192 0 0.32 0 30.528 24.512 54.784 54.784 54.784l646.976 0c6.592 0 9.728 0 11.712 0 28.736 0 52.928-22.976 54.464-51.968C896 843.264 896 842.304 896 841.344l0-20.352L896 561.408 896 512.128C896 481.792 871.424 457.152 841.152 457.152z"></path>
+</svg>
+
+              </i>
+            </a>
+          
+        
+      </li>
+    
+
+
+    <input size="15"  maxlength="15" type="search" class="docsearch" placeholder="Search Here..." />
+
+  </ul>
+</nav>
+  
+
+
+
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.css" integrity="sha256-LWdHSKWG7zv3DTpee8YAgoTfkj3gNkfauF624h4P2Nw=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.min.css" integrity="sha256-Q9bBMw/rHRRag46GDWY84J3elDNc8JJjKXL9tIC4oe8=" crossorigin="anonymous" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+   
+    <style>
+        .fork-me-on-github {
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: 0;
+        }
+        
+        @media (max-width: 1080px) {
+            .fork-me-on-github {
+                display: none;
+            }
+        }
+    </style>
+
+    <a href="https://github.com/feiflown">
+        <img loading="lazy" width="149" height="149" class="fork-me-on-github" src="/image/forkme_right_gray_6d6d6d.svg" data-recalc-dims="1" alt="Fork me on GitHub">
+    </a>
+    
+
+    <header id="header" class="header container">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">
+    
+      fei's blog
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://feiflown.github.io/">主页</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item active">
+        
+          
+          
+            <a class="menu-item-link" href="http://feiflown.github.io/post/">归档</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://feiflown.github.io/tags/">标签</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://feiflown.github.io/aboutme/">关于</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://feiflown.github.io/anime/">Anime</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://chat-gpt-next-cte79x58z-feiflown.vercel.app/" rel="noopener" target="_blank">
+              ChatGPT
+              
+              <i class="iconfont">
+                <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M623.36 272.96 473.216 423.04C467.2 429.056 467.072 438.656 472.896 444.416c0 0-6.72-6.656 1.6 1.6C496.064 467.648 528.64 500.224 528.64 500.224 534.464 506.048 544 505.856 550.016 499.904l150.08-150.144 67.328 66.432c9.024 8.96 27.456 4.544 30.4-8.96 19.968-92.608 46.656-227.52 46.656-227.52 6.848-34.496-16.192-56.704-49.92-49.92 0 0-134.656 26.816-227.328 46.784C560.32 178.048 556.352 182.272 554.752 187.136c-3.2 6.208-3.008 14.208 3.776 20.992L623.36 272.96z"></path>
+  <path d="M841.152 457.152c-30.528 0-54.784 24.512-54.784 54.656l0 274.752L237.696 786.56 237.696 237.696l206.016 0c6.656 0 10.752 0 13.248 0C487.68 237.696 512 213.184 512 182.848 512 152.32 487.36 128 456.96 128L183.04 128C153.216 128 128 152.576 128 182.848c0 3.136 0.256 6.272 0.768 9.28C128.256 195.136 128 198.272 128 201.408l0 639.488c0 0.064 0 0.192 0 0.256 0 0.128 0 0.192 0 0.32 0 30.528 24.512 54.784 54.784 54.784l646.976 0c6.592 0 9.728 0 11.712 0 28.736 0 52.928-22.976 54.464-51.968C896 843.264 896 842.304 896 841.344l0-20.352L896 561.408 896 512.128C896 481.792 871.424 457.152 841.152 457.152z"></path>
+</svg>
+
+              </i>
+            </a>
+          
+
+        
+
+      </li>
+    
+
+    
+    
+    
+    <input size="20"  maxlength="15" type="search" class="docsearch-input"  placeholder="Search Here..." />
+
+
+
+  </ul>
+</nav>
+
+
+    </header>
+
+    <div id="mobile-panel">
+        <main id="main" class="main bg-llight">
+            <div class="content-wrapper">
+                <div id="content" class="content container">
+                    <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">RocketMQ</h1>
+      
+      <div class="post-meta">
+        <time datetime="2023-06-08" class="post-time">
+          2023-06-08
+        </time>
+        <div class="post-category">
+            <a href="http://feiflown.github.io/categories/rocketmq/"> RocketMQ </a>
+            
+          </div>
+        <span class="more-meta"> 1677 words </span>
+          <span class="more-meta"> 4 min read </span>
+
+        
+        
+          <span id="busuanzi_container_page_pv">
+            | 阅读 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Table of Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#rocketmq">RocketMQ</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#移动rocketmq">移动RocketMQ</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <h2 id="前言">前言</h2>
+<p>RocketMQ的官网：http://rocketmq.apache.org/</p>
+<p>Github RocketMQ的下载地址：http://rocketmq.apache.org/release_notes/release-notes-4.9.1/ （注：不同版本需要去官网下载！）</p>
+<p>RocketMQ快速起步文档：http://rocketmq.apache.org/docs/quick-start/</p>
+<h4 id="rockermq前置知识">RockerMQ前置知识</h4>
+<p>RocketMQ 实现的是JMS，而RabbitMQ实现的是AMPQ协议，</p>
+<p>RocketMQ 语言是Java，延迟毫秒级别。RabbitMQ 语言是elang，天生具有高并发特性，延迟纳秒级别</p>
+<h2 id="rocketmq">RocketMQ</h2>
+<h4 id="消息结构">消息结构</h4>
+<p><strong>基础属性</strong></p>
+<p>topic：主题：将相同topic的消息发送到相同的的消息队列中。</p>
+<p>消息体：消息的内容，可有是String，也可以是对象类型（此对象可有序列化）。单个消息的最大长度是4M</p>
+<p>消息Flag：消息的标记，</p>
+<p><strong>拓展属性</strong></p>
+<p>tag：消息的二级分类，用于消费消息时进行过滤，可为空。</p>
+<p>keys：Messgae索引键，可有根据key，快速检索到消息，可为空。</p>
+<p>waitStoreMsgOK：消息发送时是否等消息存储后在返回。</p>
+<p>发送顺序消息</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.apache.rocketmq.acl.common.AclClientRPCHook</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.apache.rocketmq.acl.common.SessionCredentials</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.apache.rocketmq.client.producer.DefaultMQProducer</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.apache.rocketmq.client.producer.MessageQueueSelector</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.apache.rocketmq.client.producer.SendResult</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.apache.rocketmq.common.message.Message</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.apache.rocketmq.common.message.MessageQueue</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.apache.rocketmq.remoting.common.RemotingHelper</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="err">​</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Producer</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">       <span class="c1">// 移动云创建的AccessKey和SercretKey
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="n">AclClientRPCHook</span> <span class="n">rpcHook</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AclClientRPCHook</span><span class="o">(</span><span class="n">newSessionCredentials</span><span class="o">(</span><span class="s">&#34;ACCESS_KEY&#34;</span><span class="o">,</span> <span class="s">&#34;SECRET_KEY&#34;</span><span class="o">));</span>
+</span></span><span class="line"><span class="cl">       <span class="c1">// 创建Producer，并开启消息轨迹,消息队列RocketMQ版控制台创建的Group ID
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="n">DefaultMQProducer</span> <span class="n">producer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DefaultMQProducer</span><span class="o">(</span><span class="s">&#34;GID_xxx&#34;</span><span class="o">,</span> <span class="n">rpcHook</span><span class="o">,</span> <span class="kc">true</span><span class="o">,</span> <span class="s">&#34;&#34;</span><span class="o">);</span>    
+</span></span><span class="line"><span class="cl">       <span class="c1">// 消息队列RocketMQ版控制台创建的实例ID
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="n">producer</span><span class="o">.</span><span class="na">setNamespace</span><span class="o">(</span><span class="s">&#34;MQ_INST_xxx&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">       <span class="c1">// 消息队列RocketMQ版控制台的namesrv接入点地址
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="n">producer</span><span class="o">.</span><span class="na">setNamesrvAddr</span><span class="o">(</span><span class="s">&#34;xxxx&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">       <span class="n">producer</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">       <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;producer start success!&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">       <span class="k">try</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">           <span class="n">String</span><span class="o">[]</span> <span class="n">tags</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">[]</span> <span class="o">{</span><span class="s">&#34;TagA&#34;</span><span class="o">,</span> <span class="s">&#34;TagB&#34;</span><span class="o">,</span> <span class="s">&#34;TagC&#34;</span><span class="o">,</span> <span class="s">&#34;TagD&#34;</span><span class="o">,</span> <span class="s">&#34;TagE&#34;</span><span class="o">};</span>
+</span></span><span class="line"><span class="cl">           <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">               <span class="kt">int</span> <span class="n">orderId</span> <span class="o">=</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">10</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">               <span class="c1">// 消息队列RocketMQ控制台上创建的Topic。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>               <span class="n">Message</span> <span class="n">msg</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Message</span><span class="o">(</span><span class="s">&#34;xxx&#34;</span><span class="o">,</span> <span class="n">tags</span><span class="o">[</span><span class="n">i</span> <span class="o">%</span> <span class="n">tags</span><span class="o">.</span><span class="na">length</span><span class="o">],</span> <span class="s">&#34;KEY&#34;</span> <span class="o">+</span> <span class="n">i</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                  <span class="o">(</span><span class="s">&#34;Hello RocketMQ &#34;</span> <span class="o">+</span> <span class="n">i</span><span class="o">).</span><span class="na">getBytes</span><span class="o">(</span><span class="n">RemotingHelper</span><span class="o">.</span><span class="na">DEFAULT_CHARSET</span><span class="o">));</span>
+</span></span><span class="line"><span class="cl">               <span class="n">SendResult</span> <span class="n">sendResult</span> <span class="o">=</span> <span class="n">producer</span><span class="o">.</span><span class="na">send</span><span class="o">(</span><span class="n">msg</span><span class="o">,</span> <span class="k">new</span> <span class="n">MessageQueueSelector</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                   <span class="nd">@Override</span>
+</span></span><span class="line"><span class="cl">                   <span class="kd">public</span> <span class="n">MessageQueue</span> <span class="nf">select</span><span class="o">(</span><span class="n">List</span><span class="o">&lt;</span><span class="n">MessageQueue</span><span class="o">&gt;</span> <span class="n">mqs</span><span class="o">,</span> <span class="n">Message</span> <span class="n">msg</span><span class="o">,</span> <span class="n">Object</span> <span class="n">arg</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                       <span class="c1">// 选择适合自己的分区选择算法，保证同一个参数得到的结果相同。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                       <span class="n">Integer</span> <span class="n">id</span> <span class="o">=</span> <span class="o">(</span><span class="n">Integer</span><span class="o">)</span> <span class="n">arg</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">                       <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">id</span> <span class="o">%</span> <span class="n">mqs</span><span class="o">.</span><span class="na">size</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">                       <span class="k">return</span> <span class="n">mqs</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">index</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">                  <span class="o">}</span>
+</span></span><span class="line"><span class="cl">              <span class="o">},</span> <span class="n">orderId</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="err">​</span>
+</span></span><span class="line"><span class="cl">               <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;msgId:-&gt;&#34;</span> <span class="o">+</span> <span class="n">sendResult</span><span class="o">.</span><span class="na">getMsgId</span><span class="o">()</span> <span class="o">+</span> <span class="s">&#34;, msgBody: &#34;</span> <span class="o">+</span><span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="n">msg</span><span class="o">.</span><span class="na">getBody</span><span class="o">()));</span>
+</span></span><span class="line"><span class="cl">          <span class="o">}</span>
+</span></span><span class="line"><span class="cl">           <span class="n">producer</span><span class="o">.</span><span class="na">shutdown</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">      <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">           <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">           <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;send message failed&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="err">​</span>
+</span></span><span class="line"><span class="cl">      <span class="o">}</span>
+</span></span><span class="line"><span class="cl">  <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="移动rocketmq">移动RocketMQ</h2>
+<p>发送顺序消息，参考<a href="https://ecloud.10086.cn/op-help-center/doc/article/67669">移动SDK</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">com.chinamobile.tuxedo.sdk.example</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">com.chinamobile.tuxedo.sdk.api.Message</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">com.chinamobile.tuxedo.sdk.api.PropertyKeyConst</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">com.chinamobile.tuxedo.sdk.api.SendResult</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">com.chinamobile.tuxedo.sdk.api.TuxeFactory</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">com.chinamobile.tuxedo.sdk.api.order.OrderProducer</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.util.Properties</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">OrderProducerTest</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Properties</span> <span class="n">properties</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Properties</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//  控制台创建的Group
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">properties</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">PropertyKeyConst</span><span class="o">.</span><span class="na">GROUP_ID</span><span class="o">,</span> <span class="s">&#34;xxx&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//  控制台创建的实例
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">properties</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">PropertyKeyConst</span><span class="o">.</span><span class="na">INSTANCE_ID</span><span class="o">,</span> <span class="s">&#34;MQ_INST_xxx&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 启用鉴权认证
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">properties</span><span class="o">.</span><span class="na">setProperty</span><span class="o">(</span><span class="n">PropertyKeyConst</span><span class="o">.</span><span class="na">AuthenticationRequired</span><span class="o">,</span> <span class="s">&#34;true&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 开启保存消息轨迹
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">properties</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">PropertyKeyConst</span><span class="o">.</span><span class="na">MsgTraceSwitch</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// AccessKey 身份验证，在控制台总览搜索“AccessKey管理”获取
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">properties</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">PropertyKeyConst</span><span class="o">.</span><span class="na">AccessKey</span><span class="o">,</span> <span class="s">&#34;xxx&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// SecretKey 身份验证，在控制台总览搜索“AccessKey管理”获取
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">properties</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">PropertyKeyConst</span><span class="o">.</span><span class="na">SecretKey</span><span class="o">,</span> <span class="s">&#34;xxx&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 设置发送超时时间，单位毫秒
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">properties</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">PropertyKeyConst</span><span class="o">.</span><span class="na">SendMsgTimeoutMillis</span><span class="o">,</span> <span class="mi">5000</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 设置公网接入点，公网与VPC只能配置一种
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">properties</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">PropertyKeyConst</span><span class="o">.</span><span class="na">TuxeAddr</span><span class="o">,</span> <span class="s">&#34;xxx&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 设置内网VPC接入点，公网与VPC只能配置一种
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">properties</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">PropertyKeyConst</span><span class="o">.</span><span class="na">PROXY_ADDR</span><span class="o">,</span> <span class="s">&#34;xxx&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">OrderProducer</span> <span class="n">producer</span> <span class="o">=</span> <span class="n">TuxeFactory</span><span class="o">.</span><span class="na">createOrderProducer</span><span class="o">(</span><span class="n">properties</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//  在发送消息前，必须调用 start 方法来启动 Producer，只需调用一次即可。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">producer</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">50</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">String</span> <span class="n">orderId</span> <span class="o">=</span> <span class="s">&#34;biz_&#34;</span> <span class="o">+</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">20</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Message</span> <span class="n">msg</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Message</span><span class="o">(</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// Message 所属的 Topic, 控制台创建
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="s">&#34;xxx&#34;</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// Message Tag, 可理解为 Gmail 中的标签，对消息进行再归类，方便 Consumer 指定过滤条件在 MQ 服务器过滤
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="n">orderId</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// Message Body 可以是任何二进制形式的数据， MQ 不做任何干预，需要 Producer 与 Consumer 协商好一致的序列化和反序列化方式
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="o">(</span><span class="s">&#34;send order global msg:&#34;</span> <span class="o">+</span> <span class="n">i</span><span class="o">).</span><span class="na">getBytes</span><span class="o">()</span>
+</span></span><span class="line"><span class="cl">            <span class="o">);</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// 设置代表消息的业务关键属性，请尽可能全局唯一。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="c1">// 以方便您在无法正常收到消息情况下，可通过 MQ 控制台查询消息并补发。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// 注意：不设置也不会影响消息正常收发
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">msg</span><span class="o">.</span><span class="na">setKey</span><span class="o">(</span><span class="n">orderId</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// 分区顺序消息中区分不同分区的关键字段，sharding key 于普通消息的 key 是完全不同的概念。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="c1">// 全局顺序消息，该字段可以设置为任意非空字符串。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">String</span> <span class="n">shardingKey</span> <span class="o">=</span> <span class="s">&#34;aaa&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">try</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">SendResult</span> <span class="n">sendResult</span> <span class="o">=</span> <span class="n">producer</span><span class="o">.</span><span class="na">send</span><span class="o">(</span><span class="n">msg</span><span class="o">,</span> <span class="n">shardingKey</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// 发送消息，只要不抛异常就是成功
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="k">if</span> <span class="o">(</span><span class="n">sendResult</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34; Send mq message success. Topic:&#34;</span> <span class="o">+</span> <span class="n">msg</span><span class="o">.</span><span class="na">getTopic</span><span class="o">()</span> <span class="o">+</span> <span class="s">&#34; msgId is&#34;</span> <span class="o">+</span> <span class="n">sendResult</span><span class="o">.</span><span class="na">getMessageId</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">                <span class="o">}</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// 消息发送失败，需要进行重试处理，可重新发送这条消息或持久化这条数据进行补偿处理
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34; Send mq message failed. Topic:&#34;</span> <span class="o">+</span> <span class="n">msg</span><span class="o">.</span><span class="na">getTopic</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">                <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 在应用退出前，销毁 Producer 对象
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1">// 注意：如果不销毁也没有问题
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">producer</span><span class="o">.</span><span class="na">shutdown</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>只需要传入shardingKey，不需要传入队列选择器</p>
+<p>查看底层逻辑，则是对defaultMQProducer进行封装</p>
+<p><img src="https://cdn.jsdelivr.net/gh/feiflown/Image-Hosting/image-20230725154843593.png" alt="image-20230725154843593"></p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content"><a href="http://feiflown.github.io/author/fei/">fei</a></span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+      2023-07-26
+      
+        
+        
+        
+          
+          
+        
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a href="http://www.wtfpl.net/about/" rel="noopener" target="_blank">WTFPL v2</a></span>
+  </p>
+</div>
+
+
+    
+    
+<div class="post-reward">
+    <input type="checkbox" name="reward" id="reward" hidden />
+    <label class="reward-button" for="reward">Reward</label>
+    <div class="qr-code">
+         
+        <label class="qr-code-image" for="reward">
+        <img class="image" src="https://s2.loli.net/2023/02/27/Bmir7M4kLzupNl6.jpg">
+        <span>Wechat</span>
+      </label> 
+        <label class="qr-code-image" for="reward">
+        <img class="image" src="https://s2.loli.net/2023/02/27/iN47MRdaAExHJ5T.jpg">
+        <span>Alipay</span>
+      </label>
+    </div>
+</div>
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="http://feiflown.github.io/tags/rocketmq/">RocketMQ</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/apollo/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">Apollo</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/keyboard/cycle7/">
+            <span class="next-text nav-default">Cycle7</span>
+            <span class="prev-text nav-mobile">Next</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+    <div class="post bg-white">
+      <script src="https://giscus.app/client.js"
+      data-repo="feiflown/feiflown.github.io"
+      data-repo-id="R_kgDOI_tN7g"
+      data-category="General"
+      data-category-id="DIC_kwDOI_tN7s4CUczP"
+      data-mapping="pathname"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="light"
+      data-lang="zh-CN"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async>
+</script>
+    </div>
+  
+
+
+
+  
+
+  
+
+  
+
+    
+
+  
+
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer" class="footer">
+            <div class="icon-links">
+    
+  
+    <a href="mailto:feiflown@gmail.com" rel="me noopener" class="iconfont"
+      title="email" >
+      <svg class="icon" viewBox="0 0 1451 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M664.781909 681.472759 0 97.881301C0 3.997201 71.046997 0 71.046997 0L474.477909 0 961.649408 0 1361.641813 0C1361.641813 0 1432.688811 3.997201 1432.688811 97.881301L771.345323 681.472759C771.345323 681.472759 764.482731 685.154773 753.594283 688.65053L753.594283 688.664858C741.602731 693.493018 729.424896 695.068979 718.077952 694.839748 706.731093 695.068979 694.553173 693.493018 682.561621 688.664858L682.561621 688.65053C671.644501 685.140446 664.781909 681.472759 664.781909 681.472759L664.781909 681.472759ZM718.063616 811.603883C693.779541 811.016482 658.879232 802.205449 619.10784 767.734955 542.989056 701.759633 0 212.052267 0 212.052267L0 942.809523C0 942.809523 0 1024 83.726336 1024L682.532949 1024 753.579947 1024 1348.948139 1024C1432.688811 1024 1432.688811 942.809523 1432.688811 942.809523L1432.688811 212.052267C1432.688811 212.052267 893.138176 701.759633 817.019477 767.734955 777.248 802.205449 742.347691 811.03081 718.063616 811.603883L718.063616 811.603883Z"></path>
+</svg>
+
+    </a>
+  
+    <a href="https://space.bilibili.com/43658591" rel="me noopener" class="iconfont"
+      title="bilibili"  target="_blank"
+      >
+      <svg
+  class="icon" style="" viewBox="0 0 1024 1024" version="1.1" width="36"
+  height="36" id="svg8">
+  <path
+      style=""
+      d="M 744.60599,0.00486267 A 41.779915,41.779915 0 0 0 710.4184,18.673394 L 548.5048,255.32642 h -11.70046 a 41.779915,41.779915 0 0 0 -10.80295,-7.84928 L 235.66,97.084498 a 41.779915,41.779915 0 0 0 -20.07193,-4.960864 41.779915,41.779915 0 0 0 -18.3748,79.145436 L 359.4859,255.32642 H 128.16909 c -49.458302,0 -89.27932,39.82105 -89.27932,89.27932 v 508.65224 c 0,49.4583 39.821018,89.27934 89.27932,89.27934 h 19.48445 C 149.12802,984.5043 179.92773,1024 224.79179,1024 c 44.86407,0 75.66379,-39.4957 77.13826,-81.46268 H 719.98116 C 721.45559,984.5043 752.25533,1024 797.1194,1024 c 44.86406,0 75.6638,-39.4957 77.13824,-81.46268 h 21.57323 c 49.45831,0 89.27936,-39.82104 89.27936,-89.27934 V 344.60574 c 0,-49.45827 -39.82105,-89.27932 -89.27936,-89.27932 H 649.74567 L 779.38103,65.866924 A 41.779915,41.779915 0 0 0 744.60599,0.00486267 Z M 644.49108,418.70871 c 6.29985,0.21538 12.44451,2.01107 17.86888,5.22196 l 171.36218,98.10771 c 18.23417,10.21935 24.63334,33.34627 14.24614,51.48533 -10.38726,18.13909 -33.57344,24.32718 -51.61587,13.77296 L 624.9903,489.18895 c -15.21356,-8.41858 -22.66871,-26.1765 -18.03211,-42.93436 4.63664,-16.75784 20.15573,-28.14465 37.53289,-27.54588 z M 350.2006,432.31846 c 16.89952,0.0317 31.69582,11.33328 36.17844,27.62747 4.48262,16.2942 -2.44981,33.57765 -16.95507,42.24898 l -140.7157,86.91312 c -17.68528,11.18244 -41.09629,5.77692 -52.08912,-12.02686 -10.99282,-17.80373 -5.33855,-41.15658 12.58167,-51.95857 L 329.9002,438.2095 c 6.0643,-3.86439 13.10951,-5.90891 20.3004,-5.89104 z M 501.605,641.53985 c 3.75002,-0.15248 7.48645,0.53903 10.93349,2.0235 0.15842,0.0637 0.31618,0.12888 0.47325,0.19582 0.59328,0.27092 1.17574,0.56489 1.74609,0.88121 0.15868,0.0854 0.31643,0.17233 0.47325,0.2611 0.55694,0.32165 1.10131,0.66458 1.63185,1.02807 0.16455,0.1123 0.32777,0.2265 0.48956,0.34269 0.50382,0.36781 0.99371,0.75428 1.46868,1.15864 0.18724,0.15504 0.37218,0.31282 0.55484,0.47323 0.43271,0.38784 0.8518,0.79061 1.25653,1.20756 0.15449,0.16114 0.30679,0.32437 0.45693,0.48959 0.40798,0.44266 0.79989,0.89988 1.17494,1.37076 0.17799,0.22544 0.35205,0.45395 0.5222,0.68538 0.25932,0.34701 0.50964,0.70071 0.75064,1.06071 0.26712,0.39516 0.52286,0.79784 0.76699,1.20757 0.16907,0.29043 0.33231,0.58424 0.48957,0.88123 0.21836,0.41297 0.42513,0.83199 0.62009,1.25653 0.14836,0.32333 0.28983,0.64976 0.42429,0.97911 0.21319,0.51552 0.40915,1.03801 0.58747,1.5666 0.0677,0.19499 0.13296,0.39085 0.19582,0.58748 0.18652,0.60823 0.34984,1.22334 0.48957,1.84399 0.0397,0.16277 0.0779,0.32601 0.11423,0.48957 0.1436,0.69112 0.25788,1.38801 0.34269,2.08877 0.005,0.0381 0.0111,0.0761 0.0163,0.11424 0.0857,0.78056 0.13474,1.56471 0.14687,2.34988 0.005,0.0543 0.0111,0.10879 0.0163,0.1632 0,0 -0.008,1.12132 0,1.45234 0,0 -0.14697,17.84761 5.89102,34.12231 3.01902,8.13734 7.33278,15.10615 12.61433,19.61501 5.28157,4.50889 11.42894,7.62081 23.64572,7.62081 12.2168,0 18.36416,-3.11192 23.64573,-7.62081 5.28154,-4.50886 9.5953,-11.47767 12.6143,-19.61501 6.03799,-16.2747 5.89103,-34.12231 5.89103,-34.12231 -0.44885,-13.87045 10.45922,-25.46302 24.3311,-25.86506 13.87189,-0.40201 25.42828,10.53953 25.78348,24.41272 0,0 1.11929,25.7226 -9.00791,53.01927 -5.06359,13.64832 -13.1986,28.46036 -27.05631,40.29073 -13.85772,11.83039 -33.5454,19.63135 -56.20142,19.63135 -22.65603,0 -42.34371,-7.80096 -56.20141,-19.63135 -4.1801,-3.56856 -7.78733,-7.42433 -10.99878,-11.42303 -3.21235,4.00037 -6.81703,7.85309 -10.99876,11.42303 -13.85773,11.83039 -33.5454,19.63135 -56.20144,19.63135 -22.65601,0 -42.3437,-7.80096 -56.2014,-19.63135 -13.85775,-11.83037 -21.99272,-26.64241 -27.05632,-40.29073 -10.12725,-27.29667 -9.00789,-53.01928 -9.00789,-53.01927 0.20714,-13.83687 11.58744,-24.88848 25.42444,-24.69013 14.1263,0.19991 25.2971,12.0278 24.69011,26.14247 0,0 -0.14697,17.84761 5.89103,34.12231 3.01902,8.13734 7.31646,15.10615 12.598,19.61501 5.28155,4.50889 11.44526,7.62081 23.66203,7.62081 12.21681,0 18.36418,-3.11192 23.64573,-7.62081 5.28154,-4.50886 9.57899,-11.47767 12.598,-19.61501 5.76352,-15.53489 5.89112,-32.05691 5.89103,-33.56746 0.006,-0.37466 0.0111,-1.05336 0.0163,-1.20759 -0.0117,-0.74583 0.0105,-1.49177 0.0652,-2.23565 0.009,-0.15784 0.0204,-0.31561 0.0327,-0.47324 0.14204,-1.56859 0.43163,-3.12027 0.86487,-4.63449 0.0213,-0.0763 0.0433,-0.15244 0.0652,-0.22848 3.0335,-10.25748 12.24157,-17.46007 22.92769,-17.93417 z"
+      id="rect824"/>
+</svg>
+
+    </a>
+  
+    <a href="https://github.com/feiflown" rel="me noopener" class="iconfont"
+      title="github"  target="_blank"
+      >
+      <svg class="icon" style="" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M512 12.672c-282.88 0-512 229.248-512 512 0 226.261333 146.688 418.133333 350.08 485.76 25.6 4.821333 34.986667-11.008 34.986667-24.618667 0-12.16-0.426667-44.373333-0.64-87.04-142.421333 30.890667-172.458667-68.693333-172.458667-68.693333C188.672 770.986667 155.008 755.2 155.008 755.2c-46.378667-31.744 3.584-31.104 3.584-31.104 51.413333 3.584 78.421333 52.736 78.421333 52.736 45.653333 78.293333 119.850667 55.68 149.12 42.581333 4.608-33.109333 17.792-55.68 32.426667-68.48-113.706667-12.8-233.216-56.832-233.216-253.013333 0-55.893333 19.84-101.546667 52.693333-137.386667-5.76-12.928-23.04-64.981333 4.48-135.509333 0 0 42.88-13.738667 140.8 52.48 40.96-11.392 84.48-17.024 128-17.28 43.52 0.256 87.04 5.888 128 17.28 97.28-66.218667 140.16-52.48 140.16-52.48 27.52 70.528 10.24 122.581333 5.12 135.509333 32.64 35.84 52.48 81.493333 52.48 137.386667 0 196.693333-119.68 240-233.6 252.586667 17.92 15.36 34.56 46.762667 34.56 94.72 0 68.522667-0.64 123.562667-0.64 140.202666 0 13.44 8.96 29.44 35.2 24.32C877.44 942.592 1024 750.592 1024 524.672c0-282.752-229.248-512-512-512"></path>
+</svg>
+
+    </a>
+
+
+<a href="http://feiflown.github.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="30" height="30">
+  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
+</svg>
+
+  </a>
+  
+</div>
+
+<div class="copyright">
+
+    <span class="copyright-year">
+    &copy;
+    2023
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        WTFPLv2
+        
+      </span></span>
+
+    <span class="power-by">
+      <a title="Host on GitHub & AliOSS"><img alt="Ecologi (Carbon Offset)" src="https://img.shields.io/badge/Host%20on-GitHub%20%26%20AliOSS-blue"></a>
+    </span>
+    <span class="theme-info">
+      <a title="Provided by Algolia & Giscus"><img alt="Ecologi (Carbon Offset)" src="https://img.shields.io/badge/Providers-Algolia%20%26%20Giscus-brightgreen"></a>
+    </span></br>
+
+    
+    
+    <span id="busuanzi_container" style="font-size: 15px;">
+      访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+    </span>
+     
+</div>
+        </footer>
+
+        <div class="back-to-top" id="back-to-top">
+            <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+        </div>
+    </div>
+    
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js" crossorigin="anonymous"></script>
+
+
+ 
+<script type="text/javascript" src="/js/main.78133f8db5100f9fb5a6fffa4926f667d138ff995d041a4ae51629d8a7996af2.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+<script id="baidu_push">
+    (function() {
+        if (window.location.hostname === 'localhost') return;
+        var bp = document.createElement('script');
+        bp.async = true;
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+
+ 
+<script src="/js/load-photoswipe.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+ 
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+ 
+
+
+ <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+    const options = {
+      bottom: '32px', 
+      right: 'unset', 
+      left: '32px', 
+      time: '0.5s', 
+      mixColor: '#fff', 
+      backgroundColor: '#fff',  
+      buttonColorDark: '#100f2c',  
+      buttonColorLight: '#fff', 
+      saveInCookies: true, 
+      label: '🌓', 
+      autoMatchOsTheme: true 
+    }
+
+    const darkmode = new Darkmode(options);
+    darkmode.showWidget();
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.3/dist/cdn/docsearch.min.js"></script>
+<script>
+    docsearch({
+        apiKey: "0c4a9c8576799547a9fa75b544d1ab30",
+        indexName: "main-blog",
+        appId: "OL46F505O2",
+        inputSelector: '.docsearch-input',
+        debug: false,
+    });
+</script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.3/dist/cdn/docsearch.min.js"></script>
+<script>
+    docsearch({
+        apiKey: "0c4a9c8576799547a9fa75b544d1ab30",
+        indexName: "main-blog",
+        appId: "OL46F505O2",
+        inputSelector: '.docsearch',
+        debug: false,
+    });
+</script>
+
+<script src="/js/code_expander.js"></script>
+
+
+</body>
+
+</html>
