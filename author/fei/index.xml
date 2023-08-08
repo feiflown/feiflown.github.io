@@ -9,7 +9,7 @@
     <managingEditor>feiflown@gmail.com (fei)</managingEditor>
     <webMaster>feiflown@gmail.com (fei)</webMaster>
     <copyright>WTFPLv2</copyright>
-    <lastBuildDate>Mon, 19 Jun 2023 14:54:12 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/author/fei/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Aug 2023 14:53:16 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/author/fei/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于</title>
       <link>http://feiflown.github.io/aboutme/</link>
@@ -17,6 +17,42 @@
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/aboutme/</guid>
       <description>&lt;!DOCTYPE html&gt; 岂能尽如人意，但求无愧我心。 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Hover here to show all your network information. All your network information is shown below: 本站地址：https://feiflown.github.io/ 本站地址：ht</description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>http://feiflown.github.io/post/python%E7%88%AC%E5%8F%96%E8%85%BE%E8%AE%AF%E5%9C%A8%E7%BA%BF%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Tue, 01 Aug 2023 14:53:16 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/python%E7%88%AC%E5%8F%96%E8%85%BE%E8%AE%AF%E5%9C%A8%E7%BA%BF%E6%96%87%E6%A1%A3/</guid>
+      <description>最近需要写一个IP白名单程序 拉取腾讯在线文档的数据，定时任务更新，写入Nginx 由于腾讯文档的api需要注册企业开发者，无法走这一条路 写了一</description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>http://feiflown.github.io/post/%E5%8A%A8%E6%80%81%E6%8C%87%E5%AE%9A-spring-%E5%AE%B9%E5%99%A8%E5%86%85%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF/</link>
+      <pubDate>Tue, 01 Aug 2023 14:53:16 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/%E5%8A%A8%E6%80%81%E6%8C%87%E5%AE%9A-spring-%E5%AE%B9%E5%99%A8%E5%86%85%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF/</guid>
+      <description>动态指定 Spring 容器内接口实现的设计思路 假设在某个业务类中存在一个注入 bean 1 2 @Autowired private TestService testService; 其中 TestService 是一个接口，假设我们有该接口有多种实现：TestServ</description>
+    </item>
+    
+    <item>
+      <title>火绒</title>
+      <link>http://feiflown.github.io/post/%E7%81%AB%E7%BB%92/</link>
+      <pubDate>Mon, 31 Jul 2023 09:11:11 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/%E7%81%AB%E7%BB%92/</guid>
+      <description>火绒的最新更新会导致所有基于Electron的应用卡顿 请关掉火绒 火绒论坛的用户发现的临时解决方案：关掉恶意行为监控和软件安装拦截即可 更新到7</description>
+    </item>
+    
+    <item>
+      <title>Spring Security</title>
+      <link>http://feiflown.github.io/post/spring-security/</link>
+      <pubDate>Thu, 27 Jul 2023 10:15:36 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/spring-security/</guid>
+      <description>前言 Spring Security是一个用于身份验证和授权的强大框架，用于保护应用程序的安全性。它提供了一系列的功能和机制，用于实现认证、授权、访问控制</description>
     </item>
     
     <item>
@@ -181,42 +217,6 @@
       <author>feiflown@gmail.com (fei)</author>
       <guid>http://feiflown.github.io/post/use-gitlab-github-together/</guid>
       <description>由于公司团队使用 GitLab 来托管代码，同时，个人在 Github 上还有一些代码仓库，可公司邮箱与个人邮箱是不同的，由此产生的 SSH key 也是不同的，这就造成了冲突 ，文章</description>
-    </item>
-    
-    <item>
-      <title>Neko40</title>
-      <link>http://feiflown.github.io/post/keyboard/neko/</link>
-      <pubDate>Tue, 21 Mar 2023 23:23:52 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/post/keyboard/neko/</guid>
-      <description>时隔一年半Neko终于到了 其实半年前Neko就发货了，然而我是在香港代理买的，就为了省点邮费 没想到居然拖了半年才发货，更离谱的是好像今年年后</description>
-    </item>
-    
-    <item>
-      <title>Tps40</title>
-      <link>http://feiflown.github.io/post/keyboard/tps40/</link>
-      <pubDate>Tue, 21 Mar 2023 23:23:52 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/post/keyboard/tps40/</guid>
-      <description>【备忘】 Tps40 阳极灰 + pc定位板 1969 8月发货</description>
-    </item>
-    
-    <item>
-      <title>GitHub Actions实现push自动更新algolia索引</title>
-      <link>http://feiflown.github.io/post/algolia-auto-update/</link>
-      <pubDate>Mon, 20 Mar 2023 14:33:12 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/post/algolia-auto-update/</guid>
-      <description>&lt;p&gt;博客使用 Algolia 实现搜索功能，手动上传搜索记录数据一直很烦琐，只好苦学 API 和 Action，通过 GitHub Actions 实现自动上传搜索记录到 Algolia，完美呈现。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Algolia实现Hugo搜索功能</title>
-      <link>http://feiflown.github.io/post/algolia%E5%AE%9E%E7%8E%B0hugo%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</link>
-      <pubDate>Sat, 25 Feb 2023 14:55:49 +0800</pubDate>
-      <author>feiflown@gmail.com (fei)</author>
-      <guid>http://feiflown.github.io/post/algolia%E5%AE%9E%E7%8E%B0hugo%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</guid>
-      <description>&lt;p&gt;一直想实现博客的本地搜索，没有找到好的实现方式。尝试了好几个方案，现在使用 &lt;a href=&#34;https://www.algolia.com/&#34;&gt;Algolia&lt;/a&gt; 实现本地搜索。实现方式简单，每月可搜索 10000 次，可以一直白票下去&lt;/p&gt;</description>
     </item>
     
   </channel>

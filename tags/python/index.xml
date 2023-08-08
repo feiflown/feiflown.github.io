@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on fei&#39;s blog</title>
+    <link>http://feiflown.github.io/tags/python/</link>
+    <description>Recent content in python on fei&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>feiflown@gmail.com (fei)</managingEditor>
+    <webMaster>feiflown@gmail.com (fei)</webMaster>
+    <copyright>WTFPLv2</copyright>
+    <lastBuildDate>Tue, 01 Aug 2023 14:53:16 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>python</title>
+      <link>http://feiflown.github.io/post/python%E7%88%AC%E5%8F%96%E8%85%BE%E8%AE%AF%E5%9C%A8%E7%BA%BF%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Tue, 01 Aug 2023 14:53:16 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/python%E7%88%AC%E5%8F%96%E8%85%BE%E8%AE%AF%E5%9C%A8%E7%BA%BF%E6%96%87%E6%A1%A3/</guid>
+      <description>最近需要写一个IP白名单程序 拉取腾讯在线文档的数据，定时任务更新，写入Nginx 由于腾讯文档的api需要注册企业开发者，无法走这一条路 写了一</description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>http://feiflown.github.io/post/%E5%8A%A8%E6%80%81%E6%8C%87%E5%AE%9A-spring-%E5%AE%B9%E5%99%A8%E5%86%85%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF/</link>
+      <pubDate>Tue, 01 Aug 2023 14:53:16 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/%E5%8A%A8%E6%80%81%E6%8C%87%E5%AE%9A-spring-%E5%AE%B9%E5%99%A8%E5%86%85%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF/</guid>
+      <description>动态指定 Spring 容器内接口实现的设计思路 假设在某个业务类中存在一个注入 bean 1 2 @Autowired private TestService testService; 其中 TestService 是一个接口，假设我们有该接口有多种实现：TestServ</description>
+    </item>
+    
+  </channel>
+</rss>

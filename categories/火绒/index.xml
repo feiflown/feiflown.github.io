@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>火绒 on fei&#39;s blog</title>
+    <link>http://feiflown.github.io/categories/%E7%81%AB%E7%BB%92/</link>
+    <description>Recent content in 火绒 on fei&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>feiflown@gmail.com (fei)</managingEditor>
+    <webMaster>feiflown@gmail.com (fei)</webMaster>
+    <copyright>WTFPLv2</copyright>
+    <lastBuildDate>Mon, 31 Jul 2023 09:11:11 +0800</lastBuildDate><atom:link href="http://feiflown.github.io/categories/%E7%81%AB%E7%BB%92/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>火绒</title>
+      <link>http://feiflown.github.io/post/%E7%81%AB%E7%BB%92/</link>
+      <pubDate>Mon, 31 Jul 2023 09:11:11 +0800</pubDate>
+      <author>feiflown@gmail.com (fei)</author>
+      <guid>http://feiflown.github.io/post/%E7%81%AB%E7%BB%92/</guid>
+      <description>火绒的最新更新会导致所有基于Electron的应用卡顿 请关掉火绒 火绒论坛的用户发现的临时解决方案：关掉恶意行为监控和软件安装拦截即可 更新到7</description>
+    </item>
+    
+  </channel>
+</rss>
